@@ -12,9 +12,9 @@ This study empirically compares code review practices across four categories:
 - **ARA**: Agent Reviews Agent-generated code
 
 The analysis spans three research questions:
-- **RQ1**: What types of feedback are exchanged in code reviews?
-- **RQ2**: How do reviewers and code authors interact during review?
-- **RQ3**: How often are review suggestions adopted, and what is their impact on code quality?
+- **RQ1**: What are the similarities and differences between the review comments by AI agents and human reviewers?
+- **RQ2**: How do interaction patterns differ between human and AI agent code reviews?
+- **RQ3**: What is the impact of code suggestions from human reviewers and AI agents on code quality?
 
 ## Repository Structure
 
