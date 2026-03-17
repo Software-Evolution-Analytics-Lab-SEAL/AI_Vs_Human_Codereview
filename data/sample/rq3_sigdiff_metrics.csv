@@ -1,0 +1,112 @@
+Metric,Delta_Column,P_Value,Cliffs_Delta,Effect_Size,Mean_Human,Mean_AI,Median_Human,Median_AI,Count_Human,Count_AI
+SumStrictModifiedCyclomaticComplexity,SumStrictModifiedCyclomaticComplexity_Delta,2.2911060264769405e-08,-0.050330288064809346,Negligible,0.0033112582781456954,0.10550284629981024,0.0,0.0,1812,2635
+SumStrictCyclomaticComplexity,SumStrictCyclomaticComplexity_Delta,2.2911060264769405e-08,-0.050330288064809346,Negligible,-0.0016556291390728477,0.10550284629981024,0.0,0.0,1812,2635
+SumModifiedCyclomaticComplexity,SumModifiedCyclomaticComplexity_Delta,3.6258253726944313e-06,-0.03790500605283771,Negligible,0.009381898454746136,0.0857685009487666,0.0,0.0,1812,2635
+SumCyclomaticComplexity,SumCyclomaticComplexity_Delta,4.994900016361774e-06,-0.036705538870109036,Negligible,-0.002207505518763797,0.08500948766603415,0.0,0.0,1812,2635
+ExecutableStatements,ExecutableStatements_Delta,1.810213613244659e-05,-0.03953487397949994,Negligible,0.09933774834437085,0.1760910815939279,0.0,0.0,1812,2635
+Statements,Statements_Delta,0.0002521447656843512,-0.03586547201662122,Negligible,0.1076158940397351,0.2159392789373814,0.0,0.0,1812,2635
+DeclarativeCodeLines,DeclarativeCodeLines_Delta,0.000554033198610097,-0.020721439611948177,Negligible,-0.024834437086092714,0.028462998102466792,0.0,0.0,1812,2635
+Paths,Paths_Delta,0.0008318770759474556,-0.006993226686102768,Negligible,-0.24282560706401765,0.9673624288425048,0.0,0.0,1812,2635
+AverageStrictCyclomaticComplexity,AverageStrictCyclomaticComplexity_Delta,0.001322086763870466,-0.01349824698091157,Negligible,-0.009381898454746136,0.008349146110056925,0.0,0.0,1812,2635
+ExecutableStatementsJavaScript,ExecutableStatementsJavaScript_Delta,0.002330720877988527,-0.014998052201012855,Negligible,-0.00772626931567329,0.031878557874762806,0.0,0.0,1812,2635
+AverageStrictModifiedCyclomaticComplexity,AverageStrictModifiedCyclomaticComplexity_Delta,0.0024608517022496404,-0.012209558038126594,Negligible,-0.008278145695364239,0.007590132827324478,0.0,0.0,1812,2635
+AverageCyclomaticComplexity,AverageCyclomaticComplexity_Delta,0.002907864245684788,-0.010823479145984392,Negligible,-0.0033112582781456954,0.009487666034155597,0.0,0.0,1812,2635
+Lines,Lines_Delta,0.0035748561413438207,-0.03761597781603562,Negligible,0.1986754966887417,0.49449715370018976,0.0,0.0,1812,2635
+CodeLines,CodeLines_Delta,0.005012310099559395,-0.03235650166924279,Negligible,-0.02869757174392936,0.27514231499051234,0.0,0.0,1812,2635
+Semicolons,Semicolons_Delta,0.006600206913562807,-0.015856340399864284,Negligible,-0.06898454746136866,0.051233396584440226,0.0,0.0,1812,2635
+SumEssentialComplexity,SumEssentialComplexity_Delta,0.006659186373468088,-0.015427615181941181,Negligible,0.00772626931567329,0.047817836812144215,0.0,0.0,1812,2635
+ExecutableCodeLines,ExecutableCodeLines_Delta,0.006907312208526704,-0.023488989699703852,Negligible,0.06346578366445917,0.22960151802656548,0.0,0.0,1812,2635
+AverageModifiedCyclomaticComplexity,AverageModifiedCyclomaticComplexity_Delta,0.007200818559920698,-0.01006572250775978,Negligible,-0.0033112582781456954,0.00872865275142315,0.0,0.0,1812,2635
+ExecutableUnits,ExecutableUnits_Delta,0.009121371027751292,-0.010771537839660538,Negligible,0.0011037527593818985,0.03377609108159393,0.0,0.0,1812,2635
+DeclarativeStatements,DeclarativeStatements_Delta,0.00959622286050847,-0.018149716626663485,Negligible,0.025386313465783666,0.07058823529411765,0.0,0.0,1812,2635
+ClassVariables,ClassVariables_Delta,0.010724702818313234,-0.014852071997352669,Negligible,-0.04525386313465784,0.17229601518026566,0.0,0.0,1812,2635
+Functions,Functions_Delta,0.014046085951082725,-0.009716584775332906,Negligible,0.009381898454746136,0.031878557874762806,0.0,0.0,1812,2635
+PublicMethods,PublicMethods_Delta,0.018313286065458297,-0.0024133857772974604,Negligible,-0.0033112582781456954,0.0007590132827324478,0.0,0.0,1812,2635
+CommentLinesJavaScript,CommentLinesJavaScript_Delta,0.03550188537091954,-0.008685926838156754,Negligible,0.0005518763796909492,0.030360531309297913,0.0,0.0,1812,2635
+EssentialComplexity,EssentialComplexity_Delta,0.03672990615650672,-0.0033074883446221896,Negligible,-0.0033112582781456954,0.0030360531309297912,0.0,0.0,1812,2635
+CoupledClasses,CoupledClasses_Delta,0.03690713763960615,-0.02053734119155032,Negligible,0.0016556291390728477,0.19203036053130929,0.0,0.0,1812,2635
+InactiveLines,InactiveLines_Delta,0.04041379998390576,-0.00528754120746782,Negligible,0.16225165562913907,0.06869070208728653,0.0,0.0,1812,2635
+StrictCyclomaticComplexity,StrictCyclomaticComplexity_Delta,0.04064695849331445,-0.0038560136722922455,Negligible,-0.005518763796909493,0.012523719165085389,0.0,0.0,1812,2635
+StrictModifiedCyclomaticComplexity,StrictModifiedCyclomaticComplexity_Delta,0.04064695849331445,-0.0038560136722922455,Negligible,-0.005518763796909493,0.012523719165085389,0.0,0.0,1812,2635
+ModifiedCyclomaticComplexity,ModifiedCyclomaticComplexity_Delta,0.040734300234044764,-0.0038543381462817984,Negligible,-0.003863134657836645,0.012144212523719165,0.0,0.0,1812,2635
+CyclomaticComplexity,CyclomaticComplexity_Delta,0.040734300234044764,-0.0038543381462817984,Negligible,-0.003863134657836645,0.012144212523719165,0.0,0.0,1812,2635
+AverageCodeLines,AverageCodeLines_Delta,0.04341064637229745,-0.014857726897637927,Negligible,-0.02869757174392936,0.041366223908918406,0.0,0.0,1812,2635
+BlankLines,BlankLines_Delta,0.04926378200778755,0.012501309004695661,Negligible,-0.0016556291390728477,0.012903225806451613,0.0,0.0,1812,2635
+PrivateMethods,PrivateMethods_Delta,0.06411459043224761,0.0,Not Significant,0.0027593818984547464,-0.0011385199240986717,0.0,0.0,1812,2635
+BlankLinesIncludesInactive,BlankLinesIncludesInactive_Delta,0.06730733188348471,0.0,Not Significant,0.006070640176600441,0.0015180265654648956,0.0,0.0,1812,2635
+MaxStrictModifiedCyclomaticComplexity,MaxStrictModifiedCyclomaticComplexity_Delta,0.07171600642391851,0.0,Not Significant,0.00717439293598234,0.020872865275142316,0.0,0.0,1812,2635
+MaxStrictCyclomaticComplexity,MaxStrictCyclomaticComplexity_Delta,0.07189025199353175,0.0,Not Significant,0.006622516556291391,0.02049335863377609,0.0,0.0,1812,2635
+AverageCommentLinesIncludesInactive,AverageCommentLinesIncludesInactive_Delta,0.08814445400937129,0.0,Not Significant,0.0011037527593818985,0.0,0.0,0.0,1812,2635
+AverageEssentialComplexity,AverageEssentialComplexity_Delta,0.12400644357652749,0.0,Not Significant,-0.0016556291390728477,0.0030360531309297912,0.0,0.0,1812,2635
+LinesJavaScript,LinesJavaScript_Delta,0.14263435899469282,0.0,Not Significant,0.024282560706401765,0.08197343453510436,0.0,0.0,1812,2635
+AverageCommentLines,AverageCommentLines_Delta,0.17159677814030516,0.0,Not Significant,0.00772626931567329,0.0011385199240986717,0.0,0.0,1812,2635
+CommentLinesPHP,CommentLinesPHP_Delta,0.1820317845584002,0.0,Not Significant,0.0380794701986755,0.003795066413662239,0.0,0.0,1812,2635
+MaxInheritanceTree,MaxInheritanceTree_Delta,0.18223314827353376,0.0,Not Significant,-0.014900662251655629,0.005313092979127135,0.0,0.0,1812,2635
+BaseClasses,BaseClasses_Delta,0.18431837252864913,0.0,Not Significant,-0.017108167770419427,0.03643263757115749,0.0,0.0,1812,2635
+CommentLinesIncludesInactive,CommentLinesIncludesInactive_Delta,0.19550664806467621,0.0,Not Significant,0.01545253863134658,0.0064516129032258064,0.0,0.0,1812,2635
+EmptyStatements,EmptyStatements_Delta,0.22803266757255758,0.0,Not Significant,-0.0005518763796909492,0.0,0.0,0.0,1812,2635
+AverageLines,AverageLines_Delta,0.24428793995820275,0.0,Not Significant,-0.03145695364238411,0.0713472485768501,0.0,0.0,1812,2635
+ExecutableStatementsPHP,ExecutableStatementsPHP_Delta,0.2555302235589043,0.0,Not Significant,0.028145695364238412,0.011005692599620493,0.0,0.0,1812,2635
+CodeLinesIncludesInactive,CodeLinesIncludesInactive_Delta,0.25560483406565504,0.0,Not Significant,-0.0027593818984547464,0.014800759013282733,0.0,0.0,1812,2635
+PathsLogx,PathsLogx_Delta,0.26576858356095934,0.0,Not Significant,0.0,0.0026565464895635673,0.0,0.0,1812,2635
+MaxModifiedCyclomaticCompexity,MaxModifiedCyclomaticCompexity_Delta,0.2700220058305546,0.0,Not Significant,0.013245033112582781,0.009867172675521821,0.0,0.0,1812,2635
+CodeLinesJavaScript,CodeLinesJavaScript_Delta,0.27145940813008695,0.0,Not Significant,0.016556291390728478,0.05313092979127135,0.0,0.0,1812,2635
+DerivedClasses,DerivedClasses_Delta,0.2817184323962748,0.0,Not Significant,-0.0033112582781456954,0.003415559772296015,0.0,0.0,1812,2635
+BlankLinesJavaScript,BlankLinesJavaScript_Delta,0.29434964506239847,0.0,Not Significant,0.004966887417218543,-0.0018975332068311196,0.0,0.0,1812,2635
+LinesHTML,LinesHTML_Delta,0.30509937454383906,0.0,Not Significant,0.0011037527593818985,0.011764705882352941,0.0,0.0,1812,2635
+PercentLackOfCohesion,PercentLackOfCohesion_Delta,0.3216761759197656,0.0,Not Significant,-0.36909120640176596,-0.0516951294117647,0.0,0.0,1812,2635
+MaxNesting,MaxNesting_Delta,0.3406136518282701,0.0,Not Significant,0.00772626931567329,0.003415559772296015,0.0,0.0,1812,2635
+MaxCyclomaticComplexity,MaxCyclomaticComplexity_Delta,0.35342750556185687,0.0,Not Significant,0.01379690949227373,0.009867172675521821,0.0,0.0,1812,2635
+PercentLackOfCohesionModified,PercentLackOfCohesionModified_Delta,0.3593768344998458,0.0,Not Significant,-0.4204161462472406,-0.01597090436432639,0.0,0.0,1812,2635
+CommentLines,CommentLines_Delta,0.43711524343245123,0.0,Not Significant,0.07339955849889625,0.12903225806451613,0.0,0.0,1812,2635
+AverageBlankLines,AverageBlankLines_Delta,0.5565122683852302,0.0,Not Significant,-0.003863134657836645,-0.0007590132827324478,0.0,0.0,1812,2635
+CommenttoCodeRatio,CommenttoCodeRatio_Delta,0.565854830933822,0.0,Not Significant,0.0008333333333333334,0.0016091081593927895,0.0,0.0,1812,2635
+LinesPHP,LinesPHP_Delta,0.6125369845816584,0.0,Not Significant,0.09105960264900662,-0.0030360531309297912,0.0,0.0,1812,2635
+PreprocessorLines,PreprocessorLines_Delta,0.6386041370773726,0.0,Not Significant,0.004966887417218543,0.004174573055028463,0.0,0.0,1812,2635
+DeclarativeStatementsPHP,DeclarativeStatementsPHP_Delta,0.7112315865407342,0.0,Not Significant,0.003863134657836645,0.0003795066413662239,0.0,0.0,1812,2635
+AverageCodeLinesIncludesInactive,AverageCodeLinesIncludesInactive_Delta,0.7117969393022239,0.0,Not Significant,-0.0011037527593818985,0.0,0.0,0.0,1812,2635
+Classes,Classes_Delta,0.7904627078316434,0.0,Not Significant,0.0005518763796909492,0.0007590132827324478,0.0,0.0,1812,2635
+ClassMethods,ClassMethods_Delta,0.8011233800038428,0.0,Not Significant,-0.07119205298013245,0.1206831119544592,0.0,0.0,1812,2635
+BlankLinesPHP,BlankLinesPHP_Delta,0.835181589459514,0.0,Not Significant,0.009381898454746136,-0.0011385199240986717,0.0,0.0,1812,2635
+InstanceMethods,InstanceMethods_Delta,0.8395213885073529,0.0,Not Significant,-0.0005518763796909492,-0.0007590132827324478,0.0,0.0,1812,2635
+Methods,Methods_Delta,0.8509334990835402,0.0,Not Significant,-0.0005518763796909492,-0.0003795066413662239,0.0,0.0,1812,2635
+DeclarativeStatementsJavascript,DeclarativeStatementsJavascript_Delta,0.8775235251879901,0.0,Not Significant,0.00772626931567329,0.009108159392789373,0.0,0.0,1812,2635
+MaxEssentialComplexity,MaxEssentialComplexity_Delta,0.9110252180945916,0.0,Not Significant,0.02041942604856512,0.008349146110056925,0.0,0.0,1812,2635
+CodeLinesPHP,CodeLinesPHP_Delta,0.92213521646654,0.0,Not Significant,0.046357615894039736,-0.0056925996204933585,0.0,0.0,1812,2635
+MaxStrictModifiedEssentialComplexity,MaxStrictModifiedEssentialComplexity_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+CoupledClassesModified,CoupledClassesModified_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+Knots,Knots_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+StrictModifiedEssentialComplexity,StrictModifiedEssentialComplexity_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+MinEssentialKnots,MinEssentialKnots_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+AverageStrictModifiedEssentialComplexity,AverageStrictModifiedEssentialComplexity_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+AverageBlankLinesIncludesInactive,AverageBlankLinesIncludesInactive_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+Files,Files_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+CodeFiles,CodeFiles_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+HeaderFiles,HeaderFiles_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+MaxEssentialKnots,MaxEssentialKnots_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+AutoImplementedProperties,AutoImplementedProperties_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+ProtectedInstanceVariables,ProtectedInstanceVariables_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+InternalInstanceVariables,InternalInstanceVariables_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+Subprograms,Subprograms_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+Inputs,Inputs_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+ProgramUnits,ProgramUnits_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+Modules,Modules_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+BlankLinesHTML,BlankLinesHTML_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+StrictPublishedMethods,StrictPublishedMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+StrictPrivateMethods,StrictPrivateMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+ProtectedInternalMethods,ProtectedInternalMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+ProtectedMethods,ProtectedMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+CommentLinesHTML,CommentLinesHTML_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+InternalMethods,InternalMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+FriendMethods,FriendMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+DefaultMethods,DefaultMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+ConstMethods,ConstMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+AllMethods,AllMethods_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+Outputs,Outputs_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+CoupledPackages,CoupledPackages_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+PublicInstanceVariables,PublicInstanceVariables_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+ProtectedInternalInstanceVariables,ProtectedInternalInstanceVariables_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+Properties,Properties_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+PrivateInstanceVariables,PrivateInstanceVariables_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+InstanceVariables,InstanceVariables_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635
+SumStrictModifiedEssentialComplexity,SumStrictModifiedEssentialComplexity_Delta,1.0,0.0,Not Significant,0.0,0.0,0.0,0.0,1812,2635

@@ -1,0 +1,9 @@
+Feedback_Type,Human_Sugg,Human_Adopt,Agent_Sugg,Agent_Adopt,vs_Human
+Knowledge Transfer,2038,75.8%,-,-,-
+Code Improvement,20166,59.2%,53501,16.8%,-42.3%
+Defects,616,53.7%,33019,16.7%,-37.0%
+Understanding,1354,51.0%,-,-,-
+Misc,1499,1.2%,-,-,-
+External Impact,-,-,658,6.5%,-
+Testing,-,-,833,7.6%,-
+Total,25673,56.5%,88011,16.6%,-39.9%

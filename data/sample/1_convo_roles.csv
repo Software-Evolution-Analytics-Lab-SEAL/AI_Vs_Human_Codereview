@@ -1,0 +1,101 @@
+repo,pr_number,part_file_number,pr_author,convo_id,comment_count,turn_type,review_category,initial_turn_result,comment_chain_roles,LOC,LOC_src,LOC_no_blank,token_init_comment
+APSIMInitiative/ApsimX,10282,,Human(ilhuber),2335051657,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(ilhuber),21,diff_hunk,15,38
+APSIMInitiative/ApsimX,10282,,Human(ilhuber),2335051663,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(ilhuber),61,diff_hunk,9,44
+APSIMInitiative/ApsimX,10282,,Human(ilhuber),2335051667,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(ilhuber),68,diff_hunk,9,38
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781953,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),5,diff_hunk,8,39
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781961,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),5,diff_hunk,8,38
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781963,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),167,diff_hunk,9,50
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781966,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),220,diff_hunk,8,38
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781977,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),226,diff_hunk,8,32
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781980,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),15,diff_hunk,8,50
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781987,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),16,diff_hunk,9,80
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781992,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),28,diff_hunk,9,84
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314781996,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),63,diff_hunk,9,62
+APSIMInitiative/ApsimX,10344,,Human(sno036),2314782001,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),77,diff_hunk,9,48
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2299354815,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR),60,diff_hunk,9,35
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2299354825,3,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR) -> Human(ric394),44,diff_hunk,9,104
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2299354836,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR),27,diff_hunk,9,70
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2299354840,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR),54,diff_hunk,9,27
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2299354843,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR),44,diff_hunk,11,129
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2320474449,2,multi-turn,Human_Review_Human,,Human(hut104) -> Human(HamishBrownPFR),5,diff_hunk,9,38
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2320474865,1,single-turn,Human_Review_Human,,Human(hut104),2,diff_hunk,8,6
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2320479128,2,multi-turn,Human_Review_Human,,Human(hut104) -> Human(HamishBrownPFR),8,diff_hunk,9,22
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2320494614,2,multi-turn,Human_Review_Human,,Human(hut104) -> Human(HamishBrownPFR),12,diff_hunk,9,19
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2320501170,3,multi-turn,Human_Review_Human,,Human(hut104) -> Human(HamishBrownPFR) -> Human(HamishBrownPFR),15,diff_hunk,9,79
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2338191440,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR),11,diff_hunk,9,43
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2338191461,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR),17,diff_hunk,9,33
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2338191476,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR),25,diff_hunk,8,33
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2338191487,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(HamishBrownPFR),110,diff_hunk,9,55
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350647150,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),50,diff_hunk,9,23
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350648921,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),31,diff_hunk,9,17
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350649765,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),29,diff_hunk,8,5
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350651673,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),26,diff_hunk,8,25
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350665342,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),44,diff_hunk,9,92
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350666503,1,single-turn,Human_Review_Human,,Human(par456),63,diff_hunk,8,6
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350668324,1,single-turn,Human_Review_Human,,Human(par456),70,diff_hunk,9,10
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350673740,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),105,diff_hunk,9,15
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350677653,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),122,diff_hunk,7,23
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350685277,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),34,diff_hunk,9,12
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350686658,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),5,diff_hunk,8,12
+APSIMInitiative/ApsimX,10359,,Human(HamishBrownPFR),2350690233,2,multi-turn,Human_Review_Human,,Human(par456) -> Human(HamishBrownPFR),2,diff_hunk,8,36
+APSIMInitiative/ApsimX,10363,,Human(BrianCollinss),2299353677,1,single-turn,Agent_Review_Human,,Agent(Copilot),17,diff_hunk,11,178
+APSIMInitiative/ApsimX,10363,,Human(BrianCollinss),2299353691,1,single-turn,Agent_Review_Human,,Agent(Copilot),17,diff_hunk,8,107
+APSIMInitiative/ApsimX,10363,,Human(BrianCollinss),2299353697,1,single-turn,Agent_Review_Human,,Agent(Copilot),23,diff_hunk,9,33
+APSIMInitiative/ApsimX,10363,,Human(BrianCollinss),2317434616,1,single-turn,Human_Review_Human,,Human(hut104),24,diff_hunk,9,35
+APSIMInitiative/ApsimX,10363,,Human(BrianCollinss),2317436589,2,multi-turn,Human_Review_Human,,Human(hut104) -> Human(BrianCollinss),19,diff_hunk,8,20
+APSIMInitiative/ApsimX,10363,,Human(BrianCollinss),2317441257,1,single-turn,Human_Review_Human,,Human(hut104),5,diff_hunk,8,39
+APSIMInitiative/ApsimX,10363,,Human(BrianCollinss),2357361497,1,single-turn,Agent_Review_Human,,Agent(Copilot),70,diff_hunk,7,14
+APSIMInitiative/ApsimX,10365,,Human(ric394),2299819973,1,single-turn,Agent_Review_Human,,Agent(Copilot),9,diff_hunk,9,56
+APSIMInitiative/ApsimX,10365,,Human(ric394),2299819987,1,single-turn,Agent_Review_Human,,Agent(Copilot),16,diff_hunk,15,148
+APSIMInitiative/ApsimX,10365,,Human(ric394),2299820002,1,single-turn,Agent_Review_Human,,Agent(Copilot),9,diff_hunk,9,34
+APSIMInitiative/ApsimX,10369,,Human(ric394),2299669299,1,single-turn,Agent_Review_Human,,Agent(Copilot),4,diff_hunk,9,57
+APSIMInitiative/ApsimX,10371,,Human(zur003),2302777197,1,single-turn,Agent_Review_Human,,Agent(Copilot),7,diff_hunk,8,38
+APSIMInitiative/ApsimX,10371,,Human(zur003),2302777205,1,single-turn,Agent_Review_Human,,Agent(Copilot),11,diff_hunk,8,38
+APSIMInitiative/ApsimX,10371,,Human(zur003),2302777207,1,single-turn,Agent_Review_Human,,Agent(Copilot),11,diff_hunk,9,42
+APSIMInitiative/ApsimX,10372,,Human(hol353),2302750663,1,single-turn,Human_Review_Human,,Human(ric394),271,diff_hunk,8,5
+APSIMInitiative/ApsimX,10372,,Human(hol353),2302753248,1,single-turn,Human_Review_Human,,Human(ric394),298,diff_hunk,9,30
+APSIMInitiative/ApsimX,10372,,Human(hol353),2302767661,1,single-turn,Agent_Review_Human,,Agent(Copilot),271,diff_hunk,8,31
+APSIMInitiative/ApsimX,10372,,Human(hol353),2302767665,1,single-turn,Agent_Review_Human,,Agent(Copilot),6,diff_hunk,9,69
+APSIMInitiative/ApsimX,10372,,Human(hol353),2302767669,1,single-turn,Agent_Review_Human,,Agent(Copilot),17,diff_hunk,17,205
+APSIMInitiative/ApsimX,10372,,Human(hol353),2302767673,1,single-turn,Agent_Review_Human,,Agent(Copilot),6,diff_hunk,9,76
+APSIMInitiative/ApsimX,10372,,Human(hol353),2302767680,1,single-turn,Agent_Review_Human,,Agent(Copilot),5,diff_hunk,9,89
+APSIMInitiative/ApsimX,10374,,Human(hol353),2302777252,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(hol353),2,diff_hunk,8,42
+APSIMInitiative/ApsimX,10374,,Human(hol353),2302777263,1,single-turn,Agent_Review_Human,,Agent(Copilot),30,diff_hunk,10,97
+APSIMInitiative/ApsimX,10374,,Human(hol353),2302777271,1,single-turn,Agent_Review_Human,,Agent(Copilot),5,diff_hunk,9,65
+APSIMInitiative/ApsimX,10374,,Human(hol353),2302777278,1,single-turn,Agent_Review_Human,,Agent(Copilot),13,diff_hunk,10,87
+APSIMInitiative/ApsimX,10374,,Human(hol353),2302777284,1,single-turn,Agent_Review_Human,,Agent(Copilot),28,diff_hunk,9,65
+APSIMInitiative/ApsimX,10374,,Human(hol353),2302777286,1,single-turn,Agent_Review_Human,,Agent(Copilot),6,diff_hunk,9,55
+APSIMInitiative/ApsimX,10374,,Human(hol353),2302777294,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(hol353),6,diff_hunk,9,35
+APSIMInitiative/ApsimX,10374,,Human(hol353),2302777300,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(hol353),5,diff_hunk,9,69
+APSIMInitiative/ApsimX,10376,,Human(ric394),2302807403,1,single-turn,Agent_Review_Human,,Agent(Copilot),3,diff_hunk,8,48
+APSIMInitiative/ApsimX,10376,,Human(ric394),2302807410,1,single-turn,Agent_Review_Human,,Agent(Copilot),7,diff_hunk,8,100
+APSIMInitiative/ApsimX,10400,,Human(lie112),2312721089,1,single-turn,Agent_Review_Human,,Agent(Copilot),12,diff_hunk,9,18
+APSIMInitiative/ApsimX,10400,,Human(lie112),2312721092,1,single-turn,Agent_Review_Human,,Agent(Copilot),7,diff_hunk,9,20
+APSIMInitiative/ApsimX,10400,,Human(lie112),2312721094,1,single-turn,Agent_Review_Human,,Agent(Copilot),38,diff_hunk,25,53
+APSIMInitiative/ApsimX,10401,,Human(hol353),2324021620,1,single-turn,Agent_Review_Human,,Agent(Copilot),15,diff_hunk,9,48
+APSIMInitiative/ApsimX,10401,,Human(hol353),2324021630,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(hol353),5,diff_hunk,9,48
+APSIMInitiative/ApsimX,10401,,Human(hol353),2324021632,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(hol353),5,diff_hunk,9,81
+APSIMInitiative/ApsimX,10401,,Human(hol353),2324021637,1,single-turn,Agent_Review_Human,,Agent(Copilot),12,diff_hunk,13,27
+APSIMInitiative/ApsimX,10416,,Human(par456),2320782906,1,single-turn,Human_Review_Human,,Human(ric394),193,diff_hunk,8,3
+APSIMInitiative/ApsimX,10416,,Human(par456),2320787089,1,single-turn,Human_Review_Human,,Human(ric394),121,diff_hunk,94,14
+APSIMInitiative/ApsimX,10416,,Human(par456),2320871411,1,single-turn,Agent_Review_Human,,Agent(Copilot),165,diff_hunk,9,23
+APSIMInitiative/ApsimX,10416,,Human(par456),2320871420,1,single-turn,Agent_Review_Human,,Agent(Copilot),82,diff_hunk,9,36
+APSIMInitiative/ApsimX,10416,,Human(par456),2320871429,1,single-turn,Agent_Review_Human,,Agent(Copilot),4,diff_hunk,8,52
+APSIMInitiative/ApsimX,10416,,Human(par456),2320871437,1,single-turn,Agent_Review_Human,,Agent(Copilot),13,diff_hunk,9,61
+APSIMInitiative/ApsimX,10421,,Human(sno036),2323770970,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),105,diff_hunk,9,37
+APSIMInitiative/ApsimX,10425,,Human(ric394),2324225652,1,single-turn,Agent_Review_Human,,Agent(Copilot),5,diff_hunk,9,19
+APSIMInitiative/ApsimX,10425,,Human(ric394),2324225661,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(ric394),12,diff_hunk,9,49
+APSIMInitiative/ApsimX,10426,,Human(ric394),2328980779,1,single-turn,Agent_Review_Human,,Agent(Copilot),6,diff_hunk,6,60
+APSIMInitiative/ApsimX,10426,,Human(ric394),2328980784,1,single-turn,Agent_Review_Human,,Agent(Copilot),15,diff_hunk,9,40
+APSIMInitiative/ApsimX,10430,,Human(lie112),2328986332,1,single-turn,Agent_Review_Human,,Agent(Copilot),9,diff_hunk,9,48
+APSIMInitiative/ApsimX,10430,,Human(lie112),2328986344,1,single-turn,Agent_Review_Human,,Agent(Copilot),7,diff_hunk,9,99
+APSIMInitiative/ApsimX,10444,,Human(par456),2335692144,1,single-turn,Agent_Review_Human,,Agent(Copilot),10,diff_hunk,9,28
+APSIMInitiative/ApsimX,10444,,Human(par456),2335692159,1,single-turn,Agent_Review_Human,,Agent(Copilot),14,diff_hunk,8,57
+APSIMInitiative/ApsimX,10444,,Human(par456),2335692170,1,single-turn,Agent_Review_Human,,Agent(Copilot),26,diff_hunk,8,53
+APSIMInitiative/ApsimX,10444,,Human(par456),2335692183,1,single-turn,Agent_Review_Human,,Agent(Copilot),37,diff_hunk,8,50
+APSIMInitiative/ApsimX,10444,,Human(par456),2335692193,1,single-turn,Agent_Review_Human,,Agent(Copilot),58,diff_hunk,15,127
+APSIMInitiative/ApsimX,10444,,Human(par456),2335692203,1,single-turn,Agent_Review_Human,,Agent(Copilot),61,diff_hunk,8,120
+APSIMInitiative/ApsimX,10455,,Human(ric394),2342786484,1,single-turn,Agent_Review_Human,,Agent(Copilot),5,diff_hunk,9,60
+APSIMInitiative/ApsimX,10456,,Human(sno036),2342961184,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),50,diff_hunk,10,27
+APSIMInitiative/ApsimX,10456,,Human(sno036),2342961208,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),55,diff_hunk,10,38
+APSIMInitiative/ApsimX,10456,,Human(sno036),2342961216,2,multi-turn,Agent_Review_Human,,Agent(Copilot) -> Human(sno036),58,diff_hunk,29,35

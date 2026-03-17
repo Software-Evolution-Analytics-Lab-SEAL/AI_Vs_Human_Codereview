@@ -1,0 +1,101 @@
+repo,pr_number,convo_start_id,rejection_reason,confidence_score,is_adopted,rejection_category,is_merged
+dotnet/aspnetcore,63256,2277060123,Deep cloning is necessary to avoid parent exceptions with JsonNode.,9.0,False,Would Break Functionality,Yes
+wso2/carbon-identity-framework,7290,2312427113,Already addressed in a different commit,10.0,False,Already Addressed,Yes
+Azure/azure-sdk-for-net,49320,2080766778,No explicit reason given,8.0,False,No Clear Reason,Yes
+projectcalico/calico,10915,2319157537,Developer prefers to log only the key property instead of full JSON.,9.0,False,Developer Preference,Yes
+youtube/cobalt,6952,2294270323,Developer intended to keep the current error handling approach,9.0,False,Developer Preference,Yes
+Azure/azure-sdk-for-python,42268,2241577435,Too complicated.,9.0,False,Not Needed,Yes
+Azure/azure-sdk-for-net,51827,2262125418,No explicit reason given,10.0,False,No Clear Reason,Yes
+wso2/carbon-apimgt,13116,2102383906,No explicit reason given,8.0,False,Not Needed,Yes
+Azure/azure-cli,31869,2234917937,Prefixing the substring with `f` is unnecessary,9.0,False,Not Needed,Yes
+Azure/azure-cli-extensions,9199,2367273031,Duplication is necessary for separate templates useful for testing and examples,9.0,False,Misunderstood Requirements,Yes
+wso2/carbon-apimgt,13345,2320910781,Fixed via d8607f576734a5ddd08b647819873eafe29d295c,10.0,False,Accepted and Fixed,No
+wso2/carbon-apimgt,13278,2278462020,"The sync interval is correctly defined in milliseconds, not seconds.",10.0,False,Misunderstood Requirements,Yes
+wso2/carbon-identity-framework,7563,2442753542,Fallback to else condition when config is not defined,9.0,False,Misunderstood Requirements,Yes
+youtube/cobalt,6300,2182259908,c++17 is required.,10.0,False,Misunderstood Requirements,No
+projectcalico/calico,11288,2472691078,Developer prefers using context over timeout for request handling.,9.0,False,Misunderstood Requirements,Yes
+wso2/carbon-identity-framework,7377,2339789985,Not relevant to the current implementation,8.0,False,Not Needed,Yes
+Azure/azure-sdk-for-python,43188,2403409465,No explicit reason given,8.0,False,No Clear Reason,Yes
+Agoric/agoric-sdk,12015,2384459266,Team prefers current import organization as per CONTRIBUTING.md,9.0,False,Developer Preference,Yes
+wso2/carbon-apimgt,13357,2329848003,Developer prefers current implementation approach for backward compatibility.,8.0,False,Developer Preference,Yes
+Altinn/altinn-studio,16555,2425572493,This is just a temporary placeholder.,9.0,False,Deferred to Future,Yes
+youtube/cobalt,6342,2193986421,keep current code to make this PR line-to-line changes,10.0,False,No Clear Reason,No
+wso2/carbon-apimgt,13191,2232268697,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+Azure/azure-sdk-for-net,53279,2434786621,"Developer believes the release is stable, not a beta version.",9.0,False,Misunderstood Requirements,Yes
+Azure/azure-sdk-for-net,50157,2097256698,Kept temporarily to bypass link checks,8.0,False,Deferred to Future,Yes
+PowerShell/PowerShell,26246,2443457376,@copilot fix this issue,10.0,False,No Clear Reason,No
+wso2/carbon-apimgt,13139,2131924938,No explicit reason given,8.0,False,No Clear Reason,Yes
+Azure/azure-functions-host,11435,2437561207,Developer not concerned about performance in test context.,9.0,False,Developer Preference,Yes
+Azure/azure-sdk-for-js,33864,2045653142,Done,10.0,False,Accepted and Fixed,No
+youtube/cobalt,7000,2304210844,No explicit reason given,8.0,False,No Clear Reason,Yes
+Azure/azure-functions-host,11349,2371148469,Good catch. Fixed in the new iteration pushed.,10.0,False,Accepted and Fixed,No
+Azure/azure-cli,31635,2138909748,@khkh-ms Please take a look at this comment~,10.0,False,No Clear Reason,No
+wso2/carbon-apimgt,13380,2340666927,Multiple APIs with the same Name and version will not be there.,9.0,False,Would Break Functionality,Yes
+wso2/carbon-apimgt,13271,2275626565,UncaughtExceptionHandler is unnecessary as exceptions are already handled in the method.,9.0,False,Would Break Functionality,Yes
+wso2/carbon-apimgt,13436,2390567276,Key generation is allowed for UPDATE_REJECTED and UPDATE_PENDING statuses.,9.0,False,No Clear Reason,Yes
+Azure/azure-cli-extensions,8905,2168196527,Developer agreed but PR was not merged,9.0,False,No Clear Reason,Yes
+wordpress-mobile/WordPress-Android,22071,2243602357,Change is a tiny fix for a problem found during testing.,9.0,False,No Clear Reason,Yes
+wso2/carbon-apimgt,13191,2265368743,It is needed as we have to perform clean up before every insertion,9.0,False,Misunderstood Requirements,Yes
+Azure/azure-container-networking,3779,2193574097,Team prefers current coding style for consistency,8.0,False,Developer Preference,Yes
+wso2/carbon-apimgt,13191,2268100093,Established convention allows hard-coded tokens in API documentation examples,9.0,False,Developer Preference,Yes
+OpenZeppelin/openzeppelin-contracts,5904,2307651688,Team prefers current title without hyphenation,9.0,False,Developer Preference,Yes
+Azure/azure-container-networking,3779,2193574103,Developer wants to log all unexpected rules instead of stopping early,9.0,False,No Clear Reason,Yes
+Azure/azure-sdk-for-js,34591,2112807051,No explicit reason given,10.0,False,No Clear Reason,Yes
+Azure/azure-sdk-for-net,52155,2292411833,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+Azure/azure-cli,30694,2109501007,Tags to be added don't need validation,9.0,False,No Clear Reason,Yes
+youtube/cobalt,6894,2288569929,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+Altinn/altinn-studio,15398,2081093902,Team prefers using [] syntax over new List() for initialization.,9.0,False,Developer Preference,Yes
+wso2/carbon-apimgt,13144,2207083873,Already fixed in latest commit,9.0,False,Accepted and Fixed,Yes
+wso2/carbon-apimgt,13255,2272205327,Already addressed in a different commit,9.0,False,Already Addressed,Yes
+openhab/openhab-addons,19053,2230594312,WIP,10.0,False,No Clear Reason,No
+Automattic/woocommerce-payments,10927,2204613492,No explicit reason given,8.0,False,Misunderstood Requirements,Yes
+youtube/cobalt,6344,2196169267,No explicit reason given,8.0,False,Misunderstood Requirements,Yes
+wso2/carbon-apimgt,13274,2277539208,"This will be handled in a later PR, when the UI is updated",9.0,False,Deferred to Future,Yes
+wso2/carbon-identity-framework,7290,2312427105,Already addressed in a different commit,10.0,False,Already Addressed,Yes
+Azure/azure-sdk-for-net,51023,2180680243,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+Homebrew/homebrew-core,251172,2463839191,Team prefers current coding style,8.0,False,Developer Preference,Yes
+Azure/azure-sdk-for-net,51651,2249493503,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+wso2/carbon-apimgt,13313,2293275234,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+Automattic/wordpress-activitypub,1834,2155313816,is_email() makes similar validations,8.0,False,No Clear Reason,Yes
+wso2/carbon-identity-framework,7511,2416706965,No string processing is performed here.,9.0,False,No Clear Reason,Yes
+Azure/azure-sdk-for-cpp,6634,2160043941,Using std::ptrdiff_t avoids signed/unsigned mismatch warnings.,9.0,False,Misunderstood Requirements,Yes
+Azure/azure-sdk-for-python,41284,2105476445,Change is outside the scope of this PR,8.0,False,Misunderstood Requirements,Yes
+Azure/azure-powershell,28220,2215191755,Developer added condition but did not implement full error handling.,8.0,False,Would Break Functionality,Yes
+wso2/carbon-apimgt,13401,2375111244,Not needed since this is the public branch,9.0,False,Not Needed,Yes
+wso2/carbon-apimgt,13160,2184291540,Using APPLICATION_APPROVED status for consistency across all application operations,9.0,False,Developer Preference,Yes
+projectcalico/calico,10931,2323084010,No explicit reason given,8.0,False,No Clear Reason,Yes
+Altinn/altinn-studio,16095,2273465053,Updating or changing the content is out of scope,9.0,False,Deferred to Future,Yes
+youtube/cobalt,6153,2164807088,Custom logic requires specific order of method calls for functionality,9.0,False,No Clear Reason,Yes
+Azure/azure-functions-host,11101,2190580643,Not cloning due to performance concerns.,9.0,False,Would Break Functionality,Yes
+wso2/carbon-apimgt,13329,2302636100,This is copied from a separate API yaml; can't change for consistency.,9.0,False,Misunderstood Requirements,Yes
+wordpress-mobile/WordPress-Android,22151,2286908843,Already addressed in a different commit,10.0,False,Already Addressed,Yes
+wso2/carbon-apimgt,13182,2213356463,Null validation is already handled upstream in previous methods,9.0,False,Already Addressed,Yes
+wso2/carbon-apimgt,13115,2102255015,Already addressed in a different commit,9.0,False,Already Addressed,Yes
+youtube/cobalt,5999,2127573524,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+youtube/cobalt,7553,2433974412,Done,10.0,False,Accepted and Fixed,No
+Azure/azure-container-networking,3822,2202225441,We don't support Windows npm anymore,9.0,False,Deferred to Future,Yes
+youtube/cobalt,6198,2171346522,not necessary,10.0,False,Not Needed,No
+camunda/camunda,32224,2161748365,"That will be in later stages, likely during X509 implementation. Since it will require crafting a special RestTemplate.",10.0,False,Deferred to Future,No
+Azure/azure-sdk-for-net,52204,2294718129,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+dotnet/aspnetcore,62739,2208633860,Current code validates JSON structure better than using skipValue(),9.0,False,No Clear Reason,Yes
+youtube/cobalt,7228,2361837951,Need starboard:: here,9.0,False,No Clear Reason,Yes
+youtube/cobalt,7150,2344839176,not necessary. This is only one symbol for the given name in starboard namespaces.,10.0,False,Not Needed,No
+wso2/carbon-apimgt,13436,2390567256,UPDATE_REJECTED status allows updates; ON_HOLD is not used.,9.0,False,No Clear Reason,Yes
+wso2/carbon-apimgt,13255,2272263488,Team prefers current coding style with hardcoded bearer tokens,9.0,False,Developer Preference,Yes
+Automattic/woocommerce-payments,10984,2245586935,This was also erroring out,8.0,False,Would Break Functionality,Yes
+APSIMInitiative/ApsimX,10344,2314781953,No - I am right and Copilot is wrong!,10.0,False,Misunderstood Requirements,No
+Automattic/wp-calypso,103566,2098870771,No element available for adding margin-top in the format.,9.0,False,No Clear Reason,Yes
+PowerShell/PowerShell,26350,2475950241,"Job triggers on other events, making the condition necessary.",9.0,False,Misunderstood Requirements,Yes
+youtube/cobalt,6574,2229469864,Variable is unused and can be removed instead of renamed.,9.0,False,No Clear Reason,Yes
+Azure/azure-sdk-for-java,46191,2237171177,"This is the initial setup for static params on the UriBuilder.  The current approach is safer, as it relies on UriBuilder's internal parser, whereas a manual split() could fail on encoded characters in parameter values.",10.0,False,Misunderstood Requirements,No
+youtube/cobalt,7150,2344839230,not necessary. This is only one symbol for the given name in starboard namespaces.,10.0,False,Not Needed,No
+wso2/carbon-apimgt,13301,2287756839,Already addressed in a different commit,9.0,False,Already Addressed,Yes
+Azure/azure-sdk-for-net,51580,2243667215,No explicit reason given,8.0,False,No Clear Reason,Yes
+wso2/carbon-apimgt,13367,2331947183,Not needed,9.0,False,Not Needed,Yes
+wso2/carbon-apimgt,13255,2273280864,Team prefers current coding style,8.0,False,Already Addressed,Yes
+Azure/azure-sdk-for-python,41429,2127853823,No explicit reason given,8.0,False,No Clear Reason,Yes
+camunda/camunda,32224,2161232574,Good bot,10.0,False,No Clear Reason,No
+openhab/openhab-addons,19357,2365555431,Current instructions are sufficient and functional as is.,8.0,False,Not Needed,Yes
+wso2/carbon-apimgt,13301,2287775700,Already addressed in a different commit,9.0,False,Already Addressed,Yes
+youtube/cobalt,6385,2231703449,Developer agreed but PR was not merged,10.0,False,Accepted and Fixed,Yes
+Automattic/wp-calypso,104468,2170141934,Already addressed in a different commit,10.0,False,Already Addressed,Yes

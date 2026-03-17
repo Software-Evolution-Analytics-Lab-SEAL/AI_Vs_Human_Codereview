@@ -1,0 +1,12 @@
+Feedback_Type,Total,HRH,HRA,ARH,ARA
+Code Improvement,124148,57098,3567,62879,604
+Defects,47161,8062,506,38310,283
+Understanding,37493,35840,1127,520,6
+Knowledge Transfer,5123,4570,356,193,4
+Testing,5095,3376,376,1334,9
+Social Communication,3952,3618,331,1,2
+External Impact,2838,1706,80,1032,20
+Misc,2094,1925,168,1,0
+No feedback,286,284,2,0,0
+Review Tool,101,95,6,0,0
+TOTAL,228291,116574,6519,104270,928

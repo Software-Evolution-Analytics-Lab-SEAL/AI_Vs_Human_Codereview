@@ -1,0 +1,86 @@
+feed_type,Agent_Review_Agent,Agent_Review_Human,Human_Review_Agent,Human_Review_Human,Total
+Code Improvement,604,"62,879","3,567","57,098","124,148"
+Defects,283,"38,310",506,"8,062","47,161"
+External Impact,20,"1,032",80,"1,706","2,838"
+Knowledge Transfer,4,193,356,"4,570","5,123"
+Misc,0,1,168,"1,925","2,094"
+No feedback,0,0,2,284,286
+Review Tool,0,0,6,95,101
+Social Communication,2,1,331,"3,618","3,952"
+Testing,9,"1,334",376,"3,376","5,095"
+Understanding,6,520,"1,127","35,840","37,493"
+Total,928,"104,270","6,519","116,574","228,291"
+Method,Description
+0,"Raw counts of convos"
+1,"Within each feedback type, distribution across review categories"
+2,"Within each review category, distribution across feedback types"
+
+Raw Counts: Number of convos by feedback type and review category
+feed_type,Agent_Review_Agent,Agent_Review_Human,Human_Review_Agent,Human_Review_Human,Total
+Code Improvement,604,"62,879","3,567","57,098","124,148"
+Defects,283,"38,310",506,"8,062","47,161"
+External Impact,20,"1,032",80,"1,706","2,838"
+Knowledge Transfer,4,193,356,"4,570","5,123"
+Misc,0,1,168,"1,925","2,094"
+No feedback,0,0,2,284,286
+Review Tool,0,0,6,95,101
+Social Communication,2,1,331,"3,618","3,952"
+Testing,9,"1,334",376,"3,376","5,095"
+Understanding,6,520,"1,127","35,840","37,493"
+Total,928,"104,270","6,519","116,574","228,291"
+
+Method 1: Within each feedback type, share by review category (%)
+feed_type,Agent_Review_Agent,Agent_Review_Human,Human_Review_Agent,Human_Review_Human,Total
+Code Improvement,0.5%,50.6%,2.9%,46.0%,100.0%
+Defects,0.6%,81.2%,1.1%,17.1%,100.0%
+External Impact,0.7%,36.4%,2.8%,60.1%,100.0%
+Knowledge Transfer,0.1%,3.8%,6.9%,89.2%,100.0%
+Misc,0.0%,0.0%,8.0%,91.9%,100.0%
+No feedback,0.0%,0.0%,0.7%,99.3%,100.0%
+Review Tool,0.0%,0.0%,5.9%,94.1%,100.0%
+Social Communication,0.1%,0.0%,8.4%,91.5%,100.0%
+Testing,0.2%,26.2%,7.4%,66.3%,100.0%
+Understanding,0.0%,1.4%,3.0%,95.6%,100.0%
+Total,928,"104,270","6,519","116,574","228,291"
+
+Method 2: Within each review category, share by feedback type (%)
+feed_type,Agent_Review_Agent,Agent_Review_Human,Human_Review_Agent,Human_Review_Human,Total
+Code Improvement,65.1%,60.3%,54.7%,49.0%,54.4%
+Defects,30.5%,36.7%,7.8%,6.9%,20.7%
+Understanding,0.6%,0.5%,17.3%,30.7%,16.4%
+Knowledge Transfer,0.4%,0.2%,5.5%,3.9%,2.2%
+Testing,1.0%,1.3%,5.8%,2.9%,2.2%
+Social Communication,0.2%,0.0%,5.1%,3.1%,1.7%
+External Impact,2.2%,1.0%,1.2%,1.5%,1.2%
+Misc,0.0%,0.0%,2.6%,1.7%,0.9%
+No feedback,0.0%,0.0%,0.0%,0.2%,0.1%
+Review Tool,0.0%,0.0%,0.1%,0.1%,0.0%
+Total,928,"104,270","6,519","116,574","228,291"
+
+Method 1 Combined: Within each feedback type, share by review category pct(count)
+feed_type,Agent_Review_Agent,Agent_Review_Human,Human_Review_Agent,Human_Review_Human,Total
+Code Improvement,0.5%(604),"50.6%(62,879)","2.9%(3,567)","46.0%(57,098)","100.0%(124,148)"
+Defects,0.6%(283),"81.2%(38,310)",1.1%(506),"17.1%(8,062)","100.0%(47,161)"
+External Impact,0.7%(20),"36.4%(1,032)",2.8%(80),"60.1%(1,706)","100.0%(2,838)"
+Knowledge Transfer,0.1%(4),3.8%(193),6.9%(356),"89.2%(4,570)","100.0%(5,123)"
+Misc,0.0%(0),0.0%(1),8.0%(168),"91.9%(1,925)","100.0%(2,094)"
+No feedback,0.0%(0),0.0%(0),0.7%(2),99.3%(284),100.0%(286)
+Review Tool,0.0%(0),0.0%(0),5.9%(6),94.1%(95),100.0%(101)
+Social Communication,0.1%(2),0.0%(1),8.4%(331),"91.5%(3,618)","100.0%(3,952)"
+Testing,0.2%(9),"26.2%(1,334)",7.4%(376),"66.3%(3,376)","100.0%(5,095)"
+Understanding,0.0%(6),1.4%(520),"3.0%(1,127)","95.6%(35,840)","100.0%(37,493)"
+Total,928,"104,270","6,519","116,574","228,291"
+
+Method 2 Combined: Within each review category, share by feedback type pct(count)
+feed_type,Agent_Review_Agent,Agent_Review_Human,Human_Review_Agent,Human_Review_Human,Total
+Code Improvement,65.1%(604),"60.3%(62,879)","54.7%(3,567)","49.0%(57,098)","54.4%(124,148)"
+Defects,30.5%(283),"36.7%(38,310)",7.8%(506),"6.9%(8,062)","20.7%(47,161)"
+Understanding,0.6%(6),0.5%(520),"17.3%(1,127)","30.7%(35,840)","16.4%(37,493)"
+Knowledge Transfer,0.4%(4),0.2%(193),5.5%(356),"3.9%(4,570)","2.2%(5,123)"
+Testing,1.0%(9),"1.3%(1,334)",5.8%(376),"2.9%(3,376)","2.2%(5,095)"
+Social Communication,0.2%(2),0.0%(1),5.1%(331),"3.1%(3,618)","1.7%(3,952)"
+External Impact,2.2%(20),"1.0%(1,032)",1.2%(80),"1.5%(1,706)","1.2%(2,838)"
+Misc,0.0%(0),0.0%(1),2.6%(168),"1.7%(1,925)","0.9%(2,094)"
+No feedback,0.0%(0),0.0%(0),0.0%(2),0.2%(284),0.1%(286)
+Review Tool,0.0%(0),0.0%(0),0.1%(6),0.1%(95),0.0%(101)
+Total,928,"104,270","6,519","116,574","228,291"

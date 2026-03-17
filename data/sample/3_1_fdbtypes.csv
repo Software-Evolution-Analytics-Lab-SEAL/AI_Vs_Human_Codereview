@@ -1,0 +1,101 @@
+repo,pr_number,convo_start_id,pr_author_category,pr_author,reviewer_login,reviewer_category,reviewer_role,review_category,LOC,LOC_no_blank,LOC_src,part_file_number,token_init_comment,feed_type,conf_score
+Azure/azure-sdk-for-java,46726,2356889039,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,20,Code Improvement,9
+Azure/azure-sdk-for-java,46461,2319562341,Human,Human(browndav-msft),ibrandes,Human,Human(ibrandes),Human_Review_Human,25,11,diff_hunk,1,218,Knowledge Transfer,9
+Azure/azure-sdk-for-java,46461,2319634647,Human,Human(browndav-msft),ibrandes,Human,Human(ibrandes),Human_Review_Human,17,8,diff_hunk,1,74,Code Improvement,9
+Azure/azure-sdk-for-java,46461,2319685972,Human,Human(browndav-msft),ibrandes,Human,Human(ibrandes),Human_Review_Human,38,12,diff_hunk,1,112,Code Improvement,9
+Azure/azure-sdk-for-java,46461,2319701642,Human,Human(browndav-msft),ibrandes,Human,Human(ibrandes),Human_Review_Human,97,8,diff_hunk,1,43,Code Improvement,8
+Azure/azure-sdk-for-java,46461,2319733517,Human,Human(browndav-msft),ibrandes,Human,Human(ibrandes),Human_Review_Human,90,55,diff_hunk,1,348,Code Improvement,9
+Azure/azure-sdk-for-java,46467,2290400700,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,27,9,diff_hunk,1,100,Defects,9
+Azure/azure-sdk-for-java,46467,2290400717,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,9,diff_hunk,1,43,Defects,9
+Azure/azure-sdk-for-java,46468,2290441285,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,7,diff_hunk,1,118,Defects,9
+Azure/azure-sdk-for-java,46475,2292429007,Human,Human(g2vinay),Copilot,Agent,Agent(Copilot),Agent_Review_Human,8,9,diff_hunk,1,72,Defects,9
+Azure/azure-sdk-for-java,46477,2330856764,Human,Human(jeet1995),Copilot,Agent,Agent(Copilot),Agent_Review_Human,16,11,diff_hunk,1,34,Defects,9
+Azure/azure-sdk-for-java,46477,2330856773,Human,Human(jeet1995),Copilot,Agent,Agent(Copilot),Agent_Review_Human,25,9,diff_hunk,1,148,Defects,9
+Azure/azure-sdk-for-java,46477,2330856787,Human,Human(jeet1995),Copilot,Agent,Agent(Copilot),Agent_Review_Human,9,11,diff_hunk,1,58,Code Improvement,9
+Azure/azure-sdk-for-java,46477,2330856794,Human,Human(jeet1995),Copilot,Agent,Agent(Copilot),Agent_Review_Human,6,8,diff_hunk,1,36,Code Improvement,9
+Azure/azure-sdk-for-java,46477,2330856801,Human,Human(jeet1995),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,59,Defects,9
+Azure/azure-sdk-for-java,46477,2368649843,Human,Human(jeet1995),jeet1995,Human,Human(jeet1995),Human_Review_Human,5,8,diff_hunk,1,30,Understanding,8
+Azure/azure-sdk-for-java,46477,2369257795,Human,Human(jeet1995),FabianMeiswinkel,Human,Human(FabianMeiswinkel),Human_Review_Human,6,8,diff_hunk,1,19,Understanding,8
+Azure/azure-sdk-for-java,46477,2369260114,Human,Human(jeet1995),FabianMeiswinkel,Human,Human(FabianMeiswinkel),Human_Review_Human,15,9,diff_hunk,1,10,Understanding,8
+Azure/azure-sdk-for-java,46477,2369260823,Human,Human(jeet1995),FabianMeiswinkel,Human,Human(FabianMeiswinkel),Human_Review_Human,18,9,diff_hunk,1,3,Understanding,8
+Azure/azure-sdk-for-java,46477,2369261432,Human,Human(jeet1995),FabianMeiswinkel,Human,Human(FabianMeiswinkel),Human_Review_Human,39,8,diff_hunk,1,1,Social Communication,7
+Azure/azure-sdk-for-java,46477,2372918868,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,4,9,diff_hunk,1,8,Understanding,8
+Azure/azure-sdk-for-java,46477,2372950463,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,9,8,diff_hunk,1,28,Understanding,8
+Azure/azure-sdk-for-java,46477,2372970683,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,5,8,diff_hunk,1,20,Understanding,8
+Azure/azure-sdk-for-java,46477,2372974630,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,4,9,diff_hunk,1,28,Understanding,9
+Azure/azure-sdk-for-java,46477,2372996581,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,10,5,diff_hunk,1,25,Code Improvement,8
+Azure/azure-sdk-for-java,46477,2372998594,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,7,8,diff_hunk,1,19,Code Improvement,8
+Azure/azure-sdk-for-java,46477,2373017560,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,5,9,diff_hunk,1,35,Understanding,8
+Azure/azure-sdk-for-java,46477,2373047589,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,6,8,diff_hunk,1,16,Understanding,8
+Azure/azure-sdk-for-java,46477,2446407807,Human,Human(jeet1995),xinlian12,Human,Human(xinlian12),Human_Review_Human,4,9,diff_hunk,1,10,Code Improvement,8
+Azure/azure-sdk-for-java,46480,2292842447,Human,Human(g2vinay),Copilot,Agent,Agent(Copilot),Agent_Review_Human,18,9,diff_hunk,1,133,Code Improvement,9
+Azure/azure-sdk-for-java,46480,2292842462,Human,Human(g2vinay),Copilot,Agent,Agent(Copilot),Agent_Review_Human,23,8,diff_hunk,1,67,Code Improvement,9
+Azure/azure-sdk-for-java,46483,2294251536,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,6,8,diff_hunk,1,55,Code Improvement,8
+Azure/azure-sdk-for-java,46483,2294251546,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,15,8,diff_hunk,1,93,Code Improvement,9
+Azure/azure-sdk-for-java,46484,2294308046,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,1,7,diff_hunk,1,39,Code Improvement,9
+Azure/azure-sdk-for-java,46484,2294308055,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,8,9,diff_hunk,1,57,Defects,9
+Azure/azure-sdk-for-java,46484,2294308069,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,9,9,diff_hunk,1,57,Defects,9
+Azure/azure-sdk-for-java,46485,2294404633,Human,Human(aayush3011),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,28,Code Improvement,9
+Azure/azure-sdk-for-java,46485,2302057393,Human,Human(aayush3011),jeet1995,Human,Human(jeet1995),Human_Review_Human,37,9,diff_hunk,1,90,Understanding,8
+Azure/azure-sdk-for-java,46488,2294726392,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,71,4,diff_hunk,1,234,Defects,9
+Azure/azure-sdk-for-java,46488,2294726409,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,8,diff_hunk,1,37,Defects,9
+Azure/azure-sdk-for-java,46489,2294752331,Human,Human(praveenkuttappan),Copilot,Agent,Agent(Copilot),Agent_Review_Human,7,9,diff_hunk,1,89,Code Improvement,9
+Azure/azure-sdk-for-java,46489,2298502806,Human,Human(praveenkuttappan),weshaggard,Human,Human(weshaggard),Human_Review_Human,9,9,diff_hunk,1,28,Defects,9
+Azure/azure-sdk-for-java,46493,2297518486,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,6,10,diff_hunk,1,74,Code Improvement,9
+Azure/azure-sdk-for-java,46494,2299413219,Human,Human(tvaron3),kushagraThapar,Human,Human(kushagraThapar),Human_Review_Human,4,9,diff_hunk,1,32,Code Improvement,8
+Azure/azure-sdk-for-java,46494,2299413830,Human,Human(tvaron3),kushagraThapar,Human,Human(kushagraThapar),Human_Review_Human,5,9,diff_hunk,1,33,Code Improvement,8
+Azure/azure-sdk-for-java,46494,2299414816,Human,Human(tvaron3),kushagraThapar,Human,Human(kushagraThapar),Human_Review_Human,4,9,diff_hunk,1,32,Code Improvement,8
+Azure/azure-sdk-for-java,46494,2299416614,Human,Human(tvaron3),kushagraThapar,Human,Human(kushagraThapar),Human_Review_Human,13,9,diff_hunk,1,28,Code Improvement,8
+Azure/azure-sdk-for-java,46494,2302117030,Human,Human(tvaron3),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,9,diff_hunk,1,46,Defects,9
+Azure/azure-sdk-for-java,46494,2302117036,Human,Human(tvaron3),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,9,diff_hunk,1,46,Defects,9
+Azure/azure-sdk-for-java,46494,2302117041,Human,Human(tvaron3),Copilot,Agent,Agent(Copilot),Agent_Review_Human,9,9,diff_hunk,1,46,Defects,9
+Azure/azure-sdk-for-java,46494,2302117047,Human,Human(tvaron3),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,9,diff_hunk,1,46,Defects,9
+Azure/azure-sdk-for-java,46494,2302117057,Human,Human(tvaron3),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,9,diff_hunk,1,46,Defects,9
+Azure/azure-sdk-for-java,46494,2302117065,Human,Human(tvaron3),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,9,diff_hunk,1,46,Defects,9
+Azure/azure-sdk-for-java,46494,2302117075,Human,Human(tvaron3),Copilot,Agent,Agent(Copilot),Agent_Review_Human,9,9,diff_hunk,1,46,Defects,9
+Azure/azure-sdk-for-java,46494,2303399911,Human,Human(tvaron3),FabianMeiswinkel,Human,Human(FabianMeiswinkel),Human_Review_Human,4,9,diff_hunk,1,6,Understanding,7
+Azure/azure-sdk-for-java,46494,2303401063,Human,Human(tvaron3),FabianMeiswinkel,Human,Human(FabianMeiswinkel),Human_Review_Human,5,9,diff_hunk,1,2,Social Communication,7
+Azure/azure-sdk-for-java,46494,2303404634,Human,Human(tvaron3),FabianMeiswinkel,Human,Human(FabianMeiswinkel),Human_Review_Human,4,9,diff_hunk,1,4,Understanding,7
+Azure/azure-sdk-for-java,46496,2298849544,Human,Human(v-dharmarajv),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,8,diff_hunk,1,73,Defects,9
+Azure/azure-sdk-for-java,46499,2299321011,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,12,17,diff_hunk,1,77,Code Improvement,8
+Azure/azure-sdk-for-java,46500,2299331955,Human,Human(jairmyree),Copilot,Agent,Agent(Copilot),Agent_Review_Human,10,8,diff_hunk,1,95,Defects,9
+Azure/azure-sdk-for-java,46500,2299465993,Human,Human(jairmyree),vcolin7,Human,Human(vcolin7),Human_Review_Human,4,8,diff_hunk,1,5,Understanding,7
+Azure/azure-sdk-for-java,46500,2299466383,Human,Human(jairmyree),vcolin7,Human,Human(vcolin7),Human_Review_Human,4,8,diff_hunk,1,6,Understanding,7
+Azure/azure-sdk-for-java,46502,2299619639,Human,Human(weidongxu-microsoft),Copilot,Agent,Agent(Copilot),Agent_Review_Human,6,9,diff_hunk,1,43,Defects,9
+Azure/azure-sdk-for-java,46514,2303556230,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,85,External Impact,8
+Azure/azure-sdk-for-java,46514,2303556247,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,7,diff_hunk,1,85,External Impact,8
+Azure/azure-sdk-for-java,46514,2303556266,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,85,External Impact,8
+Azure/azure-sdk-for-java,46514,2303556278,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,85,External Impact,8
+Azure/azure-sdk-for-java,46514,2303556288,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,85,External Impact,8
+Azure/azure-sdk-for-java,46521,2305546427,Human,Human(xinlian12),Copilot,Agent,Agent(Copilot),Agent_Review_Human,88,9,diff_hunk,1,74,Defects,9
+Azure/azure-sdk-for-java,46521,2305546446,Human,Human(xinlian12),Copilot,Agent,Agent(Copilot),Agent_Review_Human,88,9,diff_hunk,1,74,Defects,9
+Azure/azure-sdk-for-java,46521,2306559313,Human,Human(xinlian12),FabianMeiswinkel,Human,Human(FabianMeiswinkel),Human_Review_Human,10,8,diff_hunk,1,57,Code Improvement,8
+Azure/azure-sdk-for-java,46521,2307622358,Human,Human(xinlian12),jeet1995,Human,Human(jeet1995),Human_Review_Human,4,8,diff_hunk,1,26,Understanding,8
+Azure/azure-sdk-for-java,46522,2305571442,Human,Human(sofiar-msft),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,8,diff_hunk,1,60,Understanding,8
+Azure/azure-sdk-for-java,46525,2309001870,Human,Human(weidongxu-microsoft),weidongxu-microsoft,Human,Human(weidongxu-microsoft),Human_Review_Human,1,7,reconstructed,1,249,Understanding,9
+Azure/azure-sdk-for-java,46525,2309002941,Human,Human(weidongxu-microsoft),weidongxu-microsoft,Human,Human(weidongxu-microsoft),Human_Review_Human,1,7,reconstructed,1,59,Code Improvement,8
+Azure/azure-sdk-for-java,46525,2309003584,Human,Human(weidongxu-microsoft),weidongxu-microsoft,Human,Human(weidongxu-microsoft),Human_Review_Human,,123,patch,1,17,Code Improvement,8
+Azure/azure-sdk-for-java,46525,2309004539,Human,Human(weidongxu-microsoft),weidongxu-microsoft,Human,Human(weidongxu-microsoft),Human_Review_Human,,79,patch,1,52,Code Improvement,8
+Azure/azure-sdk-for-java,46533,2307457404,Human,Human(scottaddie),Copilot,Agent,Agent(Copilot),Agent_Review_Human,4,9,diff_hunk,1,85,Code Improvement,9
+Azure/azure-sdk-for-java,46538,2308947162,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,101,10,diff_hunk,1,141,Defects,9
+Azure/azure-sdk-for-java,46538,2308947172,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,124,10,diff_hunk,1,138,Defects,9
+Azure/azure-sdk-for-java,46538,2308947179,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,117,11,diff_hunk,1,113,Defects,9
+Azure/azure-sdk-for-java,46539,2309274953,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,7,10,diff_hunk,1,49,Defects,9
+Azure/azure-sdk-for-java,46539,2309274964,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,92,Defects,9
+Azure/azure-sdk-for-java,46540,2309028998,Human,Human(weidongxu-microsoft),weidongxu-microsoft,Human,Human(weidongxu-microsoft),Human_Review_Human,1,7,reconstructed,1,25,Understanding,8
+Azure/azure-sdk-for-java,46541,2309467224,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,62,Understanding,8
+Azure/azure-sdk-for-java,46541,2309467237,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,42,Code Improvement,8
+Azure/azure-sdk-for-java,46541,2309467244,Human,Human(XiaofeiCao),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,98,External Impact,8
+Azure/azure-sdk-for-java,46542,2309247065,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,14,8,diff_hunk,1,43,Defects,9
+Azure/azure-sdk-for-java,46542,2309247079,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,8,diff_hunk,1,29,Code Improvement,8
+Azure/azure-sdk-for-java,46542,2309247087,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,10,11,diff_hunk,1,19,Code Improvement,8
+Azure/azure-sdk-for-java,46542,2309247097,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,57,9,diff_hunk,1,80,Defects,9
+Azure/azure-sdk-for-java,46542,2309247124,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,29,9,diff_hunk,1,41,Code Improvement,9
+Azure/azure-sdk-for-java,46542,2309430577,Human,Human(azure-sdk),weidongxu-microsoft,Human,Human(weidongxu-microsoft),Human_Review_Human,12,8,diff_hunk,1,6,Code Improvement,8
+Azure/azure-sdk-for-java,46546,2309587694,Human,Human(FabianMeiswinkel),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,8,diff_hunk,1,72,Code Improvement,9
+Azure/azure-sdk-for-java,46549,2311024675,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,9,diff_hunk,1,19,Code Improvement,9
+Azure/azure-sdk-for-java,46281,2255188912,Human,Human(azure-sdk),Copilot,Agent,Agent(Copilot),Agent_Review_Human,48,9,diff_hunk,1,58,Defects,9
+Azure/azure-sdk-for-java,46282,2261388650,Human,Human(ibrandes),ibrandes,Human,Human(ibrandes),Human_Review_Human,4,9,diff_hunk,1,7,Code Improvement,8
+Azure/azure-sdk-for-java,46282,2281005593,Human,Human(ibrandes),Copilot,Agent,Agent(Copilot),Agent_Review_Human,15,9,diff_hunk,1,124,Defects,9
+Azure/azure-sdk-for-java,46282,2281005595,Human,Human(ibrandes),Copilot,Agent,Agent(Copilot),Agent_Review_Human,5,8,diff_hunk,1,46,Code Improvement,9
+Azure/azure-sdk-for-java,46282,2281005596,Human,Human(ibrandes),Copilot,Agent,Agent(Copilot),Agent_Review_Human,6,8,diff_hunk,1,70,Defects,9

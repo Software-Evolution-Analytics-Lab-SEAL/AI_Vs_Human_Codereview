@@ -1,0 +1,10 @@
+Feedback_Type,Description
+Code Improvement,"Suggestions to enhance code clarity, style, structure, or maintainability without fixing defects."
+Defect Detection,"Identification of functional, logical, or correctness issues in the proposed changes."
+External Impact,Comments about broader system-level consequences beyond the local code diff.
+Knowledge Transfer,"Reviewer explains concepts, conventions, best practices, or provides learning resources."
+Misc,Comments that do not fit any defined category or are context-irrelevant.
+No Feedback,Conversations where the reviewer provides no substantive technical feedback.
+Social,"Interpersonal statements not directly tied to technical content (e.g., appreciation, encouragement)."
+Testing,"Comments about adding, updating, or fixing tests and test coverage."
+Understanding,"Clarification questions to understand context, rationale, design decisions, or implementation intent."

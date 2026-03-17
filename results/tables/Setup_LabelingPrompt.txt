@@ -1,0 +1,3 @@
+Fig. 3: Prompt for labelling feedback types.
+
+Prompt: Based on the feedback type definitions from Table II, classify the following code review comment into the most appropriate feedback type. Return the feedback type with a confidence score (1-10). Code review comment: {comment_body}
