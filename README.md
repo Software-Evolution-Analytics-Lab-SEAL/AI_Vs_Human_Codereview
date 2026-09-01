@@ -116,19 +116,8 @@ Rscript install_packages.R
 
 ### Data
 
-**Pre-computed results** are included in `data/results/` and are sufficient to reproduce
-all tables and figures in the paper.
-
-**Sample raw data** (100 rows per file) is included in `data/sample/` for demonstrating
-the full analysis pipeline.
-
-**Full raw dataset** is available on HuggingFace:
-**[TODO: Add HuggingFace URL]**
-
-To use the full dataset, download and place in `data/full/`, then update `scripts/config.py`:
-```python
-DATA_DIR = PROJECT_ROOT / "data" / "full"
-```
+**Full raw dataset** is available on Hugging Face:
+[**Suzhen/AgentReviewChat**](https://huggingface.co/datasets/Suzhen/AgentReviewChat)
 
 ## Running the Analysis
 

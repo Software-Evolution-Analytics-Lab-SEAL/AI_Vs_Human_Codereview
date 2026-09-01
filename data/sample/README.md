@@ -5,11 +5,11 @@ The sample data demonstrates the data format and allows running the scripts for 
 
 ## Full Dataset
 
-The full dataset is available on HuggingFace:
-**[TODO: Add HuggingFace URL here]**
+The full dataset is available on Hugging Face:
+[**Suzhen/AgentReviewChat**](https://huggingface.co/datasets/Suzhen/AgentReviewChat)
 
 To use the full dataset:
-1. Download from HuggingFace
+1. Download from Hugging Face
 2. Place files in `data/full/`
 3. Update `scripts/config.py` to point to `data/full/`
 
