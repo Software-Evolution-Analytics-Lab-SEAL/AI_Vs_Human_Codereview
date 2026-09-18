@@ -105,12 +105,14 @@ extra-info is retained.
 ```suggestion
                 <version>3.1.0</version>
 ```"
-13,thorvg/thorvg,3796,2357478022,Human_Review_Human,Misc,7.0,Misc,--
+13,ray-project/ray,54116,2172487257,Human_Review_Human,Code Improvement,9.0,Code Improvement,"nit, but can you use a switch case here with the two enums. compiler warnings will guarantee that you're actually covering all enumeration cases in the code for the future and you don't need else's / defaults
+
+https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wswitch-enum"
 14,RT-Thread/rt-thread,10781,2420555300,Human_Review_Human,Social Communication,8.0,Social Communication,"这是正确的用法， @Copilot, @supperthomas "
 15,Azure/azure-sdk-for-net,49826,2151210517,Human_Review_Human,External Impact,8.0,Defect Detection,"I believe you have met build failures about the apicompat and found out removing this would ""fix"" the error.
 But this is only hiding the issue instead of resolving it.
 Please revert this back and let the pipeline fails. We will find other ways to introduce real fixes to those errors."
-16,zephyrproject-rtos/zephyr,89241,2257416077,Human_Review_Human,Misc,7.0,Misc,?
+16,taosdata/TDengine,33469,2493443517,Human_Review_Human,Code Improvement,8.0,Code Improvement,这句话的英文意思能够理解，读起来感觉有点拗口，看是否能优化一下
 17,microsoft/typespec,7651,2274845713,Human_Review_Agent,Knowledge Transfer,8.0,Knowledge Transfer,@copilot the update needs to follow these instructions https://github.com/microsoft/typespec/blob/main/.github/prompts/testserver-generation.md
 18,ray-project/ray,57863,2441452869,Human_Review_Human,Understanding,8.0,Understanding,Same here - is this supposed to be cuda:2?
 19,tinymce/tinymce,10539,2286671624,Human_Review_Human,Understanding,9.0,Understanding,What's this code doing? It doesn't seem specific to textareas. Isn't `ref` always a function? Or is this a sneaky hack that I should consider a code smell?
@@ -818,7 +820,10 @@ Failing to account for it may later raise a DB-level out of range error.
         // the debug info.
 ```"
 36,home-assistant/core,151487,2313981673,Human_Review_Human,Testing,9.0,Testing,No coverage for this function
-37,ray-project/ray,56524,2353914809,Human_Review_Human,Misc,6.0,Misc,Same commetn
+37,microsoft/onnxruntime,25928,2319613627,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"Typo in comment: 'negnative' should be 'negative'.
+```suggestion
+               {utils::MakeAttribute(""mode"", ""reflect"")},  // reflect mode doesn't support negative padding value.
+```"
 38,mavlink/qgroundcontrol,13257,2255222834,Agent_Review_Human,Defects,9.0,Code Improvement,"Extra semicolon at end of function declaration. Should be single semicolon.
 ```suggestion
     QString _factGroupNameWithId(uint32_t id) const;
@@ -1099,9 +1104,7 @@ Replicate the same guard for `bbbMultiUserTools` and coerce `bbbMultiUserPenOnly
   const function3Delay = 5000; // Default: function1Delay < function2Delay < function3Delay
   vi.useFakeTimers();
 ```"
-54,prestodb/presto,24443,2183548130,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-----------------------
-```"
+54,Azure/azure-sdk-for-python,41272,2196084359,Human_Review_Human,Code Improvement,8.0,Code Improvement,Might be good to use a constant for retryWrite. 
 55,PalisadoesFoundation/talawa-api,3570,2341957018,Agent_Review_Human,External Impact,9.0,Defect Detection,"_️ Potential issue_
 
 **Pipeline failure: Unauthorized changes to sensitive file**
@@ -1139,20 +1142,34 @@ these actions you took so the CI reviewers can proceed.
 
 <!-- This is an auto-generated comment by CodeRabbit -->"
 56,dependabot/dependabot-core,13339,2445460265,Human_Review_Human,Social Communication,7.0,Social Communication,I'll try to update these untypes during the beta period
-57,membrane/api-gateway,2240,2498808498,Human_Review_Human,Misc,7.0,Misc,?
+57,cowprotocol/services,3692,2372150750,Human_Review_Human,Code Improvement,7.0,Code Improvement,"I really wanted to suggest something to make it easier to read, but couldn't come up with any better idea so far."
 58,novuhq/novu,8391,2109676371,Human_Review_Agent,Defects,8.0,Defects,"this is not needed, revert this code on this file, we don't need to use it with the new navigation"
 59,opf/openproject,20923,2490779985,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"[nitpick] The ESLint disable comment for `no-plusplus` suggests the rule is enabled in the project. Consider using `this.openSeq += 1` instead to comply with the project's linting rules without needing to disable the check.
 ```suggestion
     const seq = this.openSeq += 1;
 ```"
-60,wso2/carbon-identity-framework,6920,2184298844,Human_Review_Human,Misc,7.0,Misc,comment not relevant
+60,meshtastic/Meshtastic-Android,2131,2150305158,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"[nitpick] Consider extracting the AlertDialog and its key regeneration logic into a separate composable function to improve clarity and reusability.
+```suggestion
+    KeyGenerationDialog(
+        showDialog = showKeyGenerationDialog,
+        onDismiss = { showKeyGenerationDialog = false },
+        onConfirm = {
+            securityInput = securityInput.copy {
+                clearPrivateKey()
+            }
+            onConfirm(securityInput)
+        }
+    )
+```"
 61,mongodb-js/compass,7198,2287337312,Agent_Review_Human,Defects,9.0,Defects,"The Link component has an empty href attribute, which will result in a broken link. This should point to the actual documentation URL.
 ```suggestion
       <Link href=""https://www.mongodb.com/docs/atlas/atlas-search/"" hideExternalIcon>
 ```"
-62,DataDog/datadog-agent,36817,2101864680,Human_Review_Human,Misc,9.0,Misc,"```
-```
-See above"
+62,stackrox/stackrox,17008,2388285193,Human_Review_Human,Code Improvement,8.0,Code Improvement,"```suggestion
+            assert metadata.clusterId == clusterId
+            assert metadata.runId == complianceRun.id
+            assert metadata.standardId == NIST_800_190_ID
+```"
 63,Azure/azure-powershell,28222,2215624841,Agent_Review_Human,Defects,9.0,Defects,"The error message suggests using 'Connect-AzAccount' with '-AuthScope MicrosoftGraphEndpointResourceId', but this parameter name may not be accurate. Verify the correct parameter name for the Connect-AzAccount cmdlet.
 ```suggestion
                      ""Authentication failed against resource MicrosoftGraphEndpointResourceId. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). Please rerun 'Connect-AzAccount' with additional parameter '-Scope MicrosoftGraph'.\n"" +
@@ -1463,7 +1480,7 @@ You can now restore to your root branches' snapshots from any branch in your pro
 87,DataDog/datadog-agent,39677,2263924768,Human_Review_Human,Understanding,9.0,Understanding,"I'm a bit confused by the ""on the driver only"" part of this message; aren't we passing `false` to `enableEmrLogs`?
 
 Also, did you mean `DD_EMR_LOGS_ENABLED` instead of `DD_EMR_LOGS` (not an env var AFAIK)?  "
-88,DataDog/datadog-agent,39119,2231079839,Human_Review_Human,Misc,8.0,Misc,?
+88,microsoft/vscode,270844,2430644972,Human_Review_Human,Defects,8.0,Defects,"There's one trap in this design where if I use `this._useZeroBasedOffset` in the base class, I won't get the correct value. "
 89,department-of-veterans-affairs/vets-api,23731,2294145469,Agent_Review_Human,Defects,9.0,Defects,"Missing authentication - add `before_action :authenticate_user!` to secure this controller.
 ```suggestion
   # Violation 1: No authentication check (missing before_action)
@@ -1548,7 +1565,10 @@ because some task types depend on other task types to not run parallely. so seri
 100,redpanda-data/redpanda,27795,2390094659,Human_Review_Human,External Impact,8.0,External Impact,"In the `advance_reconciled_offset` method we're using the timeout and it's fine because the LRO in the `ctp_stm` is not the source of truth. The reconciler is not making any decisions based on the state of the `ctp_stm`. So it's OK for this to timeout or be aborted at any moment. 
 
 Here though, the `ctp_stm` is a source of truth for the start offset. The abort-source is OK in this case if it's used for shutdown, but I think we need to do something with the timeout. If the timeout error is thrown and the housekeeping fails this means that the command could still be replicated and applied later. Potentially this application could race with some other operations (housekeeping or reconciliation) with difficult to predict consequences. So I think that we should either don't use a timeout or in case of timeout we should step down the leadership. "
-101,scalableminds/webknossos,8992,2439000590,Human_Review_Human,Misc,7.0,Misc,todo
+101,mongodb-js/compass,7107,2204570747,Agent_Review_Human,Defects,9.0,Defects,"In the cleanup callback youre re-attaching the listener instead of removing it. Change `doc.on(ElementEvents.Added, onUpdate)` to `doc.off(ElementEvents.Added, onUpdate)`.
+```suggestion
+      doc.off(ElementEvents.Added, onUpdate);
+```"
 102,ssvlabs/ssv,2552,2409953321,Human_Review_Human,Social Communication,8.0,Social Communication,Same here
 103,dotnet/runtime,117832,2216672766,Human_Review_Human,Understanding,9.0,Understanding,"Just making sure I understand how this works exactly. It seems this only lets you save one exception, i.e. the first one. Suppose you crash from some callback on the UI thread that fails, so you report the exception which triggers this path, and that exception gets serialized. That's great. Then the error bubbles up in the app, and eventually XAML will actually failfast and bring the process down. Because we've already serialized the exception right when the callback works, does that mean that the stacktrace from the XAML failfast will no longer be present at all in the crash dump? Or would it still be there somewhere, just for reference, and it will simply not be the one that gets blamed (which is correct)?"
 104,n8n-io/n8n,18660,2315650685,Human_Review_Human,Social Communication,8.0,Social Communication,Same
@@ -1569,7 +1589,8 @@ LOCATIONS END -->
 106,Azure/azure-sdk-for-python,43129,2377493261,Agent_Review_Human,Defects,9.0,Defects,"The import `from typing import Any, Callable, Dict, IO, Iterable, Iterator, List, Optional, TypeVar, Union, cast, overload` has been simplified to remove unused imports like `Dict`, `Iterable`, and `List`. However, `List` is still being used as an alias on line 44. This could cause a runtime error if the `List` alias is used elsewhere in the code."
 107,openvinotoolkit/openvino,32131,2359003205,Human_Review_Human,Testing,9.0,Code Improvement,"I double-checked, and we've already tested with big int arrays for Tensor.
 Please remove this block."
-108,Azure/azure-sdk-for-java,46823,2377160332,Human_Review_Human,Misc,6.0,Misc,final
+108,microsoft/onnxruntime,26227,2408159088,Human_Review_Human,Defects,9.0,Defects,"The value should be either scalar or a dim[0] == 1.
+The spec says: a single element tensor. #Closed"
 109,dotnet/winforms,13713,2227232465,Human_Review_Human,Testing,9.0,Testing,This test has no assertion.
 110,celestiaorg/celestia-app,4913,2121740285,Human_Review_Agent,Knowledge Transfer,8.0,Knowledge Transfer,don't forget https://ibc.cosmos.network/main/migrations/v7-to-v8/ as well
 111,Azure/azure-sdk-for-js,36493,2501386179,Agent_Review_Human,External Impact,9.0,External Impact,"The `repo` field is pointing to a personal fork (`Supriya-R-Dixit/azure-rest-api-specs`) instead of the official Azure repository (`Azure/azure-rest-api-specs`). Before merging, this should be updated to reference the official repository once the changes are merged there, or this may be a temporary reference during development that needs to be reverted.
@@ -1580,12 +1601,47 @@ repo: Azure/azure-rest-api-specs
 ```
 
 Would minimize this diff"
-113,questdb/questdb,6008,2413679852,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+113,RediSearch/RediSearch,6836,2351289670,Agent_Review_Human,Defects,9.0,Defects,"### Bug: Error Masking in IndexReader Iteration
+
+<!-- DESCRIPTION START -->
+The `IndexReader`'s `Iterator::next` implementation converts all `Err(_)` results from `next_record()` into `None`. This masks critical issues like I/O errors or data corruption, making it impossible for callers to distinguish between a natural end of iteration and an actual failure, which hinders debugging.
+<!-- DESCRIPTION END -->
+
+<!-- LOCATIONS START
+src/redisearch_rs/inverted_index/src/lib.rs#L702-L709
+LOCATIONS END -->
+<a href=""https://cursor.com/open?data=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJ1Z2JvdC12MSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiQlVHQk9UX0ZJWF9JTl9DVVJTT1IiLCJkYXRhIjp7InJlZGlzS2V5IjoiYnVnYm90OjU2OGQ4NjE4LTMwZDItNDlkZC1iMTgwLWNmMzY1MWExOWE4YSIsImVuY3J5cHRpb25LZXkiOiJfWnpOa0JpM0ctUkpJaXRYN1A1WUZUQVdxVnVham9XRTFFT0N2al81a09RIiwiYnJhbmNoIjoiaXJfdXBkYXRlcyJ9LCJpYXQiOjE3NTgwMDg5MDEsImV4cCI6MTc1ODYxMzcwMX0.ioSF7FYxxZ_b21CLy2Ez_G9O4hkoljmnJajeuuiz-24SwBudOzH0fcCyCAp8FwpRvOYd0mza5S8d3xV9mFKYxjzEhfchSLmeRNkF-Dovp9Qiw4y4ZwnT4yghVSn3xmy_lkNzTfbQUPVwGQYcPsJl86utH8agdf4VDKob0zLg9Bd_tVYqX69NYCYX3aaRiEEs2IbQdCUhQSif0uVJo-Rx2wjWjxmraKayxU1hTPjXVkdmjnT-sQ_01RQYBM2MC3fVrW4rakZf6cuYjzb6ov74DN-nVDZkgxuqaemDNqHxJYsg3nAR5UnvZFBps6atw8jA1Fr3ExiOz9lqvvKMQa6Jcw""><picture><source media=""(prefers-color-scheme: dark)"" srcset=""https://cursor.com/fix-in-cursor-dark.svg""><source media=""(prefers-color-scheme: light)"" srcset=""https://cursor.com/fix-in-cursor-light.svg""><img alt=""Fix in Cursor"" src=""https://cursor.com/fix-in-cursor.svg""></picture></a>&nbsp;<a href=""https://cursor.com/agents?data=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJ1Z2JvdC12MSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiQlVHQk9UX0ZJWF9JTl9XRUIiLCJkYXRhIjp7InJlZGlzS2V5IjoiYnVnYm90OjU2OGQ4NjE4LTMwZDItNDlkZC1iMTgwLWNmMzY1MWExOWE4YSIsImVuY3J5cHRpb25LZXkiOiJfWnpOa0JpM0ctUkpJaXRYN1A1WUZUQVdxVnVham9XRTFFT0N2al81a09RIiwiYnJhbmNoIjoiaXJfdXBkYXRlcyIsInJlcG9Pd25lciI6IlJlZGlTZWFyY2giLCJyZXBvTmFtZSI6IlJlZGlTZWFyY2giLCJwck51bWJlciI6NjgzNiwiY29tbWl0U2hhIjoiMzlmNzczOTkwZTJhMTYxNDFiZTA4MWQwMDdhOWYxOWE3ODA4MGVlYSJ9LCJpYXQiOjE3NTgwMDg5MDEsImV4cCI6MTc1ODYxMzcwMX0.PTVM51rwlV-sYbu6gsm55ZbI-yO10a5aQ0cxhUDSl0WKPctKXyMBUxEqAHIEC9J8FkLllGLCcJQqzTCHsXwcs4sAVkplLr01xWx27Ex-zlnv7XumSO_D0cSx0h-PSjT3fIEqWIJqKy0wsppR4qIHJyjsx7KgQAS69rr7rXl5KWbF09Z0xxNjvEavLwEyhVsHD3vzAoM_PwUNXtSeTHekG-3B5dYE8MmKi6W7C1FEDJ1xlFoY5cEXFeJ9oykVsZ1PxdyWjvOAVQAZ14jdP_jo2RMkVM17VVQuOFVyKSIk6DCqlUsP5YbgLkyb9QQw6gO7r3BOzsqTDexT8PFt8RnSWA""><picture><source media=""(prefers-color-scheme: dark)"" srcset=""https://cursor.com/fix-in-web-dark.svg""><source media=""(prefers-color-scheme: light)"" srcset=""https://cursor.com/fix-in-web-light.svg""><img alt=""Fix in Web"" src=""https://cursor.com/fix-in-web.svg""></picture></a>
+
+"
+114,ray-project/ray,56298,2331484604,Human_Review_Human,Code Improvement,8.0,Code Improvement,Use logger instead. And is this statement correct?
+115,asyncapi/website,4129,2106361617,Agent_Review_Human,Defects,9.0,Defects,"_️ Potential issue_
+
+**Incorrect filters for ""Java Template""**  
+The ""Java Template"" generator is tagged with `JavaScript` for both language and technology, which contradicts its Java focus.  
+  
+Please revert the filters to use the Java tag:
+```diff
+- ""language"": [{ ""name"": ""JavaScript"", ... }],
+- ""technology"": [{ ""name"": ""JavaScript"", ... }],
++ ""language"": [{ ""name"": ""Java"", ... }],
++ ""technology"": [{ ""name"": ""Java"", ... }],
 ```
 
-debris"
-114,ray-project/ray,56298,2331484604,Human_Review_Human,Code Improvement,8.0,Code Improvement,Use logger instead. And is this statement correct?
-115,membrane/api-gateway,2032,2247855279,Human_Review_Human,Misc,7.0,Misc,Comment
+
+> Committable suggestion skipped: line range outside the PR's diff.
+
+<details>
+<summary> Prompt for AI Agents</summary>
+
+```
+In config/tools.json around lines 2835 to 2838, the ""Java Template"" generator is
+incorrectly tagged with ""JavaScript"" for language and technology filters. Update
+these filters to use the ""Java"" tag instead to correctly reflect its Java focus.
+```
+
+</details>
+
+<!-- This is an auto-generated comment by CodeRabbit -->"
 116,qdrant/qdrant,7219,2325190015,Human_Review_Human,Testing,8.0,Defect Detection,"Using a malformed filter is an easy test for the missing validation call.
 
 But keep in mind that the entire Update enum in depth is not validated."
@@ -1664,9 +1720,7 @@ redundant test.
  Addressed in commit fbdbc97"
 122,woocommerce/woocommerce,59486,2192509257,Human_Review_Human,Understanding,8.0,Understanding,"We add the `wpcom_connection_return` query param further down, regardless of the onboarding flow source."
 123,openvinotoolkit/openvino,32515,2477020256,Human_Review_Human,Understanding,8.0,Understanding,do we need that?
-124,WeblateOrg/weblate,16468,2413265495,Human_Review_Agent,Misc,7.0,Misc,"```suggestion
------------------------------------------------------
-```"
+124,azerothcore/azerothcore-wotlk,22589,2248598756,Agent_Review_Human,Defects,9.0,Defects,"The function `add_service_to_registry` is called with 11 parameters but the function definition only accepts 11 parameters. However, the `$additional_args` variable should be properly escaped as it may contain spaces or special characters that could break the function call."
 125,pwndbg/pwndbg,2992,2101391048,Agent_Review_Human,Code Improvement,8.0,Code Improvement,[nitpick] Consider adding a comment explaining the rationale behind using 'steps=4' for the MSR write operation to assist with maintainability.
 126,department-of-veterans-affairs/vets-api,24670,2470249483,Human_Review_Human,Testing,8.0,Code Improvement,I think this one and the one above need to be stubbed out
 127,openthread/ot-br-posix,2514,2320546652,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,"```suggestion
@@ -1674,8 +1728,11 @@ An extended `REST` API functionality providing capabilities for commissioning an
 ```"
 128,dotnet/maui,31091,2280920362,Human_Review_Agent,Social Communication,9.0,Social Communication,@copilot revert this change
 129,Azure/azure-sdk-for-python,43465,2436655001,Agent_Review_Human,External Impact,9.0,External Impact,"The sample imports and uses load_dotenv() later but the installation instructions do not list python-dotenv; please add python-dotenv to the pip install line (e.g., pip install azure-ai-projects azure-identity python-dotenv) so users can run the sample without ImportError. Apply this update consistently across all modified samples that added load_dotenv()."
-130,dotnet/runtime,120911,2446006588,Human_Review_Human,Misc,7.0,Misc,dtto
-131,tari-project/tari,7425,2288116715,Human_Review_Human,Misc,7.0,Misc,?
+130,Azure/azure-sdk-tools,11350,2231840342,Agent_Review_Human,Defects,9.0,Defects,"The description text appears to have been modified during the sort, removing quotes that were present in the original version. The original had quotes around the description, but the sorted version does not.
+```suggestion
+Cost Management - UsageDetailsAndExport,""All issues in cost management for usage details API and exports API."",e99695
+```"
+131,department-of-veterans-affairs/vets-api,23967,2334165603,Human_Review_Human,External Impact,8.0,External Impact,I think the draft appointment id would be considered PHI
 132,woocommerce/woocommerce-android,14237,2169434637,Human_Review_Human,Social Communication,9.0,Social Communication,Praise (️): Thanks for adding this test! 
 133,OneKeyHQ/app-monorepo,8088,2278166123,Agent_Review_Human,Knowledge Transfer,9.0,Testing,"_ Verification agent_
 
@@ -1859,7 +1916,7 @@ Paazl expects length/width/height as whole centimeters (integers). Send either L
 
 <!-- This is an auto-generated comment by CodeRabbit -->"
 136,NethermindEth/nethermind,8845,2163089174,Human_Review_Human,Testing,9.0,Testing,would be good to add asserts for post-osaka
-137,thorvg/thorvg,3491,2114294989,Human_Review_Human,Misc,7.0,Misc,--
+137,Automattic/wordpress-activitypub,2278,2400864752,Human_Review_Human,External Impact,8.0,External Impact,Can we first merge https://github.com/Automattic/wordpress-activitypub/pull/2284 and then have your changes afterwards? My PR adds support for URI-Objects at least for `Like`s and `Announce`s.
 138,RediSearch/RediSearch,7062,2451781620,Human_Review_Human,Understanding,9.0,Understanding,Can you elaborate on this and why it is set?
 139,zeta-chain/node,4144,2320340721,Human_Review_Human,Social Communication,8.0,Social Communication,same as previous comment in `client_start.go`
 140,openthread/openthread,11636,2166375090,Agent_Review_Human,Defects,9.0,Knowledge Transfer,"![high](https://www.gstatic.com/codereviewagent/high-priority.svg)
@@ -1881,14 +1938,34 @@ I'm not sure, just that parts of Login are server-side rendered, so it might pro
 146,zephyrproject-rtos/zephyr,90091,2322810637,Human_Review_Human,Code Improvement,8.0,Code Improvement,"```suggestion
  This sample measures the red, green, blue and IR light for all possible
 ```"
-147,cosmos/cosmos-sdk,24711,2076115668,Human_Review_Human,Misc,7.0,Misc,borked
+147,Azure/azure-sdk,9251,2400136720,Agent_Review_Human,External Impact,9.0,External Impact,"Removing authentication headers may cause GitHub API rate limiting issues for unauthenticated requests (60 requests per hour vs 5000 for authenticated). Consider the impact on users who may hit rate limits when fetching release information.
+```suggestion
+        # Use a GitHub token if available to avoid rate limiting
+        $githubToken = $env:GITHUB_TOKEN
+        if (-not $githubToken) {
+            $githubToken = $env:GH_TOKEN
+        }
+        if ($githubToken) {
+            $headers = @{ Authorization = ""token $githubToken"" }
+            $releases = Invoke-RestMethod -Uri $releasesUrl -Headers $headers
+        }
+        else {
+            $releases = Invoke-RestMethod -Uri $releasesUrl
+        }
+```"
 148,Azure/azure-sdk-for-python,40642,2053493387,Human_Review_Human,External Impact,8.0,External Impact,"@smichtch please remember to kick off release pipeline no later than 7 days from that date, or the release can fail on out-dated generation timestamp. Otherwise, you need to update the release date in here."
 149,openhab/openhab-addons,19135,2265132142,Human_Review_Human,Defects,9.0,Defects,"Channel example was missing the dash `-` in `battery-level`
 The [table is correct](https://www.openhab.org/addons/bindings/mqtt.awtrixlight/#bridge-channels-awtrix-clock)
 "
-150,Emurgo/yoroi,4020,2256692903,Human_Review_Human,Misc,7.0,Misc,to be deleted
+150,DataDog/datadog-agent,40230,2307471188,Human_Review_Human,External Impact,8.0,External Impact,"```suggestion
+go 1.24.0
+```"
 151,RediSearch/RediSearch,6431,2189977305,Human_Review_Human,Social Communication,8.0,Social Communication,@LukeMathWalker 
-152,mongodb-js/compass,7174,2266440778,Human_Review_Human,Misc,7.0,Misc,️ 
+152,BOINC/boinc,6587,2421142578,Agent_Review_Human,External Impact,8.0,External Impact,"Declaring a host dependency on the same port (libx11) can create a self-dependency loop in vcpkgs resolver. Consider moving build tools to a separate feature or using manual-tools from a bootstrap step without expressing a self host dependency.
+```suggestion
+
+    {
+```"
 153,ant-design/ant-design,53741,2075703105,Agent_Review_Human,Testing,9.0,Testing,Verify that the QRCode translations are properly displayed in the UI and that there are no issues with the expiration and refresh functionality.
 154,Azure/azure-sdk-for-python,41445,2129903344,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,all the code below here is copy-pasted from our vendored hybrid models ([code](https://github.com/Azure/autorest.python/blob/main/packages/typespec-python/test/azure/generated/authentication-api-key/authentication/apikey/_utils/model_base.py))
 155,youtube/cobalt,6144,2167679579,Human_Review_Human,Social Communication,8.0,Social Communication,Nice find
@@ -2152,7 +2229,9 @@ existing logic.
 
 <!-- This is an auto-generated comment by CodeRabbit -->"
 174,camunda/camunda,35632,2247779958,Human_Review_Agent,Understanding,8.0,Understanding," I didn't compare, but I assume `DefaultMembershipService` is largely extracted from this functionality, so don't need to do a thorough check on correctness."
-175,flutter/packages,10274,2452337284,Human_Review_Human,Misc,7.0,Misc,?
+175,microsoft/onnxruntime,25171,2167617589,Human_Review_Human,External Impact,8.0,External Impact,">broken_tests->insert({""facedetection_op8_qdq"", ""result differs""}); [](http://example.com/codeflow?start=4&length=66)
+
+need to revert this one facedetection_op8_qdq."
 176,StarRocks/starrocks,65157,2508129189,Human_Review_Human,Social Communication,8.0,Social Communication,"Hey man, this is not a only UT, this change the code.
 You'd better to change a PR title"
 177,tinymce/tinymce,10528,2333471822,Human_Review_Human,Testing,9.0,Testing,Could we add some test for this change. It makes sense that we shouldn't boolean attributes on custom elements but we should cover that.
@@ -2224,12 +2303,22 @@ resolved.
 183,dotnet/winforms,13524,2110550940,Human_Review_Human,Testing,9.0,Testing,"`DataGridViewLinkCell.LinkVisited`'s code path has system calls, so this test method's annotation should have the WinForms prefix.
 
 `DataGridViewLinkCell.LinkVisited`is used in other test methods that also need to be addressed."
-184,RediSearch/RediSearch,6885,2382730581,Human_Review_Human,Misc,7.0,Misc,Unrelated comment
+184,ray-project/ray,57845,2440823148,Human_Review_Human,External Impact,9.0,External Impact,"```suggestion
+A breaking change to this functionality will go live with Ray version 2.54.0. The defaults for `RAY_SERVE_RUN_USER_CODE_IN_SEPARATE_THREAD` and `RAY_SERVE_RUN_ROUTER_IN_SEPARATE_LOOP` will change to `0`, disabling existing default functionality to improve serving throughput.
+
+You should update your code to explicitly set these properties to `1` if your workloads require legacy behavior.
+```
+
+Typically, I avoid mentioning future state. Since this is a known planned migration, we should announce it.
+
+We should also draft customer comms and work with @tg-anyscale to address Anyscale customers. (I understand this is technically opt-in for the breaking change because it's a new Ray version, but still nice to encourage customers to start testing now.)"
 185,dotnet/roslyn,80495,2408801259,Human_Review_Human,Testing,9.0,Testing,"Consider also testing `name: ""test"", values: 1, 2, 3`."
 186,umbraco/Umbraco-CMS,19789,2228772148,Agent_Review_Human,External Impact,8.0,External Impact,The element name has been changed from 'umb-tiptap-table-toolbar-menu-element' to 'umb-tiptap-table-toolbar-menu'. Ensure this change is coordinated with any templates or code that references the old element name.
 187,qdrant/qdrant,6819,2248461270,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,Why not use the [`entry`](https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.entry) API here?
 188,oven-sh/bun,22488,2329384334,Human_Review_Human,Social Communication,8.0,Misc,ditto
-189,ls1intum/Artemis,11263,2301630494,Human_Review_Human,Misc,8.0,Misc,?
+189,home-assistant/home-assistant.io,37703,2042856403,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,"```suggestion
+With this method, it is assumed that the [NGINX Home Assistant SSL proxy add-on](https://github.com/home-assistant/addons/blob/master/nginx_proxy/DOCS.md) is running as a reverse proxy for external access to your Home Assistant installation.
+```"
 190,ray-project/ray,54787,2219920099,Human_Review_Human,Understanding,8.0,Understanding,"Can you add more details in the PR description to summarize the problem that the current code faces, and why the proposed change fixes it? "
 191,flutter/packages,9930,2317511680,Human_Review_Human,Social Communication,8.0,Social Communication,Yay!
 192,ssvlabs/ssv,2468,2306965090,Human_Review_Human,Understanding,8.0,Understanding,"Bumping this value `10s`->`15s` just to be on the safe side, since now it applies to every request `ExecutionClient` makes,
@@ -2277,13 +2366,14 @@ Otherwise, what constitutes a ""runnable job"" is determined by the repository,y
 
 The logic itself is sound though :smile: "
 197,prestodb/presto,25480,2392094231,Human_Review_Human,Social Communication,8.0,Social Communication,@mohsaka : Joe moved around these files in https://github.com/prestodb/presto/pull/26177. Can you rebase your code and test ?
-198,Agoric/agoric-sdk,11563,2192882311,Human_Review_Human,Misc,7.0,Misc,undefined
-199,DataDog/datadog-agent,41007,2389129115,Human_Review_Human,Misc,7.0,Misc,?
+198,Azure/azure-sdk-for-rust,3169,2417768942,Human_Review_Agent,Knowledge Transfer,9.0,Knowledge Transfer,"To provision test resources, @copilot you need to recommend teams run `eng/common/TestResources/New-TestResources.ps1 -ServiceDirectory <service>` and to see the root CONTRIBUTING.md for more information."
+199,nrfconnect/sdk-nrf,25267,2468154170,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"reserved memory is for RAM used by hardware e.g. DMA, it has nothing to do with NVM"
 200,volcano-sh/volcano,4656,2454838254,Human_Review_Human,External Impact,9.0,External Impact,"You should not copy the same files in mind cluster, it contain lots of `Huawei Technologies` copyright header files, as a CNCF project, we should not contains these companies copyright header. Instead, you should import these files, take common as an example, mind cluster has such depedency: `https://pkg.go.dev/gitcode.com/ascend/mind-cluster/component/ascend-for-volcano/common`"
-201,dotnet/AspNetCore.Docs,36022,2350424533,Human_Review_Human,Misc,8.0,Misc,"````suggestion
-````"
+201,pnpm/pnpm,9854,2469748859,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"```suggestion
+pnpm no longer loads non-auth and non-registry settings from rc files. Other settings must be defined in `pnpm-workspace.yaml`.
+```"
 202,woocommerce/woocommerce,60552,2300664471,Human_Review_Human,Understanding,8.0,Understanding,Can we use `store` imported above?
-203,thorvg/thorvg,3491,2114296707,Human_Review_Human,Misc,7.0,Misc,--
+203,Azure/azure-rest-api-specs,34978,2112854968,Agent_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,Clarify in the API documentation how and when a 202 Accepted status is returned by this operation to guide consumers implementation.
 204,Homebrew/homebrew-core,246477,2394919846,Human_Review_Human,External Impact,8.0,External Impact,"Eigen installs multiple license files so may need to confirm exact license.
 ```console
  ls COPYING*
@@ -2310,16 +2400,16 @@ A big thank you to everyone who participated in this program, from the kickoff d
 212,projectcalico/calico,10857,2292221734,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"Worth also calling the utility to direct log output to logrus:
 
 https://github.com/projectcalico/calico/blob/ceb00cfeb917e81dd563fada75a48e0fb5cb813d/goldmane/pkg/storage/diachronic_flow_test.go#L33"
-213,grafana/mimir,11136,2070309085,Human_Review_Human,Misc,7.0,Misc,?
-214,gravitee-io/gravitee-api-management,13761,2454428031,Human_Review_Human,Misc,7.0,Misc,//  
+213,dotnet/roslyn,80495,2405869203,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,usually new errors in feature branches are starting at larger numbers with a PROTOTYPE comment to renumber them just before merging the feature branch to main - this makes dealing with merge conflicts easier
+214,home-assistant/home-assistant.io,39078,2094605059,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"```suggestion
+This integration allows adding an [Immich](https://immich.app/) user account to Home Assistant.
+```"
 215,scalar-labs/scalardb,2736,2128010611,Human_Review_Human,Understanding,8.0,Code Improvement,"Maybe `exporting` is necessary? (CC: @ypeckstadt, @josh-wong)
 ```suggestion
                 description = 'A tool for exporting data from and importing data into ScalarDB'
 ```"
 216,Agoric/agoric-sdk,11946,2357499246,Human_Review_Agent,Code Improvement,8.0,Code Improvement,"I think ` t.truthy(result2)` is more expressive than `t.true(result2 !== undefined)`, no?"
-217,bitwarden/clients,17070,2487604445,Human_Review_Human,Misc,7.0,Misc,"Leftover comment
-```suggestion
-```"
+217,Azure/azure-sdk-tools,11635,2270480331,Human_Review_Human,Social Communication,9.0,Social Communication,:heart
 218,pnpm/pnpm,10059,2422579314,Human_Review_Human,External Impact,8.0,External Impact,"CI tests failed due to store sharing issues between projects using different `testDefaults()` configs.
 See: https://github.com/pnpm/pnpm/actions/runs/18424090647/job/52502860033
 "
@@ -2362,8 +2452,10 @@ If you apply this change, please also update the `compatibility_level` in `patch
 ```"
 235,dotnet/roslyn,80939,2502536178,Human_Review_Agent,Testing,8.0,Testing,Consider adding VerifyDiagnostics to the corlibRef lines too
 236,DataDog/datadog-agent,41546,2415558510,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"usually speaking, for loops are ""not supported"" in old kernels, you need to use pragma unroll to let the compiler correctly build the bytecode"
-237,prestodb/presto,24443,2288233645,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-=============
+237,cloudposse/atmos,1448,2325356570,Human_Review_Human,Social Communication,8.0,Social Communication,"Hrm, I think Atmos' pronouns are its/theirs. ;) 
+
+```suggestion
+	Long:               ""This command allows you to create, edit, encrypt, decrypt, and view encrypted files using Ansible Vault."",
 ```"
 238,department-of-veterans-affairs/vets-api,24443,2402469610,Human_Review_Human,Social Communication,8.0,Social Communication,"I like this - it would be duplicate documentation if we keep mine as well. That can become confusing to future devs looking for this information.
 
@@ -2538,7 +2630,7 @@ avoid runtime errors in the test suite.
 </details>
 
 <!-- This is an auto-generated comment by CodeRabbit -->"
-245,zephyrproject-rtos/zephyr,88816,2053524022,Human_Review_Human,Misc,7.0,Misc,*generated
+245,wso2/carbon-identity-framework,6782,2106783974,Human_Review_Human,Social Communication,7.0,Social Communication,Check my comment on service layer
 246,OneKeyHQ/app-monorepo,7374,2101494494,Agent_Review_Human,Defects,9.0,Defects,"_️ Potential issue_
 
 **Unsafe cast of possibly `undefined` token**
@@ -2617,15 +2709,13 @@ LOCATIONS END -->
 <a href=""https://cursor.com/open?data=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJ1Z2JvdC12MSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiQlVHQk9UX0ZJWF9JTl9DVVJTT1IiLCJkYXRhIjp7InJlZGlzS2V5IjoiYnVnYm90Ojc3ZWJhNzk1LTg1NTItNDhhYS04MDMxLWUzNjYzNmM4M2UxNSIsImVuY3J5cHRpb25LZXkiOiJaYkxUN2dYT25DeGsxTUJVdHNLdmhPQ0hOd0FHUVBKNE13NG5xcXFhNV9vIiwiYnJhbmNoIjoia2gvaW1wcm92ZS1pbmdyZXNzIn0sImlhdCI6MTc1OTY5MjYxMSwiZXhwIjoxNzYwMjk3NDExfQ.BcyApEeg3RWht_uFEdWfd8_85dyQTdEJRXkmpD1pdr31LqsozuNI6WF4G2rzDIG_FsAqk5s6s6EftKz3KEtZvW3g0RiYMM0eA9mx0T1SvxdiZClXjvB_R5yKXM6M8yVYjHgQyMnTJp8tV39Q4sxcNvo7M_iQuq9UAnW5vfsDJm1BwxVcP-HV5L8ePCsBaAxOUtJM7Dee0wPucjMGrkmaDW5PtIHYIhkktRuMNq6DwGTvl6WwEybjUyqtdnzeG5ryHoG5q9Gx2zoi_BKRS2SEEhpIzrdRUkxVxI-z2AedzGloJyvXp2GlQrXfDfQ6Vy91YKRNRcok3W9XNu4bWS8N-g""><picture><source media=""(prefers-color-scheme: dark)"" srcset=""https://cursor.com/fix-in-cursor-dark.svg""><source media=""(prefers-color-scheme: light)"" srcset=""https://cursor.com/fix-in-cursor-light.svg""><img alt=""Fix in Cursor"" src=""https://cursor.com/fix-in-cursor.svg""></picture></a>&nbsp;<a href=""https://cursor.com/agents?data=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJ1Z2JvdC12MSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiQlVHQk9UX0ZJWF9JTl9XRUIiLCJkYXRhIjp7InJlZGlzS2V5IjoiYnVnYm90Ojc3ZWJhNzk1LTg1NTItNDhhYS04MDMxLWUzNjYzNmM4M2UxNSIsImVuY3J5cHRpb25LZXkiOiJaYkxUN2dYT25DeGsxTUJVdHNLdmhPQ0hOd0FHUVBKNE13NG5xcXFhNV9vIiwiYnJhbmNoIjoia2gvaW1wcm92ZS1pbmdyZXNzIiwicmVwb093bmVyIjoicmF5LXByb2plY3QiLCJyZXBvTmFtZSI6InJheSIsInByTnVtYmVyIjo1NzE4MSwiY29tbWl0U2hhIjoiZDlhZmQzODllN2Q3YTAzM2EyNjg1NTZjOGE5Njc5YjUxMTAwYzg2NSJ9LCJpYXQiOjE3NTk2OTI2MTEsImV4cCI6MTc2MDI5NzQxMX0.PLNJd8_1G4Zvc6ACoeomJkd700vHwI943D06sQl7iQp5wbbrqltjiJ-jkiVRodC8SmjFZ9BPKgmYAzWGG7v0bzfsKeyriVqPk681BzjtbyJ0HFdUXmPXEOazK4qclZ8GQlGZA7Biho6F2-VQF7psJHrrZGlptdXhmy0m_6KFMw8W4SDOFqN2HSgKJN-Y2dPUMWp7gc5ltM5S7MGfLGmR3BVD2avRf3v3IDN9G6qDBO9XXO6vKH1f94yTm_aIMRqwuLHBoyzO6tdkLzCwuPcaRiAj-4a7FCtfHkoRejgLmCHW56WG5_aEh3cdWnhiFym8peCmzaSttmmjU2PYaOAFnQ""><picture><source media=""(prefers-color-scheme: dark)"" srcset=""https://cursor.com/fix-in-web-dark.svg""><source media=""(prefers-color-scheme: light)"" srcset=""https://cursor.com/fix-in-web-light.svg""><img alt=""Fix in Web"" src=""https://cursor.com/fix-in-web.svg""></picture></a>
 
 "
-260,zenml-io/zenml,3956,2348846780,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-...
-```"
+260,ray-project/ray,55207,2258685057,Human_Review_Human,Social Communication,7.0,Social Communication,No longer valid.
 261,Azure/azure-powershell,28675,2443575924,Human_Review_Human,Social Communication,8.0,Social Communication,"```suggestion
 ```
 
 Please do not include a new version as new versions are calculated"
 262,tuist/tuist,7997,2273288011,Human_Review_Human,Social Communication,9.0,Social Communication,Very solid  
-263,membrane/api-gateway,1958,2184541238,Human_Review_Human,Misc,7.0,Misc,Sout
+263,trezor/trezor-suite,19231,2127411763,Human_Review_Human,Social Communication,9.0,Social Communication,praise  
 264,OpenRadioss/OpenRadioss,4190,2402315490,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"Remove the commented-out interface declarations (lines 1073-1076 and 1083-1087) as they are not used and add clutter to the code.
 ```suggestion
         subroutine python_begin_openmp(python)
@@ -2635,7 +2725,7 @@ Please do not include a new version as new versions are calculated"
         end subroutine python_begin_openmp
 ```"
 265,appsmithorg/appsmith,41253,2371633670,Human_Review_Human,Social Communication,7.0,Social Communication,Same here.
-266,Emurgo/yoroi,4020,2256715281,Human_Review_Human,Misc,7.0,Misc,to be deleted
+266,Azure/azure-sdk-for-net,52975,2400166064,Human_Review_Agent,Social Communication,8.0,Social Communication,@copilot revert changes to this file
 267,redpanda-data/redpanda,27202,2294617626,Human_Review_Human,Social Communication,7.0,Social Communication,and one more
 268,noobaa/noobaa-core,9258,2468699767,Agent_Review_Human,Testing,9.0,Defects,"_️ Potential issue_ | _ Critical_
 
@@ -3114,7 +3204,7 @@ For consistency with other files in this PR (e.g., `starboard/shared/linux/cpu_f
 ```"
 273,noobaa/noobaa-core,9202,2307800934,Human_Review_Human,Understanding,8.0,Understanding,When do these values differ? 
 274,scylladb/scylladb,24657,2168859662,Human_Review_Human,Testing,9.0,Testing,This change does deserve a regression test 
-275,n8n-io/n8n,19297,2332182794,Human_Review_Human,Misc,6.0,Misc,todo here
+275,asterinas/asterinas,2502,2434392974,Human_Review_Human,Social Communication,8.0,Social Communication,Same here.
 276,bisq-network/bisq2,3611,2202313472,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"For undefined data we usually use `Res.get(""na)` which is hte i18n string for `N/A` (Not Available)."
 277,reown-com/appkit,4734,2242334774,Agent_Review_Human,External Impact,9.0,External Impact,"The change from 'atomicBatch' to 'atomic' appears to be a breaking change in the capability identifier. Consider documenting this change or providing backward compatibility if this affects existing integrations.
 ```suggestion
@@ -3135,7 +3225,7 @@ For better readability and grammatical correctness, 'technology' should be plura
 I had an amazing time working with the big data technologies Beam, Iceberg, and Kafka as well as many Google Cloud services
 ```"
 282,microsoft/testfx,5601,2104041330,Human_Review_Agent,Social Communication,8.0,Social Communication,Revert Build.cmd
-283,box/box-ui-elements,4244,2331023976,Human_Review_Human,Misc,7.0,Misc,^
+283,Azure/azure-sdk-for-net,50690,2155106079,Human_Review_Agent,Testing,9.0,Testing,remove this file. We dont need any tests for this
 284,shapeshift/web,10592,2382932040,Human_Review_Human,Testing,7.0,Testing,"Also swapper code, also confirmed actually sane: only one `true` and that's current swapper code 
 
 <img width=""1387"" height=""241"" alt=""Image"" src=""https://github.com/user-attachments/assets/0febe127-5af8-4814-a5d9-037c1a347197"" />
@@ -3218,16 +3308,24 @@ import { useLocalStorage, StudioResizableLayout } from '@studio/components';
 303,microsoft/react-native-windows,15118,2324388954,Human_Review_Agent,Social Communication,8.0,Social Communication,@copilot this change is not needed - keep it 22.14.0 only
 304,Azure/azure-sdk-for-python,42123,2226028253,Human_Review_Human,Understanding,8.0,Code Improvement,"This is a non-retryable scenario so this would fall under ""dropped"" with CLIENT_EXCEPTION"
 305,spiceai/spiceai,7715,2468457659,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"As an example of why the expr.apply is useful, this BinaryExpr match goes away completely."
-306,ant-design/ant-design,54643,2265782095,Human_Review_Human,Misc,7.0,Misc,`Empty`
-307,wolfSSL/wolfssl,9002,2221403684,Human_Review_Human,Misc,6.0,Misc,\param
+306,dotnet/maui,29397,2318600617,Human_Review_Human,Testing,9.0,Testing,"Could we include more buttons to tests more scenarios?
+- Null ItemsSource Test
+- Empty ItemsSource Test
+- Update ItemsSource to a large collection"
+307,nrfconnect/sdk-nrf,24015,2394480826,Human_Review_Human,Testing,7.0,Testing,Check that other contents has been set to zero.
 308,WeblateOrg/weblate,16568,2432247496,Human_Review_Human,Social Communication,8.0,Social Communication,Still working on this.
 309,microsoft/typespec,8514,2372806344,Human_Review_Agent,Understanding,8.0,Understanding,is this actually true? seems like you just ignore it below
-310,oven-sh/bun,22568,2365012718,Human_Review_Human,Misc,7.0,Misc,️ 
+310,ant-design/ant-design,54738,2292871310,Human_Review_Human,Testing,9.0,Testing,"Thanks for your contribution, please update the snapshot to ensure that the CI check passes.
+
+https://github.com/ant-design/ant-design/actions/runs/17148231286/job/48648548062?pr=54738
+
+<img width=""1421"" height=""809"" alt=""image"" src=""https://github.com/user-attachments/assets/79d4148d-b036-4f56-8697-3552acc266b5"" />
+"
 311,home-assistant/core,150030,2270853102,Human_Review_Human,Understanding,8.0,Understanding,"Not sure why we initialize these as local variables first, I think we can merge them"
 312,ant-design/ant-design,54600,2256485158,Human_Review_Human,Understanding,8.0,Defects,先不要给 records，这个数据用户 HOC 自己能拿
 313,ydb-platform/ydb,18669,2108659927,Human_Review_Human,Testing,8.0,Testing,"А мы же тут можем проверить, что было вставлено именно то, что мы вставили -- кажется было бы полезно? "
 314,DataDog/integrations-core,20512,2194689302,Human_Review_Human,Social Communication,9.0,Social Communication,"great start! next week we can meet up to see if/how we can extend it, but the hard work of setting up the framework is done. Thanks a ton  "
-315,Azure/azure-sdk-tools,12282,2417945223,Human_Review_Human,Misc,7.0,Misc,I saw nothing.
+315,n8n-io/n8n,20732,2454857416,Human_Review_Human,Testing,8.0,Testing,"googleApiRequestAllItems doesn't seem to complex, so it can be either covered with tests or this block can be removed"
 316,ray-project/ray,56298,2335142170,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,"```suggestion
     ""Learn more about CPU offloading in the [PyTorch documentation](https://docs.pytorch.org/docs/stable/distributed.fsdp.fully_shard.html#torch.distributed.fsdp.CPUOffloadPolicy).\n"",
 ```"
@@ -3291,7 +3389,7 @@ attributes (aria-disabled) and clear labels are used when disabling.
 
  Addressed in commit 8f83c9c"
 318,zephyrproject-rtos/zephyr,89145,2077008623,Human_Review_Human,Social Communication,8.0,Social Communication,please review all
-319,membrane/api-gateway,1849,2073395952,Human_Review_Human,Misc,6.0,Misc,documentation
+319,dotnet/runtime,118479,2260987002,Human_Review_Human,Testing,8.0,Testing,I assume ILLink needs the same fix right? Would you mind adding a shared testcase?
 320,spree/spree,13152,2391568366,Agent_Review_Human,Testing,9.0,Code Improvement,"_️ Refactor suggestion_ | _ Major_
 
 **Add test coverage for non-admin users with completed orders.**
@@ -3466,10 +3564,143 @@ in the returned cleanup function before calling stopScan().
                 case .sha512:
                     return HKDF<SHA512>.deriveKey(inputKeyMaterial: key, salt: salt, info: info, outputByteCount: destination.count)
 ```"
-327,spiceai/spiceai,7472,2418542100,Human_Review_Human,Misc,6.0,Misc,"```yaml
-params:
-  turso_file: <>
-```"
+327,PalisadoesFoundation/talawa-admin,4546,2464360621,Agent_Review_Human,Testing,9.0,Testing,"_️ Potential issue_ | _ Critical_
+
+<details>
+<summary> Analysis chain</summary>
+
+**Removed /orgactionitems route  check nav/test surfaces.**
+
+Ensure no NavBar/items, deep links, or tests still point to /orgactionitems/:orgId.
+
+
+Script:
+
+---
+
+ Script executed:
+
+```shell
+#!/bin/bash
+set -euo pipefail
+# Routes and navigation items
+rg -nC3 -S -e '/orgactionitems' -e 'orgactionitems' -e 'OrganizationActionItems' src || true
+# Cypress/e2e and unit tests
+rg -nC2 -S -e '/orgactionitems' -e 'orgactionitems' -e 'OrganizationActionItems' --glob '{**/*.spec.ts,**/*.spec.tsx,**/*.test.ts,**/*.test.tsx,**/cypress/**}' || true
+```
+
+Length of output: 9565
+
+---
+
+I need to verify whether the /orgactionitems route was actually removed from the routing configuration. Let me check the route definitions:
+
+---
+
+ Script executed:
+
+```shell
+#!/bin/bash
+set -euo pipefail
+# Check App.tsx around line 262 for route definitions
+echo ""=== Checking App.tsx around line 262 ===""
+sed -n '250,275p' src/App.tsx
+
+# Look for route definitions and path configurations
+echo -e ""\n=== Searching for route path definitions ===""
+rg -n ""path.*orgactionitems"" --type tsx --type ts -C2 src || true
+
+# Check for Router/Routes configuration
+echo -e ""\n=== Checking for route setup patterns ===""
+rg -n ""orgactionitems|'/org'"" --type tsx --type ts -B2 -A2 src/App.tsx | head -50 || true
+```
+
+Length of output: 95
+
+---
+
+I need to locate the routing files first. Let me search for them:
+
+---
+
+ Script executed:
+
+```shell
+#!/bin/bash
+set -euo pipefail
+
+# Find App.tsx and routing files
+echo ""=== Finding App.tsx and routing files ===""
+fd -t f 'App\.(tsx|ts)$' || true
+
+echo -e ""\n=== Finding route/router configuration ===""
+fd -t f -e tsx -e ts | grep -iE '(route|router)' | head -20 || true
+
+# Check if there's a main entry or app setup
+echo -e ""\n=== Checking common app structure files ===""
+fd -t f -maxdepth 2 '(App|main|index)\.(tsx|ts)$' | head -10 || true
+```
+
+Length of output: 1000
+
+---
+
+Now let me check the App.tsx content and routing configuration:
+
+---
+
+ Script executed:
+
+```shell
+#!/bin/bash
+set -euo pipefail
+
+echo ""=== Checking App.tsx routing around line 262 ===""
+wc -l src/App.tsx
+echo ""---""
+sed -n '250,275p' src/App.tsx
+
+echo -e ""\n=== Searching for orgactionitems in routing files ===""
+rg -n 'orgactionitems' src/state/reducers/userRoutesReducer.ts src/state/reducers/routesReducer.ts src/App.tsx -C3 || true
+
+echo -e ""\n=== Looking for route path definitions in App.tsx ===""
+grep -n ""path:"" src/App.tsx | head -20 || true
+```
+
+Length of output: 1192
+
+---
+
+
+
+</details>
+
+**Update tests pointing to removed /orgactionitems route.**
+
+Two test references still expect the removed route:
+
+1. `src/components/LeftDrawerOrg/LeftDrawerOrg.spec.tsx:243`  nav test data has `{ name: 'Action Items', url: '/orgactionitems/org-123' }` (update or remove this test nav item)
+2. `cypress/pageObjects/AdminPortal/ActionItemPage.ts:31`  e2e test expects `cy.url().should('match', /\/orgactionitems\/[a-f0-9-]+/);` (update the URL assertion or remove the test)
+
+<details>
+<summary> Prompt for AI Agents</summary>
+
+```
+In src/App.tsx around line 262 and related tests, update test references to the
+removed /orgactionitems route: modify
+src/components/LeftDrawerOrg/LeftDrawerOrg.spec.tsx (line ~243) to remove or
+change the nav test data entry { name: 'Action Items', url:
+'/orgactionitems/org-123' } to the new route or remove the item, and update
+cypress/pageObjects/AdminPortal/ActionItemPage.ts (line 31) to stop asserting
+against /\/orgactionitems\/[a-f0-9-]+/replace the regex with the new expected
+URL pattern or remove the URL assertion to reflect the route removal.
+```
+
+</details>
+
+<!-- fingerprinting:phantom:poseidon:chinchilla -->
+
+<!-- This is an auto-generated comment by CodeRabbit -->"
 328,Emurgo/yoroi,3989,2223316788,Agent_Review_Human,Code Improvement,9.0,Defects,"_️ Potential issue_
 
 **Remove duplicate atomic styles.**
@@ -3940,12 +4171,10 @@ true when applying overrides and false when including the template group.
 <!-- This is an auto-generated comment by CodeRabbit -->
 
  Addressed in commit 38cf9f1"
-348,prestodb/presto,24443,2288234241,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-=============
-```"
-349,Azure/azure-sdk-for-java,47130,2480300345,Human_Review_Human,Misc,6.0,Misc,Manual fix.
+348,dotnet/roslyn,80672,2424533918,Human_Review_Agent,Understanding,9.0,Understanding,@copilot why do you need this?
+349,cypress-io/cypress,32063,2294100016,Human_Review_Human,Understanding,8.0,Understanding,I don't see the reason for this change - this seems less descriptive to me.
 350,scylladb/scylladb,25622,2293018633,Human_Review_Human,Understanding,8.0,Understanding,Why not `try_get_host_id`?
-351,scalableminds/webknossos,8789,2290465724,Human_Review_Human,Misc,7.0,Misc,TODO
+351,shapeshift/web,10747,2428797976,Human_Review_Human,Understanding,8.0,Understanding,"q: will this display xpubs for xpubs/ypubs/zpubs/dgubs/ltubs ? (untested yet, there may be some magic to this)"
 352,ray-project/ray,58157,2467085225,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,"```suggestion
 ```{admonition} This quickstart uses Kind for simplicity. In a real-world scenario, you would use a cloud provider's Kubernetes service (like GKE or EKS) that has different machine types, like GPU nodes and spot instances, available. Kind ignores the `nodeSelector` fields for GKE in the example YAML.
 ```"
@@ -4053,8 +4282,7 @@ You can mark them `@skip_debug_mode`, as an oversize alloc is not reported in de
 360,ant-design/ant-design,54539,2243108976,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"I think it would be possible to add undefined, like this:
 https://github.com/ant-design/ant-design/blob/44369acc72010e155bfc75f1ca1a1aa6ac8c3bc5/typings/cssType.d.ts#L1-L5"
 361,requestly/requestly,3709,2454109837,Human_Review_Human,Social Communication,9.0,Social Communication,@iostreamer-X Can you please review this component?
-362,dotnet/runtime,120639,2449417814,Human_Review_Agent,Misc,7.0,Misc,"```suggestion
-``"
+362,neondatabase/website,4052,2445267758,Human_Review_Human,Understanding,9.0,Understanding,"When we say ""update"", does that mean I need to create API keys for my new Neon-managed org and replace keys created for the old org anywhere I might use them? Maybe explain that a little more."
 363,camunda/camunda,36244,2274074957,Human_Review_Human,Social Communication,8.0,Social Communication,Same from the previous comment
 364,openhab/openhab-addons,19268,2324257829,Human_Review_Human,Understanding,8.0,Understanding,"Nothing changed to the file, why add this ?"
 365,cloudposse/atmos,934,1930665733,Human_Review_Human,Social Communication,8.0,Social Communication,Don't commit this file
@@ -4078,7 +4306,7 @@ https://github.com/ant-design/ant-design/blob/44369acc72010e155bfc75f1ca1a1aa6ac
 ```"
 372,ssvlabs/ssv,2453,2287196265,Human_Review_Human,External Impact,8.0,External Impact,"[Pulse](https://github.com/ssvlabs/ssv-pulse) reads this field(analyzer), so it would be good to adapt it to this change (ideally making it possible to read both `round` and `qbft_round` fields)"
 373,home-assistant/core,152895,2376081050,Human_Review_Human,Testing,9.0,Testing,Please add another test parameter instead of using a condition in the test.
-374,RocketChat/Rocket.Chat,36970,2365831897,Human_Review_Human,Misc,6.0,Misc,Todo
+374,home-assistant/core,149777,2367480451,Human_Review_Human,Understanding,8.0,Understanding,"What about `is_closed()`and `current_cover_position()`, do they need reversing as well? If not then at least the docstring still seems wrong. "
 375,appwrite/appwrite,10356,2301472764,Agent_Review_Human,External Impact,9.0,Testing,"_ Verification agent_
 
 <details>
@@ -4225,7 +4453,7 @@ to refresh composer.lock against the upstream source. This will restore reproduc
  Addressed in commits eec6275 to 0e34312"
 376,navidrome/navidrome,4244,2505831806,Human_Review_Human,Understanding,8.0,Understanding,"Shouldn't this be required, like `username` and `changedBy`?"
 377,bytebase/bytebase,16277,2113443640,Agent_Review_Human,Code Improvement,8.0,Testing,[nitpick] Ensure that all DataTableColumn objects include a unique and consistent 'key' property to improve stability and readability across the new TSX column definitions.
-378,DataDog/datadog-agent,39642,2283307675,Human_Review_Human,Misc,7.0,Misc,xx
+378,scalableminds/webknossos,8824,2313699908,Human_Review_Human,Understanding,8.0,Understanding,This has quite some duplication with the other code. Do you think it makes sense to deduplicate here or? Because at some code lines it diverges. I could try to extract common methods like already done with `prepareSplitOrMerge`
 379,zephyrproject-rtos/zephyr,92090,2168475905,Human_Review_Human,Defects,8.0,Defects,just noticed all the flpr files are missing from this board
 380,department-of-veterans-affairs/vets-api,24028,2334358288,Human_Review_Human,External Impact,8.0,Knowledge Transfer,this pr - https://github.com/department-of-veterans-affairs/vets-api/pull/23890 is also referencing this method `find_or_create_appointment` for complex claims and I think this change will break that logic or at least introduce a bug so well want to make sure to update the service call in `modules/travel_pay/app/controllers/concerns/appointment_helper.rb` depending on what pr is merged first
 381,zephyrproject-rtos/zephyr,95623,2463922111,Human_Review_Human,Social Communication,9.0,Social Communication,"```suggestion
