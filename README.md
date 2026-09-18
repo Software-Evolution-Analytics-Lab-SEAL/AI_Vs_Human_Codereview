@@ -169,10 +169,8 @@ Rscript scripts/RQ3/7_scott_knott_metrics.R    # Scott-Knott ranking (from raw d
 `results/` also includes the first-author manual labels used to validate the LLM
 classifications reported in the paper (Cohen's $\kappa$ agreement):
 
-| File | Rows | Description |
-|------|------|--------------|
-| `results/verify_feedbacktype_label.csv` | 383 | Stratified sample across the 9 feedback-type categories (Table II). Columns include the LLM's label (`feed_type`), its confidence score (`conf_score`), the comment text (`comment_body`), and the first author's manual label (`human_label`). Reproduces the reported Cohen's $\kappa$ of 0.85 for feedback-type classification ($\kappa \approx 0.85$ on this sample). |
-| `results/verify_qualityattribute_label.csv` | 1,532 | Sample used to validate the four EvaCRC quality attributes (emotion, question, evaluation, suggestion). Columns include the LLM's predicted attributes (`emotion`, `question`, `evaluation`, `suggestion`, `grade`) and the first author's manual labels (`human_emotion`, `human_question`, `human_evaluation`, `human_suggestion`). |
+- `results/verify_feedbacktype_label.csv`
+- `results/verify_qualityattribute_label.csv`
 
 ## Notes
 
