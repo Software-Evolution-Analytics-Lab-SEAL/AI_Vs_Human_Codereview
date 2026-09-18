@@ -110,8 +110,7 @@ extra-info is retained.
 15,Azure/azure-sdk-for-net,49826,2151210517,Human_Review_Human,External Impact,8.0,Defect Detection,"I believe you have met build failures about the apicompat and found out removing this would ""fix"" the error.
 But this is only hiding the issue instead of resolving it.
 Please revert this back and let the pipeline fails. We will find other ways to introduce real fixes to those errors."
-16,ray-project/ray,55663,2310872123,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+16,nrfconnect/sdk-nrf,22274,2108700114,Human_Review_Human,Misc,3.0,Misc,newline
 17,microsoft/typespec,7651,2274845713,Human_Review_Agent,Knowledge Transfer,8.0,Knowledge Transfer,@copilot the update needs to follow these instructions https://github.com/microsoft/typespec/blob/main/.github/prompts/testserver-generation.md
 18,ray-project/ray,57863,2441452869,Human_Review_Human,Understanding,8.0,Understanding,Same here - is this supposed to be cuda:2?
 19,tinymce/tinymce,10539,2286671624,Human_Review_Human,Understanding,9.0,Understanding,What's this code doing? It doesn't seem specific to textareas. Isn't `ref` always a function? Or is this a sneaky hack that I should consider a code smell?
@@ -1100,8 +1099,7 @@ Replicate the same guard for `bbbMultiUserTools` and coerce `bbbMultiUserPenOnly
   const function3Delay = 5000; // Default: function1Delay < function2Delay < function3Delay
   vi.useFakeTimers();
 ```"
-54,dotnet/runtime,115355,2076948336,Human_Review_Human,Misc,8.0,Misc,"```suggestion
-```"
+54,membrane/api-gateway,1907,2174509913,Human_Review_Human,Misc,3.0,Misc,Const
 55,PalisadoesFoundation/talawa-api,3570,2341957018,Agent_Review_Human,External Impact,9.0,Defect Detection,"_️ Potential issue_
 
 **Pipeline failure: Unauthorized changes to sensitive file**
@@ -1139,16 +1137,13 @@ these actions you took so the CI reviewers can proceed.
 
 <!-- This is an auto-generated comment by CodeRabbit -->"
 56,dependabot/dependabot-core,13339,2445460265,Human_Review_Human,Social Communication,7.0,Social Communication,I'll try to update these untypes during the beta period
-57,Azure/azure-sdk-tools,11340,2243749054,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+57,ray-project/ray,55780,2317286038,Human_Review_Human,Misc,5.0,Misc,[2]
 58,novuhq/novu,8391,2109676371,Human_Review_Agent,Defects,8.0,Defects,"this is not needed, revert this code on this file, we don't need to use it with the new navigation"
 59,opf/openproject,20923,2490779985,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"[nitpick] The ESLint disable comment for `no-plusplus` suggests the rule is enabled in the project. Consider using `this.openSeq += 1` instead to comply with the project's linting rules without needing to disable the check.
 ```suggestion
     const seq = this.openSeq += 1;
 ```"
-60,Homebrew/homebrew-cask,234199,2479289125,Human_Review_Human,Misc,9.0,Misc,"```suggestion
-
-```"
+60,stackrox/stackrox,17186,2425420347,Human_Review_Human,Misc,3.0,Misc,️ 
 61,mongodb-js/compass,7198,2287337312,Agent_Review_Human,Defects,9.0,Defects,"The Link component has an empty href attribute, which will result in a broken link. This should point to the actual documentation URL.
 ```suggestion
       <Link href=""https://www.mongodb.com/docs/atlas/atlas-search/"" hideExternalIcon>
@@ -1464,8 +1459,7 @@ You can now restore to your root branches' snapshots from any branch in your pro
 87,DataDog/datadog-agent,39677,2263924768,Human_Review_Human,Understanding,9.0,Understanding,"I'm a bit confused by the ""on the driver only"" part of this message; aren't we passing `false` to `enableEmrLogs`?
 
 Also, did you mean `DD_EMR_LOGS_ENABLED` instead of `DD_EMR_LOGS` (not an env var AFAIK)?  "
-88,posit-dev/positron,9172,2299533923,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+88,DataDog/datadog-agent,39119,2231079839,Human_Review_Human,Misc,8.0,Misc,?
 89,department-of-veterans-affairs/vets-api,23731,2294145469,Agent_Review_Human,Defects,9.0,Defects,"Missing authentication - add `before_action :authenticate_user!` to secure this controller.
 ```suggestion
   # Violation 1: No authentication check (missing before_action)
@@ -1550,8 +1544,7 @@ because some task types depend on other task types to not run parallely. so seri
 100,redpanda-data/redpanda,27795,2390094659,Human_Review_Human,External Impact,8.0,External Impact,"In the `advance_reconciled_offset` method we're using the timeout and it's fine because the LRO in the `ctp_stm` is not the source of truth. The reconciler is not making any decisions based on the state of the `ctp_stm`. So it's OK for this to timeout or be aborted at any moment. 
 
 Here though, the `ctp_stm` is a source of truth for the start offset. The abort-source is OK in this case if it's used for shutdown, but I think we need to do something with the timeout. If the timeout error is thrown and the housekeeping fails this means that the command could still be replicated and applied later. Potentially this application could race with some other operations (housekeeping or reconciliation) with difficult to predict consequences. So I think that we should either don't use a timeout or in case of timeout we should step down the leadership. "
-101,dotnet/runtime,120858,2441417855,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+101,ava-labs/avalanchego,4277,2360026936,Human_Review_Human,Misc,3.0,Misc,2025
 102,ssvlabs/ssv,2552,2409953321,Human_Review_Human,Social Communication,8.0,Social Communication,Same here
 103,dotnet/runtime,117832,2216672766,Human_Review_Human,Understanding,9.0,Understanding,"Just making sure I understand how this works exactly. It seems this only lets you save one exception, i.e. the first one. Suppose you crash from some callback on the UI thread that fails, so you report the exception which triggers this path, and that exception gets serialized. That's great. Then the error bubbles up in the app, and eventually XAML will actually failfast and bring the process down. Because we've already serialized the exception right when the callback works, does that mean that the stacktrace from the XAML failfast will no longer be present at all in the crash dump? Or would it still be there somewhere, just for reference, and it will simply not be the one that gets blamed (which is correct)?"
 104,n8n-io/n8n,18660,2315650685,Human_Review_Human,Social Communication,8.0,Social Communication,Same
@@ -1583,11 +1576,9 @@ repo: Azure/azure-rest-api-specs
 ```
 
 Would minimize this diff"
-113,Altinn/altinn-studio,15824,2189043327,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+113,openhab/openhab-addons,18978,2212636589,Human_Review_Human,Misc,3.0,Misc,Setpoint
 114,ray-project/ray,56298,2331484604,Human_Review_Human,Code Improvement,8.0,Code Improvement,Use logger instead. And is this statement correct?
-115,microsoft/testfx,6511,2321172771,Human_Review_Human,Misc,8.0,Misc,"```suggestion
-```"
+115,membrane/api-gateway,2032,2247855279,Human_Review_Human,Misc,7.0,Misc,Comment
 116,qdrant/qdrant,7219,2325190015,Human_Review_Human,Testing,8.0,Defect Detection,"Using a malformed filter is an easy test for the missing validation call.
 
 But keep in mind that the entire Update enum in depth is not validated."
@@ -1666,7 +1657,8 @@ redundant test.
  Addressed in commit fbdbc97"
 122,woocommerce/woocommerce,59486,2192509257,Human_Review_Human,Understanding,8.0,Understanding,"We add the `wpcom_connection_return` query param further down, regardless of the onboarding flow source."
 123,openvinotoolkit/openvino,32515,2477020256,Human_Review_Human,Understanding,8.0,Understanding,do we need that?
-124,dotnet/runtime,120690,2433071901,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+124,WeblateOrg/weblate,16468,2413265495,Human_Review_Agent,Misc,7.0,Misc,"```suggestion
+-----------------------------------------------------
 ```"
 125,pwndbg/pwndbg,2992,2101391048,Agent_Review_Human,Code Improvement,8.0,Code Improvement,[nitpick] Consider adding a comment explaining the rationale behind using 'steps=4' for the MSR write operation to assist with maintainability.
 126,department-of-veterans-affairs/vets-api,24670,2470249483,Human_Review_Human,Testing,8.0,Code Improvement,I think this one and the one above need to be stubbed out
@@ -1675,7 +1667,8 @@ An extended `REST` API functionality providing capabilities for commissioning an
 ```"
 128,dotnet/maui,31091,2280920362,Human_Review_Agent,Social Communication,9.0,Social Communication,@copilot revert this change
 129,Azure/azure-sdk-for-python,43465,2436655001,Agent_Review_Human,External Impact,9.0,External Impact,"The sample imports and uses load_dotenv() later but the installation instructions do not list python-dotenv; please add python-dotenv to the pip install line (e.g., pip install azure-ai-projects azure-identity python-dotenv) so users can run the sample without ImportError. Apply this update consistently across all modified samples that added load_dotenv()."
-130,ray-project/ray,55663,2310871144,Human_Review_Human,Misc,8.0,Misc,"```suggestion
+130,dotnet/runtime,115583,2090182192,Human_Review_Human,Misc,5.0,Misc,"```suggestion
+            }
 ```"
 131,n8n-io/n8n,19193,2339295913,Human_Review_Human,Misc,3.0,Misc, for documenting
 132,woocommerce/woocommerce-android,14237,2169434637,Human_Review_Human,Social Communication,9.0,Social Communication,Praise (️): Thanks for adding this test! 
@@ -1883,17 +1876,16 @@ I'm not sure, just that parts of Login are server-side rendered, so it might pro
 146,zephyrproject-rtos/zephyr,90091,2322810637,Human_Review_Human,Code Improvement,8.0,Code Improvement,"```suggestion
  This sample measures the red, green, blue and IR light for all possible
 ```"
-147,apache/sedona,2024,2173638730,Human_Review_Human,Misc,9.0,Misc,"```suggestion
-```"
+147,cosmos/cosmos-sdk,24711,2076115668,Human_Review_Human,Misc,7.0,Misc,borked
 148,Azure/azure-sdk-for-python,40642,2053493387,Human_Review_Human,External Impact,8.0,External Impact,"@smichtch please remember to kick off release pipeline no later than 7 days from that date, or the release can fail on out-dated generation timestamp. Otherwise, you need to update the release date in here."
 149,openhab/openhab-addons,19135,2265132142,Human_Review_Human,Defects,9.0,Defects,"Channel example was missing the dash `-` in `battery-level`
 The [table is correct](https://www.openhab.org/addons/bindings/mqtt.awtrixlight/#bridge-channels-awtrix-clock)
 "
-150,dotnet/runtime,120690,2433071901,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+150,dotnet/sdk,51337,2440665194,Human_Review_Human,Misc,3.0,Misc,"```suggestion
+humans do today.
 ```"
 151,RediSearch/RediSearch,6431,2189977305,Human_Review_Human,Social Communication,8.0,Social Communication,@LukeMathWalker 
-152,SigmaHQ/sigma,5517,2418402378,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+152,ydb-platform/ydb,24246,2331205301,Human_Review_Agent,Misc,3.0,Misc,area/pg
 153,ant-design/ant-design,53741,2075703105,Agent_Review_Human,Testing,9.0,Testing,Verify that the QRCode translations are properly displayed in the UI and that there are no issues with the expiration and refresh functionality.
 154,Azure/azure-sdk-for-python,41445,2129903344,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,all the code below here is copy-pasted from our vendored hybrid models ([code](https://github.com/Azure/autorest.python/blob/main/packages/typespec-python/test/azure/generated/authentication-api-key/authentication/apikey/_utils/model_base.py))
 155,youtube/cobalt,6144,2167679579,Human_Review_Human,Social Communication,8.0,Social Communication,Nice find
@@ -2229,14 +2221,12 @@ resolved.
 183,dotnet/winforms,13524,2110550940,Human_Review_Human,Testing,9.0,Testing,"`DataGridViewLinkCell.LinkVisited`'s code path has system calls, so this test method's annotation should have the WinForms prefix.
 
 `DataGridViewLinkCell.LinkVisited`is used in other test methods that also need to be addressed."
-184,Azure/azure-sdk-for-net,50265,2110574779,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+184,ray-project/ray,56980,2409109736,Human_Review_Human,Misc,3.0,Misc,CPU: 1
 185,dotnet/roslyn,80495,2408801259,Human_Review_Human,Testing,9.0,Testing,"Consider also testing `name: ""test"", values: 1, 2, 3`."
 186,umbraco/Umbraco-CMS,19789,2228772148,Agent_Review_Human,External Impact,8.0,External Impact,The element name has been changed from 'umb-tiptap-table-toolbar-menu-element' to 'umb-tiptap-table-toolbar-menu'. Ensure this change is coordinated with any templates or code that references the old element name.
 187,qdrant/qdrant,6819,2248461270,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,Why not use the [`entry`](https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.entry) API here?
 188,oven-sh/bun,22488,2329384334,Human_Review_Human,Social Communication,8.0,Misc,ditto
-189,DataDog/datadog-agent,39600,2258134512,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+189,ava-labs/avalanchego,4277,2360029332,Human_Review_Human,Misc,3.0,Misc,2025
 190,ray-project/ray,54787,2219920099,Human_Review_Human,Understanding,8.0,Understanding,"Can you add more details in the PR description to summarize the problem that the current code faces, and why the proposed change fixes it? "
 191,flutter/packages,9930,2317511680,Human_Review_Human,Social Communication,8.0,Social Communication,Yay!
 192,ssvlabs/ssv,2468,2306965090,Human_Review_Human,Understanding,8.0,Understanding,"Bumping this value `10s`->`15s` just to be on the safe side, since now it applies to every request `ExecutionClient` makes,
@@ -2284,16 +2274,15 @@ Otherwise, what constitutes a ""runnable job"" is determined by the repository,y
 
 The logic itself is sound though :smile: "
 197,prestodb/presto,25480,2392094231,Human_Review_Human,Social Communication,8.0,Social Communication,@mohsaka : Joe moved around these files in https://github.com/prestodb/presto/pull/26177. Can you rebase your code and test ?
-198,ray-project/ray,55663,2310871764,Human_Review_Human,Misc,8.0,Misc,"```suggestion
-```"
-199,duneanalytics/spellbook,8809,2433789232,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+198,instructure/canvas-android,3143,2241959380,Human_Review_Human,Misc,3.0,Misc,Student
+199,oven-sh/bun,22482,2329105248,Human_Review_Human,Misc,3.0,Misc,"```suggestion
+      LlL
 ```"
 200,volcano-sh/volcano,4656,2454838254,Human_Review_Human,External Impact,9.0,External Impact,"You should not copy the same files in mind cluster, it contain lots of `Huawei Technologies` copyright header files, as a CNCF project, we should not contains these companies copyright header. Instead, you should import these files, take common as an example, mind cluster has such depedency: `https://pkg.go.dev/gitcode.com/ascend/mind-cluster/component/ascend-for-volcano/common`"
 201,dotnet/AspNetCore.Docs,36022,2350424533,Human_Review_Human,Misc,8.0,Misc,"````suggestion
 ````"
 202,woocommerce/woocommerce,60552,2300664471,Human_Review_Human,Understanding,8.0,Understanding,Can we use `store` imported above?
-203,ls1intum/Artemis,10885,2134656302,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+203,thorvg/thorvg,3491,2114296707,Human_Review_Human,Misc,7.0,Misc,--
 204,Homebrew/homebrew-core,246477,2394919846,Human_Review_Human,External Impact,8.0,External Impact,"Eigen installs multiple license files so may need to confirm exact license.
 ```console
  ls COPYING*
@@ -2320,10 +2309,8 @@ A big thank you to everyone who participated in this program, from the kickoff d
 212,projectcalico/calico,10857,2292221734,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"Worth also calling the utility to direct log output to logrus:
 
 https://github.com/projectcalico/calico/blob/ceb00cfeb917e81dd563fada75a48e0fb5cb813d/goldmane/pkg/storage/diachronic_flow_test.go#L33"
-213,neondatabase/website,3832,2362957500,Human_Review_Human,Misc,8.0,Misc,"```suggestion
-```"
-214,zenml-io/zenml,3795,2179186270,Human_Review_Human,Misc,7.0,Code Improvement,"```suggestion
-```"
+213,Consensys/teku,8444,1682295585,Human_Review_Human,Misc,3.0,Misc,final...
+214,camunda/camunda,37604,2324313558,Human_Review_Human,Misc,3.0,Misc,️ 
 215,scalar-labs/scalardb,2736,2128010611,Human_Review_Human,Understanding,8.0,Code Improvement,"Maybe `exporting` is necessary? (CC: @ypeckstadt, @josh-wong)
 ```suggestion
                 description = 'A tool for exporting data from and importing data into ScalarDB'
@@ -2372,8 +2359,7 @@ If you apply this change, please also update the `compatibility_level` in `patch
 ```"
 235,dotnet/roslyn,80939,2502536178,Human_Review_Agent,Testing,8.0,Testing,Consider adding VerifyDiagnostics to the corlibRef lines too
 236,DataDog/datadog-agent,41546,2415558510,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"usually speaking, for loops are ""not supported"" in old kernels, you need to use pragma unroll to let the compiler correctly build the bytecode"
-237,Altinn/altinn-studio,15708,2164009335,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+237,appwrite/appwrite,10023,2348290953,Human_Review_Human,Misc,3.0,Misc,VAR_ID
 238,department-of-veterans-affairs/vets-api,24443,2402469610,Human_Review_Human,Social Communication,8.0,Social Communication,"I like this - it would be duplicate documentation if we keep mine as well. That can become confusing to future devs looking for this information.
 
 So we can do this async (feel free to DM me on Slack): may I ask for your feedback on the guide you originally followed? Things that were helpful vs not and your thoughts on the location of the document, etc."
@@ -2547,8 +2533,7 @@ avoid runtime errors in the test suite.
 </details>
 
 <!-- This is an auto-generated comment by CodeRabbit -->"
-245,duneanalytics/spellbook,8923,2488264227,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+245,zephyrproject-rtos/zephyr,88816,2053524022,Human_Review_Human,Misc,7.0,Misc,*generated
 246,OneKeyHQ/app-monorepo,7374,2101494494,Agent_Review_Human,Defects,9.0,Defects,"_️ Potential issue_
 
 **Unsafe cast of possibly `undefined` token**
@@ -2627,15 +2612,15 @@ LOCATIONS END -->
 <a href=""https://cursor.com/open?data=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJ1Z2JvdC12MSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiQlVHQk9UX0ZJWF9JTl9DVVJTT1IiLCJkYXRhIjp7InJlZGlzS2V5IjoiYnVnYm90Ojc3ZWJhNzk1LTg1NTItNDhhYS04MDMxLWUzNjYzNmM4M2UxNSIsImVuY3J5cHRpb25LZXkiOiJaYkxUN2dYT25DeGsxTUJVdHNLdmhPQ0hOd0FHUVBKNE13NG5xcXFhNV9vIiwiYnJhbmNoIjoia2gvaW1wcm92ZS1pbmdyZXNzIn0sImlhdCI6MTc1OTY5MjYxMSwiZXhwIjoxNzYwMjk3NDExfQ.BcyApEeg3RWht_uFEdWfd8_85dyQTdEJRXkmpD1pdr31LqsozuNI6WF4G2rzDIG_FsAqk5s6s6EftKz3KEtZvW3g0RiYMM0eA9mx0T1SvxdiZClXjvB_R5yKXM6M8yVYjHgQyMnTJp8tV39Q4sxcNvo7M_iQuq9UAnW5vfsDJm1BwxVcP-HV5L8ePCsBaAxOUtJM7Dee0wPucjMGrkmaDW5PtIHYIhkktRuMNq6DwGTvl6WwEybjUyqtdnzeG5ryHoG5q9Gx2zoi_BKRS2SEEhpIzrdRUkxVxI-z2AedzGloJyvXp2GlQrXfDfQ6Vy91YKRNRcok3W9XNu4bWS8N-g""><picture><source media=""(prefers-color-scheme: dark)"" srcset=""https://cursor.com/fix-in-cursor-dark.svg""><source media=""(prefers-color-scheme: light)"" srcset=""https://cursor.com/fix-in-cursor-light.svg""><img alt=""Fix in Cursor"" src=""https://cursor.com/fix-in-cursor.svg""></picture></a>&nbsp;<a href=""https://cursor.com/agents?data=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJ1Z2JvdC12MSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiQlVHQk9UX0ZJWF9JTl9XRUIiLCJkYXRhIjp7InJlZGlzS2V5IjoiYnVnYm90Ojc3ZWJhNzk1LTg1NTItNDhhYS04MDMxLWUzNjYzNmM4M2UxNSIsImVuY3J5cHRpb25LZXkiOiJaYkxUN2dYT25DeGsxTUJVdHNLdmhPQ0hOd0FHUVBKNE13NG5xcXFhNV9vIiwiYnJhbmNoIjoia2gvaW1wcm92ZS1pbmdyZXNzIiwicmVwb093bmVyIjoicmF5LXByb2plY3QiLCJyZXBvTmFtZSI6InJheSIsInByTnVtYmVyIjo1NzE4MSwiY29tbWl0U2hhIjoiZDlhZmQzODllN2Q3YTAzM2EyNjg1NTZjOGE5Njc5YjUxMTAwYzg2NSJ9LCJpYXQiOjE3NTk2OTI2MTEsImV4cCI6MTc2MDI5NzQxMX0.PLNJd8_1G4Zvc6ACoeomJkd700vHwI943D06sQl7iQp5wbbrqltjiJ-jkiVRodC8SmjFZ9BPKgmYAzWGG7v0bzfsKeyriVqPk681BzjtbyJ0HFdUXmPXEOazK4qclZ8GQlGZA7Biho6F2-VQF7psJHrrZGlptdXhmy0m_6KFMw8W4SDOFqN2HSgKJN-Y2dPUMWp7gc5ltM5S7MGfLGmR3BVD2avRf3v3IDN9G6qDBO9XXO6vKH1f94yTm_aIMRqwuLHBoyzO6tdkLzCwuPcaRiAj-4a7FCtfHkoRejgLmCHW56WG5_aEh3cdWnhiFym8peCmzaSttmmjU2PYaOAFnQ""><picture><source media=""(prefers-color-scheme: dark)"" srcset=""https://cursor.com/fix-in-web-dark.svg""><source media=""(prefers-color-scheme: light)"" srcset=""https://cursor.com/fix-in-web-light.svg""><img alt=""Fix in Web"" src=""https://cursor.com/fix-in-web.svg""></picture></a>
 
 "
-260,SigmaHQ/sigma,5517,2194891117,Human_Review_Human,Misc,8.0,Misc,"```suggestion
+260,zenml-io/zenml,3956,2348846780,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+...
 ```"
 261,Azure/azure-powershell,28675,2443575924,Human_Review_Human,Social Communication,8.0,Social Communication,"```suggestion
 ```
 
 Please do not include a new version as new versions are calculated"
 262,tuist/tuist,7997,2273288011,Human_Review_Human,Social Communication,9.0,Social Communication,Very solid  
-263,prestodb/presto,26208,2414284335,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+263,shapeshift/web,10418,2330397625,Human_Review_Human,Misc,3.0,Misc,️ 
 264,OpenRadioss/OpenRadioss,4190,2402315490,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"Remove the commented-out interface declarations (lines 1073-1076 and 1083-1087) as they are not used and add clutter to the code.
 ```suggestion
         subroutine python_begin_openmp(python)
@@ -3145,8 +3130,7 @@ For better readability and grammatical correctness, 'technology' should be plura
 I had an amazing time working with the big data technologies Beam, Iceberg, and Kafka as well as many Google Cloud services
 ```"
 282,microsoft/testfx,5601,2104041330,Human_Review_Agent,Social Communication,8.0,Social Communication,Revert Build.cmd
-283,snakemake/snakemake-wrappers,4285,2174401633,Human_Review_Human,Misc,8.0,Misc,"```suggestion
-```"
+283,n8n-io/n8n,19904,2371858818,Human_Review_Human,Misc,3.0,Misc, for commenting
 284,shapeshift/web,10592,2382932040,Human_Review_Human,Testing,7.0,Testing,"Also swapper code, also confirmed actually sane: only one `true` and that's current swapper code 
 
 <img width=""1387"" height=""241"" alt=""Image"" src=""https://github.com/user-attachments/assets/0febe127-5af8-4814-a5d9-037c1a347197"" />
@@ -3229,19 +3213,16 @@ import { useLocalStorage, StudioResizableLayout } from '@studio/components';
 303,microsoft/react-native-windows,15118,2324388954,Human_Review_Agent,Social Communication,8.0,Social Communication,@copilot this change is not needed - keep it 22.14.0 only
 304,Azure/azure-sdk-for-python,42123,2226028253,Human_Review_Human,Understanding,8.0,Code Improvement,"This is a non-retryable scenario so this would fall under ""dropped"" with CLIENT_EXCEPTION"
 305,spiceai/spiceai,7715,2468457659,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"As an example of why the expr.apply is useful, this BinaryExpr match goes away completely."
-306,zephyrproject-rtos/zephyr,89274,2120177567,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+306,dailydotdev/apps,4780,2282766109,Human_Review_Human,Misc,5.0,Misc,HTML card component
 307,wolfSSL/wolfssl,9002,2221403684,Human_Review_Human,Misc,6.0,Misc,\param
 308,WeblateOrg/weblate,16568,2432247496,Human_Review_Human,Social Communication,8.0,Social Communication,Still working on this.
 309,microsoft/typespec,8514,2372806344,Human_Review_Agent,Understanding,8.0,Understanding,is this actually true? seems like you just ignore it below
-310,Azure/azure-sdk-for-rust,2728,2164790518,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+310,mondaycom/vibe,2896,2188315229,Human_Review_Human,Misc,3.0,Misc,Dropdown
 311,home-assistant/core,150030,2270853102,Human_Review_Human,Understanding,8.0,Understanding,"Not sure why we initialize these as local variables first, I think we can merge them"
 312,ant-design/ant-design,54600,2256485158,Human_Review_Human,Understanding,8.0,Defects,先不要给 records，这个数据用户 HOC 自己能拿
 313,ydb-platform/ydb,18669,2108659927,Human_Review_Human,Testing,8.0,Testing,"А мы же тут можем проверить, что было вставлено именно то, что мы вставили -- кажется было бы полезно? "
 314,DataDog/integrations-core,20512,2194689302,Human_Review_Human,Social Communication,9.0,Social Communication,"great start! next week we can meet up to see if/how we can extend it, but the hard work of setting up the framework is done. Thanks a ton  "
-315,airbytehq/airbyte,62436,2184469124,Human_Review_Agent,Misc,7.0,Misc,"```suggestion
-```"
+315,MudBlazor/MudBlazor,11534,2160295189,Human_Review_Human,Misc,3.0,Misc,Trinidad & Tobago
 316,ray-project/ray,56298,2335142170,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,"```suggestion
     ""Learn more about CPU offloading in the [PyTorch documentation](https://docs.pytorch.org/docs/stable/distributed.fsdp.fully_shard.html#torch.distributed.fsdp.CPUOffloadPolicy).\n"",
 ```"
@@ -3305,8 +3286,7 @@ attributes (aria-disabled) and clear labels are used when disabling.
 
  Addressed in commit 8f83c9c"
 318,zephyrproject-rtos/zephyr,89145,2077008623,Human_Review_Human,Social Communication,8.0,Social Communication,please review all
-319,RediSearch/RediSearch,6885,2382733890,Human_Review_Human,Misc,9.0,Misc,"```suggestion
-```"
+319,lablup/backend.ai,5676,2309608095,Human_Review_Human,Misc,3.0,Misc,600
 320,spree/spree,13152,2391568366,Agent_Review_Human,Testing,9.0,Code Improvement,"_️ Refactor suggestion_ | _ Major_
 
 **Add test coverage for non-admin users with completed orders.**
@@ -3481,7 +3461,9 @@ in the returned cleanup function before calling stopScan().
                 case .sha512:
                     return HKDF<SHA512>.deriveKey(inputKeyMaterial: key, salt: salt, info: info, outputByteCount: destination.count)
 ```"
-327,home-assistant/core,152441,2395413552,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+327,spiceai/spiceai,7472,2418542100,Human_Review_Human,Misc,6.0,Misc,"```yaml
+params:
+  turso_file: <>
 ```"
 328,Emurgo/yoroi,3989,2223316788,Agent_Review_Human,Code Improvement,9.0,Defects,"_️ Potential issue_
 
@@ -3953,10 +3935,10 @@ true when applying overrides and false when including the template group.
 <!-- This is an auto-generated comment by CodeRabbit -->
 
  Addressed in commit 38cf9f1"
-348,PowerShell/PowerShell,26281,2471031426,Human_Review_Agent,Misc,7.0,Misc,"```suggestion
+348,prestodb/presto,24443,2288234241,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+=============
 ```"
-349,microsoft/vscode,268368,2379949267,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+349,ray-project/ray,56921,2379943452,Human_Review_Human,Misc,3.0,Misc,new line
 350,scylladb/scylladb,25622,2293018633,Human_Review_Human,Understanding,8.0,Understanding,Why not `try_get_host_id`?
 351,scalableminds/webknossos,8789,2290465724,Human_Review_Human,Misc,7.0,Misc,TODO
 352,ray-project/ray,58157,2467085225,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,"```suggestion
@@ -4066,8 +4048,8 @@ You can mark them `@skip_debug_mode`, as an oversize alloc is not reported in de
 360,ant-design/ant-design,54539,2243108976,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"I think it would be possible to add undefined, like this:
 https://github.com/ant-design/ant-design/blob/44369acc72010e155bfc75f1ca1a1aa6ac8c3bc5/typings/cssType.d.ts#L1-L5"
 361,requestly/requestly,3709,2454109837,Human_Review_Human,Social Communication,9.0,Social Communication,@iostreamer-X Can you please review this component?
-362,cloudposse/atmos,934,2024862044,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+362,dotnet/runtime,120639,2449417814,Human_Review_Agent,Misc,7.0,Misc,"```suggestion
+``"
 363,camunda/camunda,36244,2274074957,Human_Review_Human,Social Communication,8.0,Social Communication,Same from the previous comment
 364,openhab/openhab-addons,19268,2324257829,Human_Review_Human,Understanding,8.0,Understanding,"Nothing changed to the file, why add this ?"
 365,cloudposse/atmos,934,1930665733,Human_Review_Human,Social Communication,8.0,Social Communication,Don't commit this file
@@ -4091,8 +4073,7 @@ https://github.com/ant-design/ant-design/blob/44369acc72010e155bfc75f1ca1a1aa6ac
 ```"
 372,ssvlabs/ssv,2453,2287196265,Human_Review_Human,External Impact,8.0,External Impact,"[Pulse](https://github.com/ssvlabs/ssv-pulse) reads this field(analyzer), so it would be good to adapt it to this change (ideally making it possible to read both `round` and `qbft_round` fields)"
 373,home-assistant/core,152895,2376081050,Human_Review_Human,Testing,9.0,Testing,Please add another test parameter instead of using a condition in the test.
-374,cypress-io/cypress,32596,2392781622,Human_Review_Human,Misc,8.0,Misc,"```suggestion
-```"
+374,home-assistant/core,134719,1903316203,Human_Review_Human,Misc,3.0,Misc,py_ccm15==0.1.1
 375,appwrite/appwrite,10356,2301472764,Agent_Review_Human,External Impact,9.0,Testing,"_ Verification agent_
 
 <details>
@@ -4239,8 +4220,7 @@ to refresh composer.lock against the upstream source. This will restore reproduc
  Addressed in commits eec6275 to 0e34312"
 376,navidrome/navidrome,4244,2505831806,Human_Review_Human,Understanding,8.0,Understanding,"Shouldn't this be required, like `username` and `changedBy`?"
 377,bytebase/bytebase,16277,2113443640,Agent_Review_Human,Code Improvement,8.0,Testing,[nitpick] Ensure that all DataTableColumn objects include a unique and consistent 'key' property to improve stability and readability across the new TSX column definitions.
-378,home-assistant/home-assistant.io,39676,2168098381,Human_Review_Human,Misc,7.0,Misc,"```suggestion
-```"
+378,DataDog/datadog-agent,39642,2283307675,Human_Review_Human,Misc,7.0,Misc,xx
 379,zephyrproject-rtos/zephyr,92090,2168475905,Human_Review_Human,Defects,8.0,Defects,just noticed all the flpr files are missing from this board
 380,department-of-veterans-affairs/vets-api,24028,2334358288,Human_Review_Human,External Impact,8.0,Knowledge Transfer,this pr - https://github.com/department-of-veterans-affairs/vets-api/pull/23890 is also referencing this method `find_or_create_appointment` for complex claims and I think this change will break that logic or at least introduce a bug so well want to make sure to update the service call in `modules/travel_pay/app/controllers/concerns/appointment_helper.rb` depending on what pr is merged first
 381,zephyrproject-rtos/zephyr,95623,2463922111,Human_Review_Human,Social Communication,9.0,Social Communication,"```suggestion
