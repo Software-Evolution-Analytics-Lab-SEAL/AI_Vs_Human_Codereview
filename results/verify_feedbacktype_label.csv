@@ -1,6 +1,9 @@
 id,repo,pr_number,convo_start_id,review_category,feed_type(llm_label),conf_score,feedback_type(human_label),comment_body
 1,Azure/azure-sdk-for-js,36250,2437491380,Human_Review_Agent,Social Communication,8.0,Social Communication,seems like it actually fixed some bad copypasta here! good bot
-2,shapeshift/web,10491,2359074992,Human_Review_Human,No feedback,,No feedback, 
+2,Azure/azure-sdk-for-js,35588,2279644146,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"The comment says 'Geographic area codes' but this method is for mobile area codes. The comment should read 'List all available mobile area codes.'
+```suggestion
+   * List all available mobile area codes.
+```"
 3,PalisadoesFoundation/talawa-admin,4615,2504336526,Agent_Review_Human,Testing,9.0,Defect Detection,"_️ Potential issue_ | _ Major_
 
 **Exercise pagination interactions**
@@ -48,8 +51,56 @@ To ensure stability, please use a version of `abseil-cpp` that is compatible wit
     version = ""20240116.2"",
 ```"
 9,redpanda-data/redpanda,27826,2407703817,Human_Review_Human,Understanding,8.0,Code Improvement,I would expect this to be next to `add_batches_reconciled`?
-10,Automattic/wp-calypso,102932,2073710410,Human_Review_Human,No feedback,,No feedback,
-11,DataDog/datadog-agent,36869,2087631440,Human_Review_Human,No feedback,,No feedback, 
+10,OneKeyHQ/app-monorepo,8189,2313159454,Agent_Review_Human,Defects,9.0,Defects,"_️ Potential issue_
+
+**Dont drop hardware extra-info. Preserve it instead of forcing undefined.**
+
+You overwrite __hwExtraInfo__ and lose SDK-provided metadata (e.g., fingerprint). Forward it from the SDK payload.
+
+
+
+Apply:
+
+```diff
+-                __hwExtraInfo__: undefined,
++                __hwExtraInfo__: account.payload?.__hwExtraInfo__ ?? (account as any).__hwExtraInfo__,
+```
+
+<!-- suggestion_start -->
+
+<details>
+<summary> Committable suggestion</summary>
+
+> ️ **IMPORTANT**
+> Carefully review the code before committing. Ensure that it accurately replaces the highlighted code, contains no missing lines, and has no issues with indentation. Thoroughly test & benchmark the code to ensure it meets the requirements.
+
+```suggestion
+                __hwExtraInfo__: account.payload?.__hwExtraInfo__ ?? (account as any).__hwExtraInfo__,
+              }),
+```
+
+</details>
+
+<!-- suggestion_end -->
+
+<details>
+<summary> Prompt for AI Agents</summary>
+
+```
+In packages/kit-bg/src/vaults/impls/alph/KeyringHardware.ts around lines 94 to
+95, the code forces __hwExtraInfo__ to undefined which drops SDK-provided
+metadata (e.g., fingerprint); instead, preserve and forward the SDK payload's
+__hwExtraInfo__ when constructing the object (use the value from the incoming
+SDK response or fallback to undefined only if it's truly absent) so the hardware
+extra-info is retained.
+```
+
+</details>
+
+<!-- fingerprinting:phantom:poseidon:chinchilla -->
+
+<!-- This is an auto-generated comment by CodeRabbit -->"
+11,ansys/pymapdl,4185,2315797977,Human_Review_Human,External Impact,7.0,External Impact,@valallansys this might be needed to run on the CICD. Although we are skipping it for the moment.
 12,wso2/carbon-identity-framework,7211,2289900741,Agent_Review_Human,External Impact,9.0,External Impact,"The maven-antrun-plugin version 1.1 is very outdated (released in 2006). Consider upgrading to a more recent version like 3.1.0 for better security, performance, and compatibility with modern Maven versions.
 ```suggestion
                 <version>3.1.0</version>
@@ -64,7 +115,7 @@ Please revert this back and let the pipeline fails. We will find other ways to i
 17,microsoft/typespec,7651,2274845713,Human_Review_Agent,Knowledge Transfer,8.0,Knowledge Transfer,@copilot the update needs to follow these instructions https://github.com/microsoft/typespec/blob/main/.github/prompts/testserver-generation.md
 18,ray-project/ray,57863,2441452869,Human_Review_Human,Understanding,8.0,Understanding,Same here - is this supposed to be cuda:2?
 19,tinymce/tinymce,10539,2286671624,Human_Review_Human,Understanding,9.0,Understanding,What's this code doing? It doesn't seem specific to textareas. Isn't `ref` always a function? Or is this a sneaky hack that I should consider a code smell?
-20,novuhq/novu,8641,2185483788,Human_Review_Human,No feedback,,No feedback,
+20,bitwarden/server,6529,2492596888,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,️ : the query in `FindUserFromExternalProviderAsync` looks up the user in the SsoUser table and then the User table - not the Org User table. You can see the EF example [here](https://github.com/bitwarden/server/blob/main/src/Infrastructure.EntityFramework/Repositories/UserRepository.cs#L135-L151) and the stored proc [here](https://github.com/bitwarden/server/blob/main/src/Sql/dbo/Stored%20Procedures/User_ReadBySsoUserOrganizationIdExternalId.sql) that dapper calls. 
 21,PalisadoesFoundation/talawa-api,3567,2324676794,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"_ Nitpick (assertive)_
 
 **Use null for absent PluginManager to match API contract**
@@ -1102,14 +1153,18 @@ these actions you took so the CI reviewers can proceed.
 ```suggestion
       <Link href=""https://www.mongodb.com/docs/atlas/atlas-search/"" hideExternalIcon>
 ```"
-62,zenml-io/zenml,3780,2170837523,Human_Review_Human,No feedback,,No feedback, 
+62,acts-project/acts,3719,1796848938,Human_Review_Human,Misc,3.0,Misc,️ 
 63,Azure/azure-powershell,28222,2215624841,Agent_Review_Human,Defects,9.0,Defects,"The error message suggests using 'Connect-AzAccount' with '-AuthScope MicrosoftGraphEndpointResourceId', but this parameter name may not be accurate. Verify the correct parameter name for the Connect-AzAccount cmdlet.
 ```suggestion
                      ""Authentication failed against resource MicrosoftGraphEndpointResourceId. User interaction is required. This may be due to the conditional access policy settings such as multi-factor authentication (MFA). Please rerun 'Connect-AzAccount' with additional parameter '-Scope MicrosoftGraph'.\n"" +
 ```"
 64,dotnet/sdk,50091,2264929418,Human_Review_Human,Social Communication,8.0,Social Communication,@dsplaisted I've made that change we talked about now - want to check me? I did load the updated MSBuild dll in an FSI session and made sure that the reflection-based lookup below does in fact resolve.
-65,Altinn/altinn-studio,15228,2062996775,Human_Review_Human,No feedback,,No feedback, 
-66,scalar-labs/scalardb,2797,2155814163,Human_Review_Human,No feedback,,No feedback, 
+65,microsoft/vscode,272623,2488880039,Human_Review_Human,Social Communication,7.0,Social Communication,Doing this would be good!
+66,Automattic/wordpress-activitypub,1880,2177851269,Agent_Review_Human,Testing,9.0,Testing,"The follower post created via `Followers::add_follower` isn't deleted after the test. Add `wp_delete_post( $remote_actor->ID, true );` in cleanup to prevent leftover posts affecting other tests.
+```suggestion
+		);
+		self::$remote_actor_id = $remote_actor;
+```"
 67,microsoft/onnxruntime,23979,2115301516,Human_Review_Human,Understanding,8.0,Understanding,Is the 'along with its OrtValue' implied and we'd always do that now? It's possibly confusing to mention that low level implementation detail here if so.  #Pending
 68,DataDog/datadog-agent,39732,2323124991,Human_Review_Human,External Impact,8.0,External Impact,"This works, so  , but it does seem strange to have this package reference the KSM check package (even if it is a subpackage within that KSM package), and could potentially lead to an cyclical import headache later on for someone else"
 69,tari-project/tari,7432,2293311243,Human_Review_Human,Understanding,8.0,Understanding,this is removed?
@@ -1235,7 +1290,9 @@ Here is a suggested fix for this block:
     }
   }, [inputHasPrefixSuffix]);
 ```"
-76,gravitee-io/gravitee-api-management,13867,2486086123,Human_Review_Human,No feedback,,No feedback,
+76,stackrox/stackrox,7951,1373736030,Human_Review_Human,Understanding,9.0,Understanding,"Do we really want this level of memory consumption to simply display PLOP?  How is PLOP presented to the user such that this is necessary? Could we not use the database to sort?
+
+I do not know enough about PLOP to have these answers, but these are the question that first come to mind that I think would help me understand.  Though admittedly this memory consumption gives me some pause."
 77,woocommerce/woocommerce,61454,2436620774,Agent_Review_Human,Defects,9.0,Defects,"_️ Potential issue_ | _ Critical_
 
 <details>
@@ -1382,18 +1439,33 @@ So creating a tap is the recommended way to install formula.
 
 PS: Setting `HOMEBREW_DEVELOPER=1` is a another workaround but the owner says it changes a lot of the behaviour of Homebrew: https://github.com/Homebrew/brew/pull/20414#issuecomment-3183734076."
 79,duckduckgo/Android,6249,2154707434,Human_Review_Human,Testing,9.0,Testing,Please add tests for this
-80,DataDog/datadog-agent,40095,2291574693,Human_Review_Human,No feedback,,No feedback, 
+80,Azure/azure-sdk-for-js,35086,2182191762,Agent_Review_Human,Code Improvement,8.0,Code Improvement,"Add a TSDoc comment for setContinuationToken to document its parameters and behavior, and mark it with @internal since it's an internal helper."
 81,Azure/azure-cli-extensions,9265,2400407344,Human_Review_Human,External Impact,8.0,External Impact,"To avoid breaking change, we can remove the `is_preview=True` in extension first.
 Then after azure-cli release, we update `""azext.minCliCoreVersion"": <azure-cli-version>` in [azext_metadata.json](https://github.com/Azure/azure-cli-extensions/blob/main/src/containerapp/azext_containerapp/azext_metadata.json) first, then remove these GA commands in extension."
-82,ray-project/ray,56336,2330847027,Human_Review_Human,No feedback,,No feedback,
+82,bytechefhq/bytechef,3052,2337679516,Agent_Review_Human,Defects,9.0,Defects,"The getAccount promise lacks error handling. If authentication fails due to network issues or server errors, the user won't be redirected to login and may be stuck in an undefined state. Add a .catch() handler to ensure proper error handling.
+```suggestion
+                }
+            })
+            .catch((error) => {
+                // Optionally log the error for debugging
+                // console.error('Failed to fetch account:', error);
+                if (window.location.pathname !== '/login') {
+                    window.location.pathname = '/login';
+                }
+```"
 83,dotnet/roslyn,80664,2423817243,Human_Review_Agent,Testing,8.0,Testing,@copilot please update DocumentationCommentTests.vb to have the corresponding VB versions of all these tests.
-84,woocommerce/woocommerce,59305,2183386225,Human_Review_Human,No feedback,,No feedback, 
-85,camunda/camunda,36879,2279758131,Human_Review_Human,No feedback,,No feedback, 
+84,ray-project/ray,58175,2463204143,Agent_Review_Human,External Impact,8.0,External Impact,"![medium](https://www.gstatic.com/codereviewagent/medium-priority.svg)
+
+I notice the `success` field is being removed, which helps in making the benchmark result files more consistent. For complete consistency, this field should also be removed from `release/perf_metrics/scalability/single_node.json`."
+85,neondatabase/website,3850,2293989421,Human_Review_Agent,Knowledge Transfer,9.0,Knowledge Transfer,"```suggestion
+You can now restore to your root branches' snapshots from any branch in your project, giving more flexibility in restoring data for your workflows. Each snapshot card now shows the snapshot expiration date. The soon-to-be introduced snapshot scheduler will let you specify an expiration date. For now, the expiration date is _never_, but  you can manually delete a snapshot at time.
+```"
 86,Altinn/altinn-studio,16865,2498267063,Human_Review_Human,Understanding,6.0,Misc,`StudioSelect.Option`
 87,DataDog/datadog-agent,39677,2263924768,Human_Review_Human,Understanding,9.0,Understanding,"I'm a bit confused by the ""on the driver only"" part of this message; aren't we passing `false` to `enableEmrLogs`?
 
 Also, did you mean `DD_EMR_LOGS_ENABLED` instead of `DD_EMR_LOGS` (not an env var AFAIK)?  "
-88,lablup/backend.ai-webui,4249,2354632805,Human_Review_Human,No feedback,,No feedback,
+88,posit-dev/positron,9172,2299533923,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+```"
 89,department-of-veterans-affairs/vets-api,23731,2294145469,Agent_Review_Human,Defects,9.0,Defects,"Missing authentication - add `before_action :authenticate_user!` to secure this controller.
 ```suggestion
   # Violation 1: No authentication check (missing before_action)
@@ -1521,16 +1593,82 @@ Would minimize this diff"
 But keep in mind that the entire Update enum in depth is not validated."
 117,dotnet/sdk,49882,2219957773,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,This was never used by ASP.NET and was removed by type/assembly refactoring
 118,home-assistant/core,146972,2200515028,Human_Review_Human,Knowledge Transfer,8.0,Code Improvement,Move these to the `sensor.py` and look into `SensorEntityDescription`. These will help you a lot
-119,DataDog/datadog-agent,36869,2087631440,Human_Review_Human,No feedback,,No feedback, 
+119,RocketChat/Rocket.Chat,36970,2365768824,Human_Review_Human,Social Communication,7.0,Social Communication,Check
 120,Azure/azure-sdk-tools,11968,2359560646,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"```suggestion
    - For Java and Python, use `emitter-output-dir` for package name if it exists. Otherwise use `package-dir` to get the package name as fallback approach.
 ```"
-121,woocommerce/woocommerce,59803,2226297953,Human_Review_Human,No feedback,,No feedback, 
-122,blockscout/blockscout,12386,2150004102,Human_Review_Human,No feedback,,No feedback,
+121,PalisadoesFoundation/talawa-admin,4501,2444154115,Agent_Review_Human,Testing,9.0,Testing,"_️ Potential issue_ | _ Major_
+
+**Test doesn't verify undefined data edge case; uses wrong mock.**
+
+This test claims to handle the edge case when `userTagMembersToAssignTo` data is undefined, but it uses the regular `link` with standard `MOCKS` that contains valid data. The test only asserts that the scrollable div exists, which doesn't verify undefined-data handling. Either use `MOCK_EMPTY` or create a specific mock with undefined data, and assert the expected behavior (e.g., empty state message), or remove this test as redundant.
+
+
+
+```diff
+-  it('handles edge case when userTagMembersToAssignTo data is undefined', async () => {
+-    const { getByText } = renderAddPeopleToTagModal(props, link);
+-
+-    await wait();
+-
+-    await waitFor(() => {
+-      expect(getByText(translations.addPeople)).toBeInTheDocument();
+-    });
+-
+-    // Verify the infinite scroll component renders with fallback dataLength of 0
+-    const infiniteScrollDiv = screen.getByTestId('addPeopleToTagScrollableDiv');
+-    expect(infiniteScrollDiv).toBeInTheDocument();
+-  });
+```
+
+<!-- suggestion_start -->
+
+<details>
+<summary> Committable suggestion</summary>
+
+> ️ **IMPORTANT**
+> Carefully review the code before committing. Ensure that it accurately replaces the highlighted code, contains no missing lines, and has no issues with indentation. Thoroughly test & benchmark the code to ensure it meets the requirements.
+
+```suggestion
+  // Test removed: ""handles edge case when userTagMembersToAssignTo data is undefined""
+  // Reason: Test used regular MOCKS (valid data) but claimed to test undefined edge case
+  // Related to verification that infinite scroll renders; covered by other tests
+```
+
+```suggestion
+
+```
+
+</details>
+
+<!-- suggestion_end -->
+
+<details>
+<summary> Prompt for AI Agents</summary>
+
+```
+In src/components/AddPeopleToTag/AddPeopleToTag.spec.tsx around lines 468 to
+480, the test purports to check the edge case where userTagMembersToAssignTo is
+undefined but still renders with the normal link/MOCKS and only asserts the
+scrollable div exists; update the test to use the appropriate empty mock (e.g.,
+MOCK_EMPTY) or create a mock where userTagMembersToAssignTo is explicitly
+undefined, then assert the component shows the expected empty-state behavior
+(for example an empty state message or that the InfiniteScroll
+dataLength/fallback is 0) instead of only checking the div exists;
+alternatively, if this scenario is already covered elsewhere, remove the
+redundant test.
+```
+
+</details>
+
+<!-- This is an auto-generated comment by CodeRabbit -->
+
+ Addressed in commit fbdbc97"
+122,woocommerce/woocommerce,59486,2192509257,Human_Review_Human,Understanding,8.0,Understanding,"We add the `wpcom_connection_return` query param further down, regardless of the onboarding flow source."
 123,openvinotoolkit/openvino,32515,2477020256,Human_Review_Human,Understanding,8.0,Understanding,do we need that?
 124,dotnet/runtime,120690,2433071901,Human_Review_Human,Misc,7.0,Misc,"```suggestion
 ```"
-125,scalar-labs/scalardb,2797,2155814163,Human_Review_Human,No feedback,,No feedback, 
+125,pwndbg/pwndbg,2992,2101391048,Agent_Review_Human,Code Improvement,8.0,Code Improvement,[nitpick] Consider adding a comment explaining the rationale behind using 'steps=4' for the MSR write operation to assist with maintainability.
 126,department-of-veterans-affairs/vets-api,24670,2470249483,Human_Review_Human,Testing,8.0,Code Improvement,I think this one and the one above need to be stubbed out
 127,openthread/ot-br-posix,2514,2320546652,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,"```suggestion
 An extended `REST` API functionality providing capabilities for commissioning and on-mesh diagnostics to generic off-mesh HTTP/HTTPS clients. The implementation is guided by the [JSON:API specification](https://jsonapi.org/format/). All the resources are described in the openapi.yaml specification. The intent of this document is to provide basic usage and additional background information.
@@ -2029,7 +2167,7 @@ You'd better to change a PR title"
 * Improve native execution of sidecar query analysis by enabling Presto built-in functions. `#25135 <https://github.com/prestodb/presto/pull/25135>`_
 * Update coordinator behaviour to validate sidecar function signatures against plugin loaded function signatures at startup. `#25919 <https://github.com/prestodb/presto/pull/25919>`_
 ```"
-181,RediSearch/RediSearch,6979,2404711256,Human_Review_Human,No feedback,,No feedback, 
+181,woocommerce/woocommerce,56101,2071664616,Human_Review_Human,Defects,9.0,Defects,"Clicking twice isn't needed because in the previous `step` of this test we already added this product to the cart, so one single click is enough to trigger the error."
 182,OneKeyHQ/app-monorepo,8672,2428635807,Agent_Review_Human,External Impact,9.0,Defects,"_️ Potential issue_ | _ Critical_
 
 <details>
@@ -2094,8 +2232,8 @@ resolved.
 184,Azure/azure-sdk-for-net,50265,2110574779,Human_Review_Human,Misc,7.0,Misc,"```suggestion
 ```"
 185,dotnet/roslyn,80495,2408801259,Human_Review_Human,Testing,9.0,Testing,"Consider also testing `name: ""test"", values: 1, 2, 3`."
-186,redpanda-data/redpanda,27988,2417885814,Human_Review_Human,No feedback,,No feedback,   
-187,opf/openproject,20206,2344050880,Human_Review_Human,No feedback,,No feedback, 
+186,umbraco/Umbraco-CMS,19789,2228772148,Agent_Review_Human,External Impact,8.0,External Impact,The element name has been changed from 'umb-tiptap-table-toolbar-menu-element' to 'umb-tiptap-table-toolbar-menu'. Ensure this change is coordinated with any templates or code that references the old element name.
+187,qdrant/qdrant,6819,2248461270,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,Why not use the [`entry`](https://doc.rust-lang.org/std/collections/struct.HashMap.html#method.entry) API here?
 188,oven-sh/bun,22488,2329384334,Human_Review_Human,Social Communication,8.0,Misc,ditto
 189,DataDog/datadog-agent,39600,2258134512,Human_Review_Human,Misc,7.0,Misc,"```suggestion
 ```"
@@ -2154,7 +2292,8 @@ The logic itself is sound though :smile: "
 201,dotnet/AspNetCore.Docs,36022,2350424533,Human_Review_Human,Misc,8.0,Misc,"````suggestion
 ````"
 202,woocommerce/woocommerce,60552,2300664471,Human_Review_Human,Understanding,8.0,Understanding,Can we use `store` imported above?
-203,dotCMS/core,32667,2210617494,Human_Review_Human,No feedback,,No feedback,
+203,ls1intum/Artemis,10885,2134656302,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+```"
 204,Homebrew/homebrew-core,246477,2394919846,Human_Review_Human,External Impact,8.0,External Impact,"Eigen installs multiple license files so may need to confirm exact license.
 ```console
  ls COPYING*
@@ -2174,7 +2313,9 @@ While many signal handlers don't utilize the `ucontext_t` argument, POSIX specif
 Could you clarify if this is a known limitation or if MUSL applications targeted by Starboard are not expected to use the `ucontext_t` from `sa_sigaction`? If it might be used, would it be feasible to pass through the platform's `context` (the third argument to `ReverseWrapperHandler`) after appropriate translation, or is that considered out of scope or too complex for ABI stability?"
 209,dotnet/AspNetCore.Docs,35786,2224111129,Human_Review_Human,Knowledge Transfer,8.0,Code Improvement,"Could we make Blazor Web App a link to an article that explains the differences between Blazor, RP, and MVC.
 "
-210,lablup/backend.ai,4463,2101478694,Human_Review_Human,No feedback,,No feedback, 
+210,asyncapi/website,4333,2285014377,Human_Review_Human,Social Communication,9.0,Social Communication,"```suggestion
+A big thank you to everyone who participated in this program, from the kickoff discussions to the wrap-up event. Y'all are the special ones. And to those spreading the word about the AsyncAPI Mentorship Program, you all belong on the cover of Essence.
+```"
 211,ray-project/ray,55724,2283794644,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,Instead of using threads here we can use coroutines by enabling `async=True` within the `S3FileSystem` https://s3fs.readthedocs.io/en/latest/  and then you can just await the coroutines concurrently instead of spinning up threads
 212,projectcalico/calico,10857,2292221734,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"Worth also calling the utility to direct log output to logrus:
 
@@ -2193,14 +2334,16 @@ https://github.com/projectcalico/calico/blob/ceb00cfeb917e81dd563fada75a48e0fb5c
 See: https://github.com/pnpm/pnpm/actions/runs/18424090647/job/52502860033
 "
 219,dotnet/aspnetcore,61854,2082517373,Human_Review_Human,Understanding,8.0,Understanding,"Any concerns with the internally created `ValidationContext` ""leaking"" outside of the validate call?"
-220,opf/openproject,20045,2318595016,Human_Review_Human,No feedback,,No feedback, 
+220,department-of-veterans-affairs/vets-api,24148,2345483052,Human_Review_Human,Testing,9.0,Testing,Should we write a test to cover this rescue code?
 221,unoplatform/uno,21462,2340901972,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"Using `default` for the old precedence parameter is unclear and could be confusing. Consider using `DependencyPropertyValuePrecedences.None` or a more explicit value to indicate there is no previous style precedence.
 ```suggestion
 			OnStyleChanged(null, DependencyPropertyValuePrecedences.None, style, DependencyPropertyValuePrecedences.ImplicitStyle);
 ```"
 222,Azure/azure-sdk-tools,11459,2252865779,Human_Review_Human,External Impact,8.0,External Impact,The PR description mentions this being moved into a service? Would be nice to avoid dependencies on the openai packages in this class for testing/coupling purposes.
 223,Azure/azure-sdk-tools,11432,2270159128,Human_Review_Agent,Understanding,9.0,Understanding,where is this used? what's teh significance of this if all ops are based on pacakge root path which detects teh language.
-224,redpanda-data/redpanda,28084,2441492436,Human_Review_Human,No feedback,,No feedback, 
+224,DataDog/datadog-agent,32533,1898418522,Human_Review_Human,Understanding,8.0,Understanding,"I don't remember the issue, But I think @L3n41c tried in the past to change this source but it has some side effect. 
+
+the one that I'm thinking of (but not 100%sure) is when user don't give access to user to the container runtime, but we can still have info about the container with the kubelet."
 225,ava-labs/avalanchego,4147,2270747785,Human_Review_Human,Testing,8.0,Defects,It feels like this should be a part of the aforementioned `NewTx` test
 226,ava-labs/avalanchego,4159,2278745386,Human_Review_Human,Testing,9.0,Testing,can we please add a test for the exponential backoff? 
 227,ray-project/ray,55500,2277523032,Human_Review_Human,External Impact,8.0,External Impact,upgrading uv to the latest version to match current ci
@@ -2216,7 +2359,17 @@ df.write.format(""iceberg"").mode(""append"").saveAsTable(""some_catalog.matt.ic
 ```"
 232,Azure/azure-sdk-for-rust,2603,2087648842,Human_Review_Human,Testing,8.0,Testing,"We're definitely going to need this for testing. You might consider commenting it out, or maybe we just add it back in once we start implementing more mock tests or whatever."
 233,ydb-platform/ydb,18925,2111172075,Human_Review_Human,External Impact,8.0,External Impact,"А вот это мне очень не нравится. Обработчики сигналов есть в YDB CLI, библиотека приедет в ydb_int, не исключено, что и в ydbd может попасть, везде они свои есть. Свои обработчики могут сломать что-то важное в приложениях, например сбор корок."
-234,lablup/backend.ai,4677,2149016581,Human_Review_Human,No feedback,,No feedback, 
+234,bazelbuild/bazel-central-registry,5938,2364426448,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"![high](https://www.gstatic.com/codereviewagent/high-priority.svg)
+
+The `compatibility_level` is set to `6` for version `7.0.0-pre1`. Since this is a new major version, it's expected to contain breaking changes compared to the `6.x` series. If this is the case, the `compatibility_level` should be incremented from the previous version's level to signal this incompatibility.
+
+A common and recommended practice is to align the `compatibility_level` with the major version. To reflect the major version bump to 7 and clearly signal backward incompatibility, please consider changing this to `7`.
+
+If you apply this change, please also update the `compatibility_level` in `patches/module_dot_bazel.patch` accordingly.
+
+```suggestion
+    compatibility_level = 7,
+```"
 235,dotnet/roslyn,80939,2502536178,Human_Review_Agent,Testing,8.0,Testing,Consider adding VerifyDiagnostics to the corlibRef lines too
 236,DataDog/datadog-agent,41546,2415558510,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"usually speaking, for loops are ""not supported"" in old kernels, you need to use pragma unroll to let the compiler correctly build the bytecode"
 237,Altinn/altinn-studio,15708,2164009335,Human_Review_Human,Misc,7.0,Misc,"```suggestion
@@ -2348,7 +2501,52 @@ terminates normally and does not execute the STATISTICS_ENABLED case.
 <!-- This is an auto-generated comment by CodeRabbit -->
 
  Addressed in commits ff18a8f to 51a6039"
-244,Automattic/wp-calypso,103270,2083619225,Human_Review_Human,No feedback,,No feedback, 
+244,Altinn/altinn-studio,15542,2146772436,Agent_Review_Human,Defects,9.0,Defects,"_️ Potential issue_
+
+**Incorrect import style for `userEvent`  will be `undefined` at runtime**
+
+`@testing-library/user-event` exposes its API as the default export.  
+Destructuring it as a named export returns `undefined`, so every call to `userEvent.setup()` will crash the test suite.
+
+```diff
+-import { userEvent } from '@testing-library/user-event';
++import userEvent from '@testing-library/user-event';
+```
+
+
+
+<!-- suggestion_start -->
+
+<details>
+<summary> Committable suggestion</summary>
+
+> ️ **IMPORTANT**
+> Carefully review the code before committing. Ensure that it accurately replaces the highlighted code, contains no missing lines, and has no issues with indentation. Thoroughly test & benchmark the code to ensure it meets the requirements.
+
+```suggestion
+-import { userEvent } from '@testing-library/user-event';
++import userEvent from '@testing-library/user-event';
+```
+
+</details>
+
+<!-- suggestion_end -->
+
+<details>
+<summary> Prompt for AI Agents</summary>
+
+```
+In
+frontend/app-development/features/appSettings/components/TabsContent/Tabs/AboutTab/AppResourceForm/AppResourceForm.test.tsx
+at line 6, the import of userEvent is incorrect because it is destructured as a
+named export, which results in undefined at runtime. Change the import to use
+the default import syntax without curly braces to correctly import userEvent and
+avoid runtime errors in the test suite.
+```
+
+</details>
+
+<!-- This is an auto-generated comment by CodeRabbit -->"
 245,duneanalytics/spellbook,8923,2488264227,Human_Review_Human,Misc,7.0,Misc,"```suggestion
 ```"
 246,OneKeyHQ/app-monorepo,7374,2101494494,Agent_Review_Human,Defects,9.0,Defects,"_️ Potential issue_
@@ -2407,8 +2605,10 @@ The MLflow Model Deployer is not meant for deploying models in development setti
 255,celestiaorg/celestia-app,4285,1954622820,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"```suggestion
 Instead of waiting until data is downloaded to gossip `Have` messages, in PBBT, they are gossiped after verifying them.
 ```"
-256,oven-sh/bun,22981,2383725294,Human_Review_Human,No feedback,,No feedback, 
-257,bitwarden/clients,17249,2504707309,Human_Review_Human,No feedback,,No feedback, 
+256,dotnet/sdk,49813,2223915427,Human_Review_Human,External Impact,8.0,External Impact,"I think long term, it'd be great to have these tests in NuGet.Client repo."
+257,spiceai/spiceai,7585,2453225918,Human_Review_Human,Knowledge Transfer,9.0,Knowledge Transfer,"This optimizer spreads a single `DataSourceExec` file scan out into many separate scans under a `UnionExec`. It does not care about the underlying datasource, and if provided `PartitionedFile` with ranges, it will leave the ranges alone and attempt to redistribute them.
+
+Doing it this way also makes it so that we don't have to care about the underlying file's row-group concept (or lack thereof, or how we read them from metadata, etc)"
 258,bitfoundation/bitplatform,11527,2478538280,Agent_Review_Human,External Impact,8.0,External Impact,"The new approach using `EnsureCreatedAsync()` bypasses migrations entirely, which can lead to schema drift between test and production databases. The removed code properly applied pending migrations and validated their existence. Consider keeping the migration logic for tests to ensure test environments accurately reflect production schema changes, or document why this simplified approach is acceptable for this specific test scenario.
 ```suggestion
             await dbContext.Database.MigrateAsync(); // Apply migrations to ensure schema matches production.
@@ -2427,7 +2627,8 @@ LOCATIONS END -->
 <a href=""https://cursor.com/open?data=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJ1Z2JvdC12MSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiQlVHQk9UX0ZJWF9JTl9DVVJTT1IiLCJkYXRhIjp7InJlZGlzS2V5IjoiYnVnYm90Ojc3ZWJhNzk1LTg1NTItNDhhYS04MDMxLWUzNjYzNmM4M2UxNSIsImVuY3J5cHRpb25LZXkiOiJaYkxUN2dYT25DeGsxTUJVdHNLdmhPQ0hOd0FHUVBKNE13NG5xcXFhNV9vIiwiYnJhbmNoIjoia2gvaW1wcm92ZS1pbmdyZXNzIn0sImlhdCI6MTc1OTY5MjYxMSwiZXhwIjoxNzYwMjk3NDExfQ.BcyApEeg3RWht_uFEdWfd8_85dyQTdEJRXkmpD1pdr31LqsozuNI6WF4G2rzDIG_FsAqk5s6s6EftKz3KEtZvW3g0RiYMM0eA9mx0T1SvxdiZClXjvB_R5yKXM6M8yVYjHgQyMnTJp8tV39Q4sxcNvo7M_iQuq9UAnW5vfsDJm1BwxVcP-HV5L8ePCsBaAxOUtJM7Dee0wPucjMGrkmaDW5PtIHYIhkktRuMNq6DwGTvl6WwEybjUyqtdnzeG5ryHoG5q9Gx2zoi_BKRS2SEEhpIzrdRUkxVxI-z2AedzGloJyvXp2GlQrXfDfQ6Vy91YKRNRcok3W9XNu4bWS8N-g""><picture><source media=""(prefers-color-scheme: dark)"" srcset=""https://cursor.com/fix-in-cursor-dark.svg""><source media=""(prefers-color-scheme: light)"" srcset=""https://cursor.com/fix-in-cursor-light.svg""><img alt=""Fix in Cursor"" src=""https://cursor.com/fix-in-cursor.svg""></picture></a>&nbsp;<a href=""https://cursor.com/agents?data=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImJ1Z2JvdC12MSJ9.eyJ2ZXJzaW9uIjoxLCJ0eXBlIjoiQlVHQk9UX0ZJWF9JTl9XRUIiLCJkYXRhIjp7InJlZGlzS2V5IjoiYnVnYm90Ojc3ZWJhNzk1LTg1NTItNDhhYS04MDMxLWUzNjYzNmM4M2UxNSIsImVuY3J5cHRpb25LZXkiOiJaYkxUN2dYT25DeGsxTUJVdHNLdmhPQ0hOd0FHUVBKNE13NG5xcXFhNV9vIiwiYnJhbmNoIjoia2gvaW1wcm92ZS1pbmdyZXNzIiwicmVwb093bmVyIjoicmF5LXByb2plY3QiLCJyZXBvTmFtZSI6InJheSIsInByTnVtYmVyIjo1NzE4MSwiY29tbWl0U2hhIjoiZDlhZmQzODllN2Q3YTAzM2EyNjg1NTZjOGE5Njc5YjUxMTAwYzg2NSJ9LCJpYXQiOjE3NTk2OTI2MTEsImV4cCI6MTc2MDI5NzQxMX0.PLNJd8_1G4Zvc6ACoeomJkd700vHwI943D06sQl7iQp5wbbrqltjiJ-jkiVRodC8SmjFZ9BPKgmYAzWGG7v0bzfsKeyriVqPk681BzjtbyJ0HFdUXmPXEOazK4qclZ8GQlGZA7Biho6F2-VQF7psJHrrZGlptdXhmy0m_6KFMw8W4SDOFqN2HSgKJN-Y2dPUMWp7gc5ltM5S7MGfLGmR3BVD2avRf3v3IDN9G6qDBO9XXO6vKH1f94yTm_aIMRqwuLHBoyzO6tdkLzCwuPcaRiAj-4a7FCtfHkoRejgLmCHW56WG5_aEh3cdWnhiFym8peCmzaSttmmjU2PYaOAFnQ""><picture><source media=""(prefers-color-scheme: dark)"" srcset=""https://cursor.com/fix-in-web-dark.svg""><source media=""(prefers-color-scheme: light)"" srcset=""https://cursor.com/fix-in-web-light.svg""><img alt=""Fix in Web"" src=""https://cursor.com/fix-in-web.svg""></picture></a>
 
 "
-260,mongodb-js/compass,7429,2413529934,Human_Review_Human,No feedback,,No feedback, 
+260,SigmaHQ/sigma,5517,2194891117,Human_Review_Human,Misc,8.0,Misc,"```suggestion
+```"
 261,Azure/azure-powershell,28675,2443575924,Human_Review_Human,Social Communication,8.0,Social Communication,"```suggestion
 ```
 
@@ -2445,7 +2646,7 @@ Please do not include a new version as new versions are calculated"
 ```"
 265,appsmithorg/appsmith,41253,2371633670,Human_Review_Human,Social Communication,7.0,Social Communication,Same here.
 266,Emurgo/yoroi,4020,2256715281,Human_Review_Human,Misc,7.0,Misc,to be deleted
-267,DataDog/datadog-agent,39759,2288750229,Human_Review_Human,No feedback,,No feedback, 
+267,redpanda-data/redpanda,27202,2294617626,Human_Review_Human,Social Communication,7.0,Social Communication,and one more
 268,noobaa/noobaa-core,9258,2468699767,Agent_Review_Human,Testing,9.0,Defects,"_️ Potential issue_ | _ Critical_
 
 <details>
@@ -2911,7 +3112,7 @@ For consistency with other files in this PR (e.g., `starboard/shared/linux/cpu_f
   SetArmFeaturesInvalid(features);
   SetX86FeaturesInvalid(features);
 ```"
-270,lablup/backend.ai,4677,2144136465,Human_Review_Human,No feedback,,No feedback, 
+270,pingcap/tidb,62002,2170037700,Human_Review_Human,Testing,9.0,Testing,"Do we need to test other partitioning schemes as well? Like RANGE COLUMNS, LIST [COLUMNS] and KEY?"
 271,trezor/trezor-suite,11855,1651044913,Human_Review_Human,Understanding,7.0,External Impact,this should be now solved. the mutation happend in background.ts. 
 272,department-of-veterans-affairs/vets-api,24665,2434278703,Agent_Review_Human,External Impact,9.0,External Impact,"Replacing has_appointments (boolean) with appointments (object) is a breaking API change; clients expecting hasAppointments will fail silently or misinterpret data. Document the change, consider versioning or providing both fields temporarily, and update API consumers accordingly.
 ```suggestion
@@ -2921,7 +3122,7 @@ For consistency with other files in this PR (e.g., `starboard/shared/linux/cpu_f
       appointments.present? && appointments.respond_to?(:any?) ? appointments.any? : appointments.present?
     end
 ```"
-273,n8n-io/n8n,19738,2386988921,Human_Review_Human,No feedback,,No feedback, 
+273,noobaa/noobaa-core,9202,2307800934,Human_Review_Human,Understanding,8.0,Understanding,When do these values differ? 
 274,scylladb/scylladb,24657,2168859662,Human_Review_Human,Testing,9.0,Testing,This change does deserve a regression test 
 275,n8n-io/n8n,19297,2332182794,Human_Review_Human,Misc,6.0,Misc,todo here
 276,bisq-network/bisq2,3611,2202313472,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"For undefined data we usually use `Res.get(""na)` which is hte i18n string for `N/A` (Not Available)."
@@ -2930,7 +3131,7 @@ For consistency with other files in this PR (e.g., `starboard/shared/linux/cpu_f
   ATOMIC_BATCH: 'atomic',
   ATOMIC: 'atomic', // Alias for backward compatibility
 ```"
-278,department-of-veterans-affairs/vets-api,23387,2255053454,Human_Review_Human,No feedback,,No feedback, 
+278,stackrox/stackrox,14999,2052472956,Human_Review_Human,Code Improvement,8.0,Code Improvement,nit:  imageCVEV2DataStore
 279,NethermindEth/nethermind,9021,2232920245,Agent_Review_Human,Defects,9.0,Defects,"Using null-forgiving operator (!) on `parentSearch.Object` is unsafe. The previous error check only validates `parentSearch.IsError`, but doesn't guarantee the Object is non-null."
 280,randombit/botan,5036,2250850894,Agent_Review_Human,Defects,9.0,Defects,"This appears to be incorrect - when creating an EC private key with a null algorithm name, it should default to an EC algorithm like ""ECDSA"", not ""RSA"". RSA keys don't use EC groups.
 ```suggestion
@@ -2956,7 +3157,7 @@ I had an amazing time working with the big data technologies Beam, Iceberg, and 
 This project is released to a public `NuGet` feed and a `github release`. It does not currently ship to `nuget.org.`
 ```"
 286,ls1intum/Artemis,10944,2135576762,Human_Review_Human,Social Communication,7.0,Social Communication,same here
-287,bitwarden/clients,17249,2504707309,Human_Review_Human,No feedback,,No feedback, 
+287,Azure/azure-sdk-for-net,51307,2212012345,Human_Review_Human,Defects,8.0,Defects,@JoshLove-msft  seems like we should not add InputModelProperty.Update in the first place.
 288,Azure/azure-sdk-for-python,41025,2085700318,Human_Review_Human,Social Communication,8.0,Social Communication,I think we probably don't want to commit this
 289,volcano-sh/volcano,4641,2384447427,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,I think the user guide of `how to use resource strategy fit plugin` should also contain the sra and proportional strategy: https://github.com/volcano-sh/volcano/pull/4454
 290,mullvad/mullvadvpn-app,8854,2390586723,Agent_Review_Human,Testing,8.0,External Impact,"[nitpick] This function replaces the previous socket2-based implementation with manual field access. While this removes a dependency, the multiple unsafe blocks and manual byte order conversion increases complexity and potential for errors. Consider adding unit tests to verify the byte order conversions are correct across different architectures."
@@ -3024,16 +3225,17 @@ import { useLocalStorage, StudioResizableLayout } from '@studio/components';
 299,camunda/camunda,38231,2353013688,Human_Review_Human,Code Improvement,8.0,Code Improvement,"It was confusing that this was logging twice; might as well incorporate the stacktrace to warn, as it is useful for debugging (unless we avoid stacktraces on warn/error logs)."
 300,ray-project/ray,56294,2326169098,Human_Review_Human,Understanding,9.0,Understanding,"Doesn't this modify the number of rows? Like, you pass in a URI for a CSV, and then possibly get many rows?"
 301,home-assistant/home-assistant.io,37646,2367116335,Human_Review_Human,Understanding,8.0,Defects,There are different spellings of Ekey Bionyx. Which one is correct?
-302,camunda/camunda,35583,2229071893,Human_Review_Human,No feedback,,No feedback, 
+302,qdrant/qdrant,6812,2198194006,Human_Review_Human,External Impact,8.0,External Impact,"If this is going to be in a stored config file, we should probably also include a version number field for `Mmap`, in case we want to update/migrate to a new incompatible mmap implementation"
 303,microsoft/react-native-windows,15118,2324388954,Human_Review_Agent,Social Communication,8.0,Social Communication,@copilot this change is not needed - keep it 22.14.0 only
 304,Azure/azure-sdk-for-python,42123,2226028253,Human_Review_Human,Understanding,8.0,Code Improvement,"This is a non-retryable scenario so this would fall under ""dropped"" with CLIENT_EXCEPTION"
-305,Automattic/wordpress-activitypub,1722,2102346472,Human_Review_Human,No feedback,,No feedback, 
+305,spiceai/spiceai,7715,2468457659,Human_Review_Human,Knowledge Transfer,8.0,Knowledge Transfer,"As an example of why the expr.apply is useful, this BinaryExpr match goes away completely."
 306,zephyrproject-rtos/zephyr,89274,2120177567,Human_Review_Human,Misc,7.0,Misc,"```suggestion
 ```"
 307,wolfSSL/wolfssl,9002,2221403684,Human_Review_Human,Misc,6.0,Misc,\param
 308,WeblateOrg/weblate,16568,2432247496,Human_Review_Human,Social Communication,8.0,Social Communication,Still working on this.
 309,microsoft/typespec,8514,2372806344,Human_Review_Agent,Understanding,8.0,Understanding,is this actually true? seems like you just ignore it below
-310,oven-sh/bun,22981,2383357742,Human_Review_Human,No feedback,,No feedback, 
+310,Azure/azure-sdk-for-rust,2728,2164790518,Human_Review_Human,Misc,7.0,Misc,"```suggestion
+```"
 311,home-assistant/core,150030,2270853102,Human_Review_Human,Understanding,8.0,Understanding,"Not sure why we initialize these as local variables first, I think we can merge them"
 312,ant-design/ant-design,54600,2256485158,Human_Review_Human,Understanding,8.0,Defects,先不要给 records，这个数据用户 HOC 自己能拿
 313,ydb-platform/ydb,18669,2108659927,Human_Review_Human,Testing,8.0,Testing,"А мы же тут можем проверить, что было вставлено именно то, что мы вставили -- кажется было бы полезно? "
@@ -3102,7 +3304,7 @@ attributes (aria-disabled) and clear labels are used when disabling.
 <!-- This is an auto-generated comment by CodeRabbit -->
 
  Addressed in commit 8f83c9c"
-318,Automattic/wp-calypso,103229,2079030216,Human_Review_Human,No feedback,,No feedback,
+318,zephyrproject-rtos/zephyr,89145,2077008623,Human_Review_Human,Social Communication,8.0,Social Communication,please review all
 319,RediSearch/RediSearch,6885,2382733890,Human_Review_Human,Misc,9.0,Misc,"```suggestion
 ```"
 320,spree/spree,13152,2391568366,Agent_Review_Human,Testing,9.0,Code Improvement,"_️ Refactor suggestion_ | _ Major_
@@ -3378,7 +3580,167 @@ preventing potential runtime errors due to missing references.
 
 <!-- This is an auto-generated comment by CodeRabbit -->"
 332,dotnet/AspNetCore.Docs,35732,2196894629,Human_Review_Human,Social Communication,8.0,Social Communication,Ok
-333,taiga-family/taiga-ui,11604,2269714137,Human_Review_Agent,No feedback,,No feedback, 
+333,shapeshift/web,10216,2265451753,Agent_Review_Human,Testing,9.0,Testing,"_ Verification agent_
+
+<details>
+<summary> Verification inconclusive</summary>
+
+**Persisting iOS text selection: add touch-action and proactively prevent native context menu**
+
+Even with user-select/touch-callout disabled, iOS may still trigger selection/context menu. Two complementary changes help:
+- Add `touchAction: 'manipulation'` to styles (non-destructive for scroll).
+- Export a shared `onContextMenu` handler to `preventDefault()` on rows.
+
+
+
+
+```diff
+ export const longPressSx = {
+   // Apply universally first in case media query doesn't work
+   ...(isIOS || isAndroid
+     ? {
+         userSelect: 'none',
+         WebkitUserSelect: 'none',
+         MozUserSelect: 'none',
+         msUserSelect: 'none',
+         WebkitTouchCallout: 'none',
+         WebkitTapHighlightColor: 'transparent',
++        touchAction: 'manipulation',
+       }
+     : {}),
+ 
+   '@media (hover: none) and (pointer: coarse)': {
+     userSelect: 'none',
+     WebkitUserSelect: 'none',
+     MozUserSelect: 'none',
+     msUserSelect: 'none',
+     WebkitTouchCallout: 'none',
+     WebkitTapHighlightColor: 'transparent',
++    touchAction: 'manipulation',
+   },
+ }
++
++// Optional: shared event handlers to suppress native context menu on long-press
++import type { HTMLAttributes } from 'react'
++export const longPressEvents: Pick<HTMLAttributes<HTMLElement>, 'onContextMenu'> = {
++  onContextMenu: e => e.preventDefault(),
++}
+```
+
+Please verify on iOS that long-press no longer triggers text selection or the context menu when applying both `longPressSx` and `longPressEvents` to the row container(s).
+
+---
+
+
+
+</details>
+
+**Add touch-action and suppress native context menu in longPressSx**
+
+To fully disable iOS long-press selection/context menu, add `touchAction: 'manipulation'` to both style blocks and export a shared `onContextMenu` handler to call `preventDefault()`.
+
+Locations to update:
+- src/constants/longPress.ts (around lines 930)
+
+```diff
+ export const longPressSx = {
+   // Apply universally first in case media query doesnt work
+   ...(isIOS || isAndroid
+     ? {
+         userSelect: 'none',
+         WebkitUserSelect: 'none',
+         MozUserSelect: 'none',
+         msUserSelect: 'none',
+         WebkitTouchCallout: 'none',
+         WebkitTapHighlightColor: 'transparent',
++        touchAction: 'manipulation',
+       }
+     : {}),
+
+   '@media (hover: none) and (pointer: coarse)': {
+     userSelect: 'none',
+     WebkitUserSelect: 'none',
+     MozUserSelect: 'none',
+     msUserSelect: 'none',
+     WebkitTouchCallout: 'none',
+     WebkitTapHighlightColor: 'transparent',
++    touchAction: 'manipulation',
+   },
+ }
+
++// Optional: suppress native context menu on long-press
++import type { HTMLAttributes } from 'react'
++export const longPressEvents: Pick<HTMLAttributes<HTMLElement>, 'onContextMenu'> = {
++  onContextMenu: e => e.preventDefault(),
++}
+```
+
+Please test on iOS to confirm that long-press no longer triggers text selection or the native context menu when using both `longPressSx` and `longPressEvents`.
+
+<!-- suggestion_start -->
+
+<details>
+<summary> Committable suggestion</summary>
+
+> ️ **IMPORTANT**
+> Carefully review the code before committing. Ensure that it accurately replaces the highlighted code, contains no missing lines, and has no issues with indentation. Thoroughly test & benchmark the code to ensure it meets the requirements.
+
+```suggestion
+export const longPressSx = {
+  // Apply universally first in case media query doesnt work
+  ...(isIOS || isAndroid
+    ? {
+        userSelect: 'none',
+        WebkitUserSelect: 'none',
+        MozUserSelect: 'none',
+        msUserSelect: 'none',
+        WebkitTouchCallout: 'none',
+        WebkitTapHighlightColor: 'transparent',
+        touchAction: 'manipulation',
+      }
+    : {}),
+
+  '@media (hover: none) and (pointer: coarse)': {
+    userSelect: 'none',
+    WebkitUserSelect: 'none',
+    MozUserSelect: 'none',
+    msUserSelect: 'none',
+    WebkitTouchCallout: 'none',
+    WebkitTapHighlightColor: 'transparent',
+    touchAction: 'manipulation',
+  },
+}
+
+// Optional: suppress native context menu on long-press
+import type { HTMLAttributes } from 'react'
+export const longPressEvents: Pick<HTMLAttributes<HTMLElement>, 'onContextMenu'> = {
+  onContextMenu: e => e.preventDefault(),
+}
+```
+
+</details>
+
+<!-- suggestion_end -->
+
+<details>
+<summary> Prompt for AI Agents</summary>
+
+```
+In src/constants/longPress.ts around lines 9 to 30, update the longPressSx style
+object to include touchAction: 'manipulation' in both the universal style block
+(for isIOS or isAndroid) and the media query block to better disable iOS
+long-press selection and context menu. Additionally, export a shared
+onContextMenu event handler function that calls preventDefault() to suppress the
+native context menu. After making these changes, test on iOS devices to ensure
+long-press no longer triggers text selection or the native context menu when
+using longPressSx and longPressEvents together.
+```
+
+</details>
+
+<!-- fingerprinting:phantom:poseidon:capybara -->
+
+<!-- This is an auto-generated comment by CodeRabbit -->"
 334,cloudposse/atmos,1452,2328392025,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"_️ Refactor suggestion_
 
 **Wrap returned errors with a static sentinel per guidelines.**
@@ -3457,7 +3819,7 @@ I guess the question is: how do you plan to query this ?"
 342,dotnet/sdk,50056,2254654185,Human_Review_Human,Testing,9.0,Testing,@nohwnd @mariam-abdulla Any ideas for additional test cases?
 343,navikt/aksel,4134,2390618833,Human_Review_Human,Understanding,8.0,Understanding,Why aren't we using `withThemeByClassName` here?
 344,microsoft/testfx,6058,2209757707,Human_Review_Agent,Testing,9.0,Testing,Let's have tests for Assert.IsFalse on all these cases
-345,taiga-family/taiga-ui,11604,2269714137,Human_Review_Agent,No feedback,,No feedback, 
+345,ls1intum/Artemis,11111,2256707568,Human_Review_Human,Understanding,9.0,Understanding,"What does x, y mean? Row and seat number?"
 346,qdrant/qdrant,7120,2296105072,Human_Review_Human,Defects,9.0,Defects,"Should be under `#[cfg(unix)]` (or moved into the same code block as call to `metadata.blocks()`), otherwise it produces a warning on Windows. (and our CI doesn't catch it)
 
 https://github.com/qdrant/qdrant/actions/runs/17166548660/job/48708117198?pr=7120#step:9:42
@@ -3658,8 +4020,41 @@ buyAccountMetadata.
 ```"
 355,nrwl/nx,31172,2085192722,Human_Review_Human,Understanding,9.0,Understanding,"> and you do not want the latest beta.
 what does this mean?"
-356,trezor/trezor-suite,19406,2132431716,Human_Review_Human,No feedback,,No feedback,  
-357,shapeshift/web,10803,2475740977,Human_Review_Human,No feedback,,No feedback, 
+356,blockscout/blockscout,11886,1987691202,Human_Review_Human,Code Improvement,8.0,Code Improvement,Could we extract URL pattern parsing to a common helper function for API specs since it could be used for token instances metadata as well?
+357,Emurgo/yoroi,3799,2046521713,Agent_Review_Human,Defects,9.0,Defects,"_️ Refactor suggestion_
+
+**Validate `splits` array length before indexing.**
+
+You're accessing `swapForm.createTx?.splits[0]` in both `netPrice` and `initialPrice`. If `splits` is empty or undefined, you'll hit an error. Consider guarding for an empty array:
+```diff
+- const netPrice = swapForm.createTx?.netPrice ?? swapForm.createTx?.splits[0].initialPrice ?? 0
++ const netPrice = swapForm.createTx?.netPrice ??
++   (swapForm.createTx?.splits?.length ? swapForm.createTx.splits[0].initialPrice : 0)
+```
+
+
+
+<!-- suggestion_start -->
+
+<details>
+<summary> Committable suggestion</summary>
+
+> ️ **IMPORTANT**
+> Carefully review the code before committing. Ensure that it accurately replaces the highlighted code, contains no missing lines, and has no issues with indentation. Thoroughly test & benchmark the code to ensure it meets the requirements.
+
+`````suggestion
+  const netPrice = swapForm.createTx?.netPrice ??
+    (swapForm.createTx?.splits?.length ? swapForm.createTx.splits[0].initialPrice : 0)
+  const roundedPrice = netPrice.toFixed(tokenOutInfo?.decimals ?? 0).replace(/\.0+$/, '')
+  const price = roundedPrice !== '0' ? roundedPrice : netPrice.toFixed(6)
+  const priceInfoValue = `1 ${tokenInTicker} = ${price} ${tokenOutTicker}`
+`````
+
+</details>
+
+<!-- suggestion_end -->
+
+<!-- This is an auto-generated comment by CodeRabbit -->"
 358,home-assistant/home-assistant.io,41205,2406727005,Agent_Review_Human,Code Improvement,9.0,Code Improvement,"Use 'use cases' instead of 'use-cases' to follow Microsoft Style guidance and our documentation standards.
 ```suggestion
 ## Possible use cases
