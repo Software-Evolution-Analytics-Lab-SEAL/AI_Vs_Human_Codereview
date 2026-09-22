@@ -21,6 +21,8 @@ The analysis spans three research questions:
 ```
 AI_Vs_Human_Codereview/
 ├── README.md                          # This file
+├── appendix/
+│   └── Appendix_RQ_Results.pdf        # Fine-grained taxonomy & cross-agent analysis
 ├── run_all.py                         # Run all scripts in one command
 ├── requirements.txt                   # Python dependencies
 ├── requirements-lock.txt              # Pinned Python dependencies
@@ -163,6 +165,16 @@ python scripts/RQ3/3_unadopted_analysis.py     # Figure 8
 Rscript scripts/RQ3/6_code_metrics_R.R         # Statistical testing (from raw data)
 Rscript scripts/RQ3/7_scott_knott_metrics.R    # Scott-Knott ranking (from raw data)
 ```
+
+## Appendix
+
+See [appendix/Appendix_RQ_Results.pdf](appendix/Appendix_RQ_Results.pdf) for material that complements the main results:
+
+- **Fine-grained technical taxonomy** (Table A1) — Turzo and Bosu's sub-categories for *Defect Detection* and *Code Improvement* comments, extending the RQ1 comparison.
+- **Cross-agent analysis** (Table A2–A4, Figure A1–A2) — per-agent breakdown across all three RQs for the seven AI reviewers (GitHub Copilot, CodeRabbit, Gemini Code Assist, Cursor, Claude Code, Sourcery AI, Greptile):
+  - RQ1: feedback-type distribution, reading-ease ranking, and quality-attribute distribution per agent vs. the aggregate AI-agent baseline.
+  - RQ2: interaction patterns (average comment count, multi-comment rate, usefulness) per agent.
+  - RQ3: code-metric changes associated with each agent's adopted suggestions vs. the aggregate baseline.
 
 ## Manual Validation Artifacts
 
