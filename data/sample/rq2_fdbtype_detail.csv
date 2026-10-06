@@ -1,0 +1,101 @@
+thread_id,comment_count,review_category,pr_merged,feed_type,is_multi_turn,is_multi_turn_int,pr_merged_int
+2335051657,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2335051663,2,Agent_Review_Human,True,Defects,True,1,1
+2335051667,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2314781953,2,Agent_Review_Human,False,Code Improvement,True,1,0
+2314781961,2,Agent_Review_Human,False,Code Improvement,True,1,0
+2314781963,2,Agent_Review_Human,False,Defects,True,1,0
+2314781966,2,Agent_Review_Human,False,Code Improvement,True,1,0
+2314781977,2,Agent_Review_Human,False,Code Improvement,True,1,0
+2314781980,2,Agent_Review_Human,False,Code Improvement,True,1,0
+2314781987,2,Agent_Review_Human,False,Defects,True,1,0
+2314781992,2,Agent_Review_Human,False,Defects,True,1,0
+2314781996,2,Agent_Review_Human,False,Code Improvement,True,1,0
+2314782001,2,Agent_Review_Human,False,Code Improvement,True,1,0
+2299354815,2,Agent_Review_Human,True,Defects,True,1,1
+2299354825,3,Agent_Review_Human,True,Code Improvement,True,1,1
+2299354836,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2299354840,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2299354843,2,Agent_Review_Human,True,Defects,True,1,1
+2320474449,2,Human_Review_Human,True,Code Improvement,True,1,1
+2320474865,1,Human_Review_Human,True,Code Improvement,False,0,1
+2320479128,2,Human_Review_Human,True,Code Improvement,True,1,1
+2320494614,2,Human_Review_Human,True,Understanding,True,1,1
+2320501170,3,Human_Review_Human,True,Code Improvement,True,1,1
+2338191440,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2338191461,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2338191476,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2338191487,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2350647150,2,Human_Review_Human,True,Code Improvement,True,1,1
+2350648921,2,Human_Review_Human,True,Code Improvement,True,1,1
+2350649765,2,Human_Review_Human,True,Code Improvement,True,1,1
+2350651673,2,Human_Review_Human,True,Code Improvement,True,1,1
+2350665342,2,Human_Review_Human,True,Code Improvement,True,1,1
+2350666503,1,Human_Review_Human,True,Code Improvement,False,0,1
+2350668324,1,Human_Review_Human,True,Understanding,False,0,1
+2350673740,2,Human_Review_Human,True,Understanding,True,1,1
+2350677653,2,Human_Review_Human,True,Code Improvement,True,1,1
+2350685277,2,Human_Review_Human,True,Code Improvement,True,1,1
+2350686658,2,Human_Review_Human,True,Code Improvement,True,1,1
+2350690233,2,Human_Review_Human,True,Code Improvement,True,1,1
+2299353677,1,Agent_Review_Human,True,Defects,False,0,1
+2299353691,1,Agent_Review_Human,True,Defects,False,0,1
+2299353697,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2317434616,1,Human_Review_Human,True,Code Improvement,False,0,1
+2317436589,2,Human_Review_Human,True,Understanding,True,1,1
+2317441257,1,Human_Review_Human,True,Testing,False,0,1
+2357361497,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2299819973,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2299819987,1,Agent_Review_Human,True,Defects,False,0,1
+2299820002,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2299669299,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302777197,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302777205,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302777207,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302750663,1,Human_Review_Human,True,Code Improvement,False,0,1
+2302753248,1,Human_Review_Human,True,Code Improvement,False,0,1
+2302767661,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302767665,1,Agent_Review_Human,True,Understanding,False,0,1
+2302767669,1,Agent_Review_Human,True,Defects,False,0,1
+2302767673,1,Agent_Review_Human,True,Defects,False,0,1
+2302767680,1,Agent_Review_Human,True,Defects,False,0,1
+2302777252,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2302777263,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302777271,1,Agent_Review_Human,True,Defects,False,0,1
+2302777278,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302777284,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302777286,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302777294,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2302777300,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2302807403,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2302807410,1,Agent_Review_Human,True,Defects,False,0,1
+2312721089,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2312721092,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2312721094,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2324021620,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2324021630,2,Agent_Review_Human,True,Defects,True,1,1
+2324021632,2,Agent_Review_Human,True,Defects,True,1,1
+2324021637,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2320782906,1,Human_Review_Human,True,Defects,False,0,1
+2320787089,1,Human_Review_Human,True,Code Improvement,False,0,1
+2320871411,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2320871420,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2320871429,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2320871437,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2323770970,2,Agent_Review_Human,True,Defects,True,1,1
+2324225652,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2324225661,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2328980779,1,Agent_Review_Human,True,Defects,False,0,1
+2328980784,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2328986332,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2328986344,1,Agent_Review_Human,True,Defects,False,0,1
+2335692144,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2335692159,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2335692170,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2335692183,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2335692193,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2335692203,1,Agent_Review_Human,True,Code Improvement,False,0,1
+2342786484,1,Agent_Review_Human,True,Defects,False,0,1
+2342961184,2,Agent_Review_Human,True,Code Improvement,True,1,1
+2342961208,2,Agent_Review_Human,True,Defects,True,1,1
+2342961216,2,Agent_Review_Human,True,Code Improvement,True,1,1

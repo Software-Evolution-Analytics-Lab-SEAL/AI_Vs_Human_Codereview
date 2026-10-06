@@ -1,0 +1,101 @@
+repo,pr_number,convo_start_id,review_category,pr_author_category,reviewer_category,reviewer_login,feed_type,conf_score,has_suggestion,suggestion_code,suggestion_count,LOC,token_init_comment,comment_body
+Azure/azure-sdk-for-java,46726,2356889039,Agent_Review_Human,Human,Agent,Copilot,Code Improvement,9.0,False,,0,5.0,20,There should be a space after 'user and ask:' to properly separate the sentence from the colon.
+Azure/azure-sdk-for-java,46461,2319562341,Human_Review_Human,Human,Human,ibrandes,Knowledge Transfer,9.0,False,,0,25.0,218,"instead of putting the list directly in the test and looping through it, junit offers something called a [ParamaterizedTest](https://www.baeldung.com/parameterized-tests-junit-5). we use it by creating a ""supplier"" method, populating it with x values, and then the test will x times with each individual value. 
+
+here's a general structure for how it may look:
+
+```
+@ParameterizedTest
+@MethodSource(""exceptionSupplier"")
+public void sendRequestThrowsTimeoutException(Exception exceptionType) {
+// test
+}
+
+private static Stream<Arguments> exceptionSupplier() {
+        return Stream.of(Arguments.of(TimeoutException.class),
+            Arguments.of(RuntimeException.class),
+            Arguments.of(ExecutionException.class),
+            Arguments.of(InterruptedException.class)
+            );
+}
+```
+
+here i made an external supplier method because i personally think it looks cleaner, but you can also use `ValueSource` like in the doc I linked! 
+
+if you want to see more examples of `ParameterizedTest`'s, they're all over our test files."
+Azure/azure-sdk-for-java,46461,2319634647,Human_Review_Human,Human,Human,ibrandes,Code Improvement,9.0,False,,0,17.0,74,"we should always avoid using * imports - i believe your IDE added this automatically, you can turn it off by going to settings > editor > code style > java > imports  and make sure: 
+- use single class import is checked
+- set Class count to use import with '*' to 999
+- set Names count to use static import with '*' to 999"
+Azure/azure-sdk-for-java,46461,2319685972,Human_Review_Human,Human,Human,ibrandes,Code Improvement,9.0,False,,0,38.0,112,"we can avoid using a try catch here by using another test convention, `assertThrows`. we should use this instead of a try catch because we are testing something that should always throw. we can then assign assertThrows to the runtime exception we are trying to catch, and call assertNotNull and assertInstanceOf on that. 
+
+```
+RuntimeException e = assertThrows(RuntimeException.class,
+            () -> StorageImplUtils.sendRequest(operation, Duration.ofSeconds(120), BlobStorageException.class));
+        assertNotNull(e.getCause());
+        assertInstanceOf(exceptionType, e.getCause());
+
+```"
+Azure/azure-sdk-for-java,46461,2319701642,Human_Review_Human,Human,Human,ibrandes,Code Improvement,8.0,False,,0,97.0,43,"I dont think we need to pass a `BlobStorageException` into `sendRequest`, I believe we can just use `HttpResponseException.class`. I would verify this first, but if so, this can be removed"
+Azure/azure-sdk-for-java,46461,2319733517,Human_Review_Human,Human,Human,ibrandes,Code Improvement,9.0,False,,0,90.0,348,"because parameter suppliers support multiple arguments, we can combine all this logic into it. instead of reflection-based construction (generateSupplier), we can supply callable instances directly. for the supplier method, we can follow the general structure of:
+
+(Callable object that throws an exception type, expected cause)
+
+Here's the new test and supplier, courtesy of copilot: (i verified it but you should too)
+
+```
+public class StorageImplUtilsTests {
+
+    @ParameterizedTest
+    @MethodSource(""exceptionCallables"")
+    void sendRequestWrapsNonMatchingExceptions(Callable<?> operation, Class<? extends Exception> expectedCauseType) {
+        RuntimeException e = assertThrows(RuntimeException.class,
+            () -> StorageImplUtils.sendRequest(operation, Duration.ofSeconds(120), HttpResponseException.class));
+
+        assertNotNull(e.getCause());
+        assertInstanceOf(expectedCauseType, e.getCause());
+    }
+
+    private static Stream<Arguments> exceptionCallables() {
+        return Stream.of(
+            // Future completes exceptionally with TimeoutException as cause -> wrapped RuntimeException(cause)
+            Arguments.of((Callable<Object>) () -> {
+                throw new TimeoutException();
+            }, TimeoutException.class),
+            // Direct RuntimeException cause should be rethrown by sendRequest (no additional wrapping of cause)
+            Arguments.of((Callable<Object>) () -> {
+                throw new RuntimeException(""rt"");
+            }, RuntimeException.class),
+            // ExecutionException cause path -> RuntimeException(causeInsideExecutionException)
+            Arguments.of((Callable<Object>) () -> {
+                throw new ExecutionException(""exec"", new RuntimeException(""inner""));
+            }, ExecutionException.class),
+            // Checked InterruptedException -> wrapped
+            Arguments.of((Callable<Object>) () -> {
+                throw new InterruptedException(""int"");
+            }, InterruptedException.class));
+    }
+```
+"
+Azure/azure-sdk-for-java,46467,2290400700,Agent_Review_Human,Human,Agent,Copilot,Defects,9.0,True,"jsonWriter.writeStringField(""netBiosDomainName"", this.netBiosDomainName);
+        jsonWriter.writeStringField(""forestName"", this.forestName);
+        jsonWriter.writeStringField(""domainGuid"", this.domainGuid);",1,27.0,100,"The JSON serialization order has changed - domainGuid is now written before netBiosDomainName and forestName, whereas it was previously written after them. This reordering could potentially break clients that depend on a specific field order in the JSON output.
+```suggestion
+        jsonWriter.writeStringField(""netBiosDomainName"", this.netBiosDomainName);
+        jsonWriter.writeStringField(""forestName"", this.forestName);
+        jsonWriter.writeStringField(""domainGuid"", this.domainGuid);
+```"
+Azure/azure-sdk-for-java,46467,2290400717,Agent_Review_Human,Human,Agent,Copilot,Defects,9.0,False,,0,4.0,43,"The JSON deserialization order has changed - domainGuid is now processed before netBiosDomainName and forestName, whereas it was previously processed after them. This reordering should be consistent with the serialization order changes."
+Azure/azure-sdk-for-java,46468,2290441285,Agent_Review_Human,Human,Agent,Copilot,Defects,9.0,True,<version>2.0.0-beta.3</version> <!-- {x-version-update;com.azure.resourcemanager:azure-resourcemanager-test;dependency} -->,1,5.0,118,"The version is inconsistent with other files in the PR. This file updates the version to 2.0.0-beta.2 while all other files update to 2.0.0-beta.3. The version comment also changes from 'unreleased_com.azure.resourcemanager' to 'com.azure.resourcemanager', but the version should match the pattern used in other files.
+```suggestion
+      <version>2.0.0-beta.3</version> <!-- {x-version-update;com.azure.resourcemanager:azure-resourcemanager-test;dependency} -->
+```"
+Azure/azure-sdk-for-java,46475,2292429007,Agent_Review_Human,Human,Agent,Copilot,Defects,9.0,True,"= new StringBuilder(""az login --claims-challenge "").append(shellEscape(request.getClaims()));",1,8.0,72,"The string replacement for escaping quotes is incomplete. This only escapes double quotes but doesn't handle other shell metacharacters that could be present in claims. Consider using a more robust escaping mechanism or validating the claims content to prevent command injection.
+```suggestion
+            = new StringBuilder(""az login --claims-challenge "").append(shellEscape(request.getClaims()));
+```"
+Azure/azure-sdk-for-java,46477,2330856764,Agent_Review_Human,Human,Agent,Copilot,Defects,9.0,False,,0,16.0,34,The early return inside the write lock leaves the lock acquired without unlocking it. Move the null/empty check outside the try-finally block or ensure the lock is released.
+Azure/azure-sdk-for-java,46477,2330856773,Agent_Review_Human,Human,Agent,Copilot,Defects,9.0,True,"// Remove any existing feature flag suffix before appending a new one
+            String base = !Strings.isNullOrEmpty(this.baseUserAgentWithSuffix) ? this.baseUserAgentWithSuffix : this.baseUserAgent;
+            // Feature flag suffix pattern: ""|F"" followed by hex digits (case-insensitive)
+            base = base.replaceAll(""\\|F[0-9A-F]+$"", """");

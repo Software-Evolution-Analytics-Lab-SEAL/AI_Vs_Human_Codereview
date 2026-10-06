@@ -1,0 +1,384 @@
+repo,pr_number,convo_start_id,is_merged,rejection_category
+dotnet/aspnetcore,63256,2277060123,Yes,Incorrect Suggestion
+wso2/carbon-identity-framework,7290,2312427113,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,49320,2080766778,Yes,Deferred
+projectcalico/calico,10915,2319157537,Yes,Developer Preference
+youtube/cobalt,6952,2294270323,Yes,Developer Preference
+Azure/azure-sdk-for-python,42268,2241577435,Yes,Not Needed
+Azure/azure-sdk-for-net,51827,2262125418,Yes,Alternative Fix
+wso2/carbon-apimgt,13116,2102383906,Yes,Not Needed
+Azure/azure-cli,31869,2234917937,Yes,Not Needed
+Azure/azure-cli-extensions,9199,2367273031,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13345,2320910781,No,Alternative Fix
+wso2/carbon-apimgt,13278,2278462020,Yes,Incorrect Suggestion
+wso2/carbon-identity-framework,7563,2442753542,Yes,Incorrect Suggestion
+youtube/cobalt,6300,2182259908,No,Incorrect Suggestion
+projectcalico/calico,11288,2472691078,Yes,Incorrect Suggestion
+wso2/carbon-identity-framework,7377,2339789985,Yes,Not Needed
+Azure/azure-sdk-for-python,43188,2403409465,Yes,Others
+Agoric/agoric-sdk,12015,2384459266,Yes,Developer Preference
+wso2/carbon-apimgt,13357,2329848003,Yes,Developer Preference
+Altinn/altinn-studio,16555,2425572493,Yes,Deferred
+youtube/cobalt,6342,2193986421,No,Developer Preference
+wso2/carbon-apimgt,13191,2232268697,Yes,Claimed Fixed (Unverified)
+Azure/azure-sdk-for-net,53279,2434786621,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,50157,2097256698,Yes,Deferred
+wso2/carbon-apimgt,13139,2131924938,Yes,Alternative Fix
+Azure/azure-functions-host,11435,2437561207,Yes,Developer Preference
+wso2/carbon-apimgt,13380,2340666927,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13271,2275626565,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13436,2390567276,Yes,Developer Preference
+Azure/azure-cli-extensions,8905,2168196527,Yes,Alternative Fix
+wordpress-mobile/WordPress-Android,22071,2243602357,Yes,Alternative Fix
+wso2/carbon-apimgt,13191,2265368743,Yes,Incorrect Suggestion
+Azure/azure-container-networking,3779,2193574097,Yes,Developer Preference
+wso2/carbon-apimgt,13191,2268100093,Yes,Developer Preference
+OpenZeppelin/openzeppelin-contracts,5904,2307651688,Yes,Developer Preference
+Azure/azure-container-networking,3779,2193574103,Yes,Alternative Fix
+Azure/azure-sdk-for-js,34591,2112807051,Yes,Developer Preference
+Azure/azure-sdk-for-net,52155,2292411833,Yes,Claimed Fixed (Unverified)
+Azure/azure-cli,30694,2109501007,Yes,Alternative Fix
+youtube/cobalt,6894,2288569929,Yes,Claimed Fixed (Unverified)
+Altinn/altinn-studio,15398,2081093902,Yes,Developer Preference
+wso2/carbon-apimgt,13144,2207083873,Yes,Alternative Fix
+wso2/carbon-apimgt,13255,2272205327,Yes,Claimed Fixed (Unverified)
+openhab/openhab-addons,19053,2230594312,No,Alternative Fix
+Automattic/woocommerce-payments,10927,2204613492,Yes,Incorrect Suggestion
+youtube/cobalt,6344,2196169267,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13274,2277539208,Yes,Deferred
+wso2/carbon-identity-framework,7290,2312427105,Yes,Claimed Fixed (Unverified)
+Azure/azure-sdk-for-net,51023,2180680243,Yes,Claimed Fixed (Unverified)
+Homebrew/homebrew-core,251172,2463839191,Yes,Developer Preference
+Azure/azure-sdk-for-net,51651,2249493503,Yes,Alternative Fix
+wso2/carbon-apimgt,13313,2293275234,Yes,Alternative Fix
+Automattic/wordpress-activitypub,1834,2155313816,Yes,Alternative Fix
+wso2/carbon-identity-framework,7511,2416706965,Yes,Developer Preference
+Azure/azure-sdk-for-cpp,6634,2160043941,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-python,41284,2105476445,Yes,Others
+Azure/azure-powershell,28220,2215191755,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13401,2375111244,Yes,Not Needed
+wso2/carbon-apimgt,13160,2184291540,Yes,Developer Preference
+projectcalico/calico,10931,2323084010,Yes,Alternative Fix
+Altinn/altinn-studio,16095,2273465053,Yes,Deferred
+youtube/cobalt,6153,2164807088,Yes,Developer Preference
+Azure/azure-functions-host,11101,2190580643,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13329,2302636100,Yes,Incorrect Suggestion
+wordpress-mobile/WordPress-Android,22151,2286908843,Yes,Alternative Fix
+wso2/carbon-apimgt,13182,2213356463,Yes,Alternative Fix
+wso2/carbon-apimgt,13115,2102255015,Yes,Alternative Fix
+youtube/cobalt,5999,2127573524,Yes,Claimed Fixed (Unverified)
+youtube/cobalt,7553,2433974412,No,Alternative Fix
+Azure/azure-container-networking,3822,2202225441,Yes,Deferred
+youtube/cobalt,6198,2171346522,No,Not Needed
+camunda/camunda,32224,2161748365,No,Deferred
+Azure/azure-sdk-for-net,52204,2294718129,Yes,Claimed Fixed (Unverified)
+dotnet/aspnetcore,62739,2208633860,Yes,Developer Preference
+youtube/cobalt,7228,2361837951,Yes,Developer Preference
+youtube/cobalt,7150,2344839176,No,Not Needed
+wso2/carbon-apimgt,13436,2390567256,Yes,Developer Preference
+wso2/carbon-apimgt,13255,2272263488,Yes,Developer Preference
+Automattic/woocommerce-payments,10984,2245586935,Yes,Incorrect Suggestion
+APSIMInitiative/ApsimX,10344,2314781953,No,Incorrect Suggestion
+Automattic/wp-calypso,103566,2098870771,Yes,Not Needed
+PowerShell/PowerShell,26350,2475950241,Yes,Incorrect Suggestion
+youtube/cobalt,6574,2229469864,Yes,Claimed Fixed (Unverified)
+Azure/azure-sdk-for-java,46191,2237171177,No,Incorrect Suggestion
+youtube/cobalt,7150,2344839230,No,Not Needed
+wso2/carbon-apimgt,13301,2287756839,Yes,Claimed Fixed (Unverified)
+Azure/azure-sdk-for-net,51580,2243667215,Yes,Claimed Fixed (Unverified)
+wso2/carbon-apimgt,13367,2331947183,Yes,Not Needed
+wso2/carbon-apimgt,13255,2273280864,Yes,Alternative Fix
+Azure/azure-sdk-for-python,41429,2127853823,Yes,Claimed Fixed (Unverified)
+camunda/camunda,32224,2161232574,No,Alternative Fix
+openhab/openhab-addons,19357,2365555431,Yes,Not Needed
+wso2/carbon-apimgt,13301,2287775700,Yes,Claimed Fixed (Unverified)
+youtube/cobalt,6385,2231703449,Yes,Claimed Fixed (Unverified)
+Automattic/wp-calypso,104468,2170141934,Yes,Alternative Fix
+youtube/cobalt,7137,2342496247,Yes,Developer Preference
+wso2/carbon-apimgt,13317,2328805387,No,Claimed Fixed (Unverified)
+Automattic/wp-calypso,103039,2070285341,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,50141,2095910054,Yes,Deferred
+Azure/azure-sdk-for-net,52026,2279889650,Yes,Claimed Fixed (Unverified)
+membrane/api-gateway,2036,2382154419,No,Incorrect Suggestion
+wso2/carbon-apimgt,13255,2272551585,Yes,Alternative Fix
+wso2/carbon-apimgt,13301,2287775687,Yes,Not Needed
+Altinn/altinn-studio,15719,2158870828,Yes,Alternative Fix
+wso2/carbon-apimgt,13443,2393543483,Yes,Alternative Fix
+youtube/cobalt,6406,2203501894,Yes,Not Needed
+Azure/azure-cli,32130,2354089627,Yes,Alternative Fix
+Altinn/altinn-studio,15414,2139177586,Yes,Incorrect Suggestion
+wordpress-mobile/WordPress-Android,22285,2431998477,Yes,Incorrect Suggestion
+Azure/azure-powershell,28457,2299322589,Yes,Developer Preference
+Azure/azure-sdk-for-js,33906,2077017906,Yes,Not Needed
+wso2/carbon-identity-framework,7290,2312427106,Yes,Claimed Fixed (Unverified)
+wso2/carbon-identity-framework,7563,2442753541,Yes,Incorrect Suggestion
+Azure/azure-powershell,28393,2276340424,Yes,Alternative Fix
+wso2/carbon-identity-framework,7449,2386690904,Yes,Alternative Fix
+wso2/carbon-apimgt,13329,2302636099,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13340,2309763776,Yes,Developer Preference
+Azure/azure-sdk-for-net,51429,2226834042,Yes,Claimed Fixed (Unverified)
+Altinn/altinn-studio,16105,2276130035,Yes,Deferred
+Automattic/wordpress-activitypub,2314,2466995924,Yes,Not Needed
+wso2/carbon-apimgt,13160,2185087641,Yes,Incorrect Suggestion
+Altinn/altinn-studio,15838,2189042722,Yes,Deferred
+camunda/camunda,35777,2223359975,No,Deferred
+wso2/carbon-apimgt,13344,2317632103,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13514,2453182129,Yes,Alternative Fix
+Azure/azure-sdk-for-net,51524,2237838717,Yes,Claimed Fixed (Unverified)
+youtube/cobalt,6385,2201410823,Yes,Alternative Fix
+Azure/azure-cli,31753,2178304148,Yes,Alternative Fix
+youtube/cobalt,5832,2109816625,Yes,Incorrect Suggestion
+APSIMInitiative/ApsimX,10572,2396549996,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13201,2257104488,Yes,Alternative Fix
+wso2/carbon-apimgt,13369,2334187409,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13255,2272263471,Yes,Alternative Fix
+dotnet/aspnetcore,61743,2067525235,Yes,Alternative Fix
+Azure/azure-sdk-for-python,41234,2099238529,Yes,Deferred
+Azure/azure-sdk-for-python,42298,2248408588,Yes,Alternative Fix
+camunda/camunda,35858,2226482045,Yes,Not Needed
+wso2/carbon-apimgt,13158,2184645879,Yes,Incorrect Suggestion
+camunda/camunda,36161,2280993405,No,Alternative Fix
+wso2/carbon-apimgt,13201,2259895080,Yes,Alternative Fix
+wso2/carbon-apimgt,13327,2300695558,No,Incorrect Suggestion
+wso2/carbon-apimgt,13201,2257104466,Yes,Alternative Fix
+wso2/carbon-apimgt,13369,2334137559,Yes,Not Needed
+Azure/azure-sdk-for-python,42623,2289566749,Yes,Alternative Fix
+wso2/carbon-identity-framework,7371,2336474377,Yes,Developer Preference
+Altinn/altinn-studio,16095,2273465104,Yes,Deferred
+youtube/cobalt,7523,2426893807,Yes,Developer Preference
+Azure/azure-sdk-for-net,51542,2238427842,Yes,Claimed Fixed (Unverified)
+Adyen/adyen-web,3491,2321873682,Yes,Incorrect Suggestion
+APSIMInitiative/ApsimX,10537,2382319067,Yes,Not Needed
+wso2/carbon-apimgt,13311,2292853352,Yes,Not Needed
+Azure/azure-sdk-for-python,43260,2408666018,Yes,Developer Preference
+camunda/camunda,36280,2245465488,Yes,Incorrect Suggestion
+projectcalico/calico,10027,2245302449,Yes,Developer Preference
+wordpress-mobile/WordPress-Android,22001,2194844419,Yes,Deferred
+wordpress-mobile/WordPress-Android,22141,2283767127,Yes,Incorrect Suggestion
+Altinn/altinn-studio,15414,2139177582,Yes,Deferred
+Azure/azure-sdk-for-python,41403,2125183588,Yes,Developer Preference
+membrane/api-gateway,2156,2367691373,Yes,Incorrect Suggestion
+Altinn/altinn-studio,15272,2065652870,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13255,2273332804,Yes,Not Needed
+youtube/cobalt,6159,2165229829,Yes,Developer Preference
+youtube/cobalt,7212,2357406350,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-java,46389,2274405357,Yes,Not Needed
+wso2/carbon-apimgt,13314,2293324448,Yes,Not Needed
+wso2/carbon-identity-framework,7444,2380951870,Yes,Incorrect Suggestion
+Azure/azure-rest-api-specs,37683,2373663878,Yes,Incorrect Suggestion
+youtube/cobalt,7313,2377247157,Yes,Not Needed
+camunda/camunda,35228,2202006161,Yes,Incorrect Suggestion
+Homebrew/homebrew-core,251186,2463917316,Yes,Not Needed
+Automattic/wp-calypso,104207,2144940151,Yes,Incorrect Suggestion
+Azure/azure-powershell,28230,2216536083,Yes,Developer Preference
+Azure/azure-sdk-for-net,49960,2081217211,Yes,Alternative Fix
+wso2/carbon-apimgt,13255,2273280873,Yes,Not Needed
+Azure/azure-functions-host,11324,2353083185,Yes,Developer Preference
+Azure/azure-sdk-for-net,50865,2166141419,Yes,Alternative Fix
+youtube/cobalt,6876,2283391493,No,Developer Preference
+youtube/cobalt,6342,2193986425,No,Not Needed
+Azure/azure-sdk-for-js,35411,2259621716,Yes,Not Needed
+Azure/azure-sdk-for-net,51580,2243667307,Yes,Alternative Fix
+Azure/azure-sdk-for-python,42597,2286523328,Yes,Claimed Fixed (Unverified)
+camunda/camunda,37685,2329901204,Yes,Deferred
+Azure/azure-cli,32130,2356982326,Yes,Alternative Fix
+wso2/carbon-apimgt,13313,2293275244,Yes,Incorrect Suggestion
+wso2/carbon-identity-framework,7371,2336474361,Yes,Claimed Fixed (Unverified)
+Azure/azure-sdk-for-cpp,6554,2071065194,Yes,Deferred
+wso2/carbon-apimgt,13191,2258997549,Yes,Not Needed
+wso2/carbon-apimgt,13251,2276456350,Yes,Not Needed
+youtube/cobalt,6488,2220290689,Yes,Alternative Fix
+Automattic/wordpress-activitypub,1983,2222780106,Yes,Incorrect Suggestion
+Azure/azure-powershell,28629,2393548318,Yes,Deferred
+Altinn/altinn-studio,15719,2158870831,Yes,Deferred
+Azure/azure-sdk-for-net,50786,2176785176,Yes,Alternative Fix
+wso2/carbon-apimgt,13278,2278462034,Yes,Not Needed
+Azure/azure-sdk-for-net,50544,2140140674,Yes,Claimed Fixed (Unverified)
+Homebrew/homebrew-core,251172,2463839196,Yes,Not Needed
+Azure/azure-sdk-for-java,46224,2243821602,Yes,Alternative Fix
+wso2/carbon-apimgt,13473,2415943831,Yes,Not Needed
+Automattic/wp-calypso,102932,2071518507,Yes,Incorrect Suggestion
+youtube/cobalt,6403,2202358030,No,Incorrect Suggestion
+openhab/openhab-addons,19095,2249119192,Yes,Incorrect Suggestion
+umbraco/Umbraco-CMS,19941,2287110535,Yes,Developer Preference
+camunda/camunda,36280,2245465501,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-python,42750,2307890241,Yes,Claimed Fixed (Unverified)
+Azure/azure-cli,31808,2205615894,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13328,2301075910,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13201,2250317979,Yes,Alternative Fix
+Automattic/wordpress-activitypub,2379,2466804412,Yes,Not Needed
+openhab/openhab-addons,19117,2264159821,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13343,2316839183,No,Not Needed
+Azure/azure-cli-extensions,8770,2098556545,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-python,42698,2301554063,Yes,Alternative Fix
+Altinn/altinn-studio,15414,2139177590,Yes,Deferred
+Automattic/wordpress-activitypub,1931,2206736046,Yes,Not Needed
+wso2/carbon-apimgt,13338,2307027105,No,Alternative Fix
+wso2/carbon-apimgt,13362,2329977219,Yes,Claimed Fixed (Unverified)
+youtube/cobalt,6488,2219856711,Yes,Claimed Fixed (Unverified)
+wso2/carbon-apimgt,13247,2269252848,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,50267,2106854947,Yes,Alternative Fix
+openhab/openhab-addons,19322,2434963344,Yes,Developer Preference
+wso2/carbon-apimgt,13416,2377711130,Yes,Incorrect Suggestion
+dotnet/AspNetCore.Docs,35841,2237824410,Yes,Incorrect Suggestion
+Automattic/wp-calypso,104793,2225009302,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13092,2107367756,Yes,Alternative Fix
+Azure/azure-sdk-for-net,51318,2226920023,Yes,Deferred
+youtube/cobalt,6159,2165218089,Yes,Alternative Fix
+youtube/cobalt,6159,2165218095,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13468,2418494059,Yes,Not Needed
+Azure/azure-sdk-for-net,51524,2237838701,Yes,Claimed Fixed (Unverified)
+camunda/camunda,32224,2161232555,No,Alternative Fix
+wordpress-mobile/WordPress-Android,22285,2431998555,Yes,Incorrect Suggestion
+wordpress-mobile/WordPress-Android,22151,2286908851,Yes,Alternative Fix
+youtube/cobalt,7140,2342589766,Yes,Not Needed
+Azure/azure-sdk-for-net,51542,2238427829,Yes,Claimed Fixed (Unverified)
+Altinn/altinn-studio,16288,2324419143,Yes,Not Needed
+wso2/carbon-apimgt,13344,2317626162,Yes,Developer Preference
+Azure/azure-cli,31896,2244959905,Yes,Alternative Fix
+youtube/cobalt,7443,2400350235,No,Alternative Fix
+wso2/carbon-apimgt,13263,2274257001,Yes,Alternative Fix
+wso2/carbon-apimgt,13456,2398647630,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,51733,2255502802,Yes,Claimed Fixed (Unverified)
+wso2/carbon-apimgt,13278,2278462021,Yes,Not Needed
+Altinn/altinn-studio,16037,2261939632,Yes,Incorrect Suggestion
+Homebrew/homebrew-core,251186,2463912956,Yes,Not Needed
+projectcalico/calico,10819,2278683660,Yes,Developer Preference
+Automattic/wordpress-activitypub,2415,2485147540,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,51827,2262125394,Yes,Incorrect Suggestion
+youtube/cobalt,7140,2342589674,Yes,Not Needed
+youtube/cobalt,7150,2364589455,No,Incorrect Suggestion
+wso2/carbon-apimgt,13445,2394161145,Yes,Alternative Fix
+Altinn/altinn-studio,15985,2254265615,Yes,Deferred
+youtube/cobalt,7140,2342589661,Yes,Not Needed
+Azure/azure-sdk-for-python,42597,2286523351,Yes,Claimed Fixed (Unverified)
+Azure/azure-container-networking,3739,2150760240,Yes,Deferred
+Altinn/altinn-studio,16428,2377845281,Yes,Incorrect Suggestion
+Altinn/altinn-studio,15814,2179506692,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,52062,2283183370,Yes,Incorrect Suggestion
+Automattic/wordpress-activitypub,2001,2227968781,Yes,Deferred
+wso2/carbon-apimgt,13350,2321345579,No,Not Needed
+wso2/carbon-apimgt,13327,2300713771,No,Not Needed
+wso2/carbon-apimgt,13310,2292765203,Yes,Alternative Fix
+Azure/azure-sdk-for-net,53477,2464551103,Yes,Alternative Fix
+wso2/carbon-apimgt,13458,2400779380,Yes,Alternative Fix
+Azure/azure-sdk-for-net,52026,2279889658,Yes,Claimed Fixed (Unverified)
+camunda/camunda,35912,2230679860,Yes,Incorrect Suggestion
+wordpress-mobile/WordPress-Android,22007,2197569902,Yes,Incorrect Suggestion
+youtube/cobalt,6010,2159682044,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13521,2464550163,Yes,Not Needed
+camunda/camunda,37627,2322510460,Yes,Not Needed
+youtube/cobalt,7150,2364589459,No,Incorrect Suggestion
+wso2/carbon-apimgt,13255,2272263473,Yes,Alternative Fix
+wso2/carbon-apimgt,13182,2213356432,Yes,Incorrect Suggestion
+Altinn/altinn-studio,16716,2459772918,Yes,Alternative Fix
+wso2/carbon-apimgt,13322,2299780912,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13416,2380025717,Yes,Incorrect Suggestion
+youtube/cobalt,5894,2112268233,Yes,Incorrect Suggestion
+youtube/cobalt,6683,2251972655,Yes,Claimed Fixed (Unverified)
+Azure/azure-sdk-for-python,42698,2301554078,Yes,Alternative Fix
+wso2/carbon-apimgt,13387,2369894356,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,52464,2323372245,Yes,Not Needed
+wso2/carbon-apimgt,13318,2297066894,Yes,Not Needed
+wso2/carbon-apimgt,13160,2185179090,Yes,Incorrect Suggestion
+Altinn/altinn-studio,16708,2454897993,Yes,Not Needed
+youtube/cobalt,6299,2182175531,Yes,Incorrect Suggestion
+youtube/cobalt,7140,2342589796,Yes,Not Needed
+Homebrew/homebrew-core,251130,2463130718,Yes,Developer Preference
+Altinn/altinn-studio,16716,2455083054,Yes,Incorrect Suggestion
+youtube/cobalt,7196,2354224431,Yes,Others
+wso2/carbon-apimgt,13201,2257104525,Yes,Alternative Fix
+Azure/azure-sdk-for-js,34682,2127123724,Yes,Incorrect Suggestion
+youtube/cobalt,6344,2196169265,Yes,Alternative Fix
+wso2/carbon-apimgt,13466,2409542712,Yes,Not Needed
+youtube/cobalt,7140,2342589692,Yes,Not Needed
+wso2/carbon-apimgt,13301,2287908660,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13307,2290180374,Yes,Alternative Fix
+youtube/cobalt,7140,2342589719,Yes,Not Needed
+Altinn/altinn-studio,15850,2204743474,Yes,Incorrect Suggestion
+Homebrew/homebrew-core,229543,2195827054,Yes,Incorrect Suggestion
+youtube/cobalt,5545,2105505823,No,Incorrect Suggestion
+Azure/azure-sdk-for-js,33941,2113453939,Yes,Incorrect Suggestion
+Automattic/wp-calypso,104883,2228015740,Yes,Deferred
+Azure/azure-sdk-for-net,51169,2197038243,Yes,Alternative Fix
+Azure/azure-container-networking,3958,2291985411,Yes,Incorrect Suggestion
+Altinn/altinn-studio,16095,2273457761,Yes,Deferred
+wso2/carbon-apimgt,13361,2335533643,Yes,Alternative Fix
+Azure/azure-sdk-for-net,51524,2237838691,Yes,Claimed Fixed (Unverified)
+wso2/carbon-apimgt,13416,2377711115,Yes,Alternative Fix
+Altinn/altinn-studio,16716,2455082956,Yes,Incorrect Suggestion
+Altinn/altinn-studio,15814,2179506686,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,51345,2218377874,Yes,Incorrect Suggestion
+youtube/cobalt,7072,2323612266,Yes,Claimed Fixed (Unverified)
+Altinn/altinn-studio,15925,2239354293,Yes,Deferred
+youtube/cobalt,7140,2342589805,Yes,Not Needed
+wso2/carbon-apimgt,13452,2398075148,Yes,Alternative Fix
+Automattic/woocommerce-payments,10947,2242174377,Yes,Alternative Fix
+youtube/cobalt,7074,2335197459,Yes,Incorrect Suggestion
+Automattic/wordpress-activitypub,2314,2466995909,Yes,Alternative Fix
+youtube/cobalt,7429,2396480189,Yes,Incorrect Suggestion
+OpenZeppelin/openzeppelin-contracts,5880,2294872946,Yes,Incorrect Suggestion
+youtube/cobalt,5903,2112858947,Yes,Alternative Fix
+wso2/carbon-apimgt,13198,2241517442,Yes,Alternative Fix
+membrane/api-gateway,2122,2324974155,Yes,Others
+wso2/carbon-apimgt,13416,2377711113,Yes,Claimed Fixed (Unverified)
+Automattic/wordpress-activitypub,2369,2462314121,Yes,Alternative Fix
+wso2/carbon-apimgt,13255,2275224133,Yes,Alternative Fix
+Altinn/altinn-studio,16095,2273457752,Yes,Deferred
+youtube/cobalt,7249,2369597127,Yes,Claimed Fixed (Unverified)
+camunda/camunda,37119,2297935282,Yes,Alternative Fix
+Altinn/altinn-studio,15483,2097925212,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-go,24864,2175546606,Yes,Not Needed
+youtube/cobalt,7149,2344779495,Yes,Not Needed
+dotnet/AspNetCore.Docs,35786,2219547443,Yes,Not Needed
+wordpress-mobile/WordPress-Android,22162,2291835833,Yes,Deferred
+wordpress-mobile/WordPress-Android,22151,2286913692,Yes,Alternative Fix
+wso2/carbon-apimgt,13255,2272551473,Yes,Alternative Fix
+wso2/carbon-apimgt,13201,2250317977,Yes,Alternative Fix
+youtube/cobalt,6970,2297118262,Yes,Alternative Fix
+Azure/azure-container-networking,4081,2433584874,Yes,Not Needed
+Azure/azure-sdk-for-net,52464,2323372221,Yes,Claimed Fixed (Unverified)
+Azure/azure-sdk-for-net,51745,2256184933,Yes,Incorrect Suggestion
+Azure/azure-cli-extensions,8820,2120466171,Yes,Deferred
+Azure/azure-sdk-for-net,51651,2249493516,Yes,Claimed Fixed (Unverified)
+dotnet/aspnetcore,63239,2274475033,Yes,Developer Preference
+youtube/cobalt,6430,2208958211,Yes,Claimed Fixed (Unverified)
+projectcalico/calico,10931,2323084024,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13386,2349130982,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13437,2390096187,Yes,Alternative Fix
+Altinn/altinn-studio,15272,2065652890,Yes,Alternative Fix
+Azure/azure-sdk-for-java,46320,2299400332,Yes,Deferred
+membrane/api-gateway,2068,2293821192,Yes,Incorrect Suggestion
+APSIMInitiative/ApsimX,10572,2396549955,Yes,Incorrect Suggestion
+Azure/azure-container-networking,3930,2274851316,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,52206,2294796899,Yes,Claimed Fixed (Unverified)
+Azure/azure-functions-host,11344,2365766747,No,Not Needed
+Azure/azure-functions-host,11258,2306139653,Yes,Incorrect Suggestion
+Azure/azure-powershell,28457,2299322618,Yes,Incorrect Suggestion
+youtube/cobalt,6385,2201410787,Yes,Alternative Fix
+membrane/api-gateway,1861,2079263110,Yes,Alternative Fix
+Azure/azure-sdk-for-net,51957,2302194165,Yes,Alternative Fix
+Azure/azure-sdk-for-java,46389,2274405346,Yes,Not Needed
+wso2/carbon-apimgt,13416,2380025753,Yes,Alternative Fix
+wso2/carbon-apimgt,13186,2222393289,Yes,Claimed Fixed (Unverified)
+openhab/openhab-addons,19352,2360480103,Yes,Developer Preference
+youtube/cobalt,7196,2354224418,Yes,Incorrect Suggestion
+Azure/azure-sdk-for-net,53371,2445985967,Yes,Claimed Fixed (Unverified)
+Altinn/altinn-studio,16205,2306769550,Yes,Claimed Fixed (Unverified)
+wso2/carbon-apimgt,13452,2398072083,Yes,Incorrect Suggestion
+wordpress-mobile/WordPress-Android,22126,2274493536,Yes,Alternative Fix
+Agoric/agoric-sdk,11857,2311703128,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13201,2262063089,Yes,Alternative Fix
+wso2/carbon-apimgt,13434,2389895220,Yes,Incorrect Suggestion
+wso2/carbon-apimgt,13416,2377711132,Yes,Alternative Fix
+Altinn/altinn-studio,15659,2149801237,Yes,Not Needed
+wso2/carbon-apimgt,13180,2209470757,Yes,Incorrect Suggestion
+Homebrew/homebrew-core,250096,2441253373,Yes,Alternative Fix
+Azure/azure-sdk-for-java,47032,2437158339,Yes,Alternative Fix
+Automattic/woocommerce-payments,10940,2210777606,Yes,Not Needed
+Automattic/wordpress-activitypub,2027,2301278435,Yes,Incorrect Suggestion
+OpenZeppelin/openzeppelin-contracts,5941,2360143954,Yes,Incorrect Suggestion
+wordpress-mobile/WordPress-Android,22141,2283767153,Yes,Deferred
+Azure/azure-sdk-for-net,49921,2086177848,Yes,Incorrect Suggestion
+membrane/api-gateway,2032,2247669087,Yes,Alternative Fix
+Azure/azure-cli-extensions,9091,2300933957,Yes,Not Needed

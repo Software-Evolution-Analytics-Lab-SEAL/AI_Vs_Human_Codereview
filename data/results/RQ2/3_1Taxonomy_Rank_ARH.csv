@@ -1,0 +1,7 @@
+"feed_type","Rank","Mean_ATC","Median_ATC","N"
+"Defects",1,1.26296006264683,1,38310
+"Understanding",1,1.22884615384615,1,520
+"Testing",1,1.22188905547226,1,1334
+"External Impact",1,1.2093023255814,1,1032
+"Knowledge Transfer",1,1.18652849740933,1,193
+"Code Improvement",1,1.17869240923043,1,62879

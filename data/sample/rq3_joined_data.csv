@@ -1,0 +1,101 @@
+repo,pr_id,thread_id,path,reviewer_type,review_category,feed_type,lang,language_group,language,final_is_applied,final_similarity,final_before_similarity,final_commit_sha,final_commit_lines,sug_startline,sug_LOC,conf_score,is_pure
+APSIMInitiative/ApsimX,10560,2400777243,Tests/UnitTests/CommandLineArgsTests.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.928,1.0,cab3cd2,371-371,371,1,9.0,True
+APSIMInitiative/ApsimX,10560,2400777250,Models/Core/ConfigFile/ConfigFile.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9474,1.0,6eae453,231-231,231,1,9.0,True
+APSIMInitiative/ApsimX,10560,2400777256,Models/Core/ConfigFile/ConfigFile.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9474,1.0,6eae453,231-231,299,1,9.0,True
+APSIMInitiative/ApsimX,10655,2450331193,Models/Functions/FrostHeatDamageFunctions.cs,Agent,ARH,Defects,cs,C#,cs,True,0.8737,0.752,f69f458,228-228,228,1,9.0,True
+APSIMInitiative/ApsimX,10675,2467799104,ApsimNG/Utility/Excel.cs,Agent,ARH,Defects,cs,C#,cs,True,0.7918,0.6609,c81f1f4,35-40,33,8,9.0,True
+APSIMInitiative/ApsimX,10675,2467799112,ApsimNG/Utility/Excel.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9186,0.8784,c81f1f4,43-43,37,1,9.0,True
+Adyen/adyen-web,3449,2300958052,packages/e2e-playwright/automated-a11y.config.ts,Agent,ARH,Code Improvement,ts,TypeScript,ts,True,0.9532,0.8443,ec86abe,74-74,74,1,9.0,True
+Adyen/adyen-web,3449,2300958062,packages/e2e-playwright/playwright.config.ts,Agent,ARH,Code Improvement,ts,TypeScript,ts,True,0.9532,0.8443,d77ed26,83-83,83,1,9.0,True
+Adyen/adyen-web,3499,2325801348,packages/lib/src/components/internal/Address/components/AddressSearch.tsx,Agent,ARH,Code Improvement,tsx,TypeScript,tsx,True,0.9556,0.3283,3c1d770,20-20,20,1,9.0,True
+Adyen/adyen-web,3548,2394413638,packages/lib/src/components/Card/constants.ts,Agent,ARH,Code Improvement,ts,TypeScript,ts,True,1.0,0.8126,43d4a04,1-1,1,1,9.0,True
+Adyen/adyen-web,3622,2493790628,packages/lib/src/components/Card/stories/Card.stories.tsx,Agent,ARH,Code Improvement,tsx,TypeScript,tsx,True,0.8021,0.8339,7d58790,207-207,207,1,9.0,True
+Adyen/adyen-web,3622,2493790637,packages/lib/src/components/Card/stories/Card.stories.tsx,Agent,ARH,Defects,tsx,TypeScript,tsx,True,0.8667,0.6733,7d58790,221-221,221,1,9.0,True
+Agoric/agoric-sdk,11964,2373495486,packages/portfolio-contract/src/pos.exo.ts,Human,HRH,Defects,ts,TypeScript,ts,True,0.9923,0.8847,d7ac7c2,71-71,71,1,9.0,True
+Altinn/altinn-studio,15228,2062988317,frontend/packages/ux-editor/src/components/config/FormComponentConfig.tsx,Human,HRH,Understanding,tsx,TypeScript,tsx,True,0.6678,0.991,ec44861,356-358,339,4,8.0,True
+Altinn/altinn-studio,15231,2106881462,frontend/packages/process-editor/src/components/ConfigPanel/ConfigContent/EditUserControlledImplementation/index.ts,Human,HRH,Code Improvement,ts,TypeScript,ts,True,1.0,0.6094,4445663,1-1,1,1,8.0,True
+Altinn/altinn-studio,15231,2106886069,frontend/packages/process-editor/src/components/ConfigPanel/ConfigContent/EditCorrespondenceResource/index.ts,Human,HRH,Understanding,ts,TypeScript,ts,True,0.996,0.6151,0902206,1-1,1,1,7.0,True
+Altinn/altinn-studio,15255,2094888604,frontend/app-development/layout/PageHeader/SubHeader/SettingsModalButton/SettingsModal/components/Tabs/AccessControlTab/AccessControlTab.module.css,Human,HRH,Code Improvement,css,CSS,css,True,0.9818,0.6667,15eb710,7-7,7,1,8.0,True
+Altinn/altinn-studio,15255,2094889962,frontend/packages/ux-editor/src/containers/DesignView/AddItem/ToggleAddComponentPoc.tsx,Human,HRH,Code Improvement,tsx,TypeScript,tsx,True,0.8636,1.0,15eb710,48-48,48,1,8.0,True
+Altinn/altinn-studio,15324,2071128081,backend/src/Designer/TypedHttpClients/AltinnAuthorization/AltinnAuthorizationPolicyClient.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.6,1.0,e4c3b73,61-61,53,1,9.0,True
+Altinn/altinn-studio,15324,2071235171,backend/src/Designer/TypedHttpClients/AltinnAuthorization/AltinnAuthorizationPolicyClient.cs,Human,HRH,Code Improvement,cs,C#,cs,True,0.9567,0.9371,e4c3b73,58-58,58,1,8.0,True
+Altinn/altinn-studio,15324,2071235471,backend/src/Designer/TypedHttpClients/AltinnAuthorization/AltinnAuthorizationPolicyClient.cs,Human,HRH,Code Improvement,cs,C#,cs,True,0.9596,0.9408,e4c3b73,59-59,59,1,8.0,True
+Altinn/altinn-studio,15339,2072943531,frontend/libs/studio-content-library/src/ContentLibrary/LibraryBody/LibraryBody.module.css,Human,HRH,Code Improvement,css,CSS,css,True,0.9812,0.6352,5c21da2,3-3,3,1,8.0,True
+Altinn/altinn-studio,15344,2075305522,frontend/packages/ux-editor/src/components/TaskNavigation/TaskCard.module.css,Human,HRH,Understanding,css,CSS,css,True,1.0,0.7208,db832e6,12-12,12,1,8.0,True
+Altinn/altinn-studio,15385,2076987222,frontend/libs/studio-components/src/components/StudioContentMenu/context/StudioContentMenuContext.tsx,Agent,ARH,Defects,tsx,TypeScript,tsx,True,0.684,0.7167,150321d,9-10,9,2,9.0,True
+Altinn/altinn-studio,15448,2111007126,frontend/packages/policy-editor/src/components/ConsentResourcePolicyRulesEditor/ConsentResourcePolicyRulesEditor.tsx,Human,HRH,Code Improvement,tsx,TypeScript,tsx,True,0.5714,1.0,63c831f,160-160,160,1,7.0,True
+Altinn/altinn-studio,15448,2111008352,frontend/packages/policy-editor/src/components/ConsentResourcePolicyRulesEditor/ConsentResourcePolicyRulesEditor.tsx,Human,HRH,Code Improvement,tsx,TypeScript,tsx,True,0.8839,1.0,63c831f,162-162,162,1,9.0,True
+Altinn/altinn-studio,15495,2139775419,frontend/packages/shared/src/utils/compareFunctions.ts,Human,HRH,Code Improvement,ts,TypeScript,ts,True,0.9902,0.8007,b1f127e,15-15,15,1,9.0,True
+Altinn/altinn-studio,15502,2106653581,frontend/testing/playwright/tests/app-settings/app-settings.spec.ts,Agent,ARH,Defects,ts,TypeScript,ts,True,0.9906,0.771,4f4e8a2,82-82,82,1,9.0,True
+Altinn/altinn-studio,15502,2106653583,frontend/testing/playwright/tests/app-settings/app-settings.spec.ts,Agent,ARH,Defects,ts,TypeScript,ts,True,0.9906,0.771,4f4e8a2,82-82,93,1,9.0,True
+Altinn/altinn-studio,15509,2107297509,frontend/libs/studio-content-library/src/ContentLibrary/LibraryBody/pages/CodeListPage/CodeListPage.test.tsx,Agent,ARH,Defects,tsx,TypeScript,tsx,True,0.8103,0.7326,d55e71a,197-197,197,1,9.0,True
+Altinn/altinn-studio,15536,2111956451,frontend/packages/ux-editor/src/components/Properties/GroupConfigPanel/GroupConfigPanel.tsx,Human,HRH,Understanding,tsx,TypeScript,tsx,True,0.9211,0.7264,c0e7484,23-23,23,1,9.0,True
+Azure/azure-cli-extensions,9319,2445836408,src/azure-firewall/azext_firewall/tests/latest/test_azure_firewall_scenario.py,Agent,ARH,Code Improvement,py,Python,py,True,0.9163,0.417,e142570,1538-1538,1538,1,9.0,True
+Azure/azure-cli-extensions,9319,2445836428,src/azure-firewall/azext_firewall/tests/latest/test_azure_firewall_scenario.py,Agent,ARH,Code Improvement,py,Python,py,True,0.9963,0.4174,e142570,1568-1580,1568,13,9.0,True
+Azure/azure-cli-extensions,9396,2496454676,src/aks-preview/azext_aks_preview/aks_safeguards_custom.py,Agent,ARH,Defects,py,Python,py,True,0.9566,0.5966,532d583,39-39,39,1,9.0,True
+Azure/azure-cli-extensions,9396,2496454693,src/aks-preview/azext_aks_preview/aks_safeguards_custom.py,Agent,ARH,Code Improvement,py,Python,py,True,0.8102,0.6855,532d583,52-59,52,8,9.0,True
+Azure/azure-cli-extensions,9396,2496454700,src/aks-preview/azext_aks_preview/aks_safeguards_custom.py,Agent,ARH,Code Improvement,py,Python,py,True,0.9262,0.6855,532d583,52-59,52,8,9.0,True
+Azure/azure-functions-host,11174,2196097047,test/WebJobs.Script.Tests/ScriptStartupTypeDiscovererTests.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9681,1.0,7cce375,1177-1177,1177,1,9.0,True
+Azure/azure-functions-host,11174,2196150378,test/WebJobs.Script.Tests/ScriptStartupTypeDiscovererTests.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9681,0.9308,7cce375,1177-1177,1177,1,9.0,True
+Azure/azure-functions-host,11210,2237846021,src/WebJobs.Script/Http/RetryProxyHandler.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.571,0.5724,832bb61,49-49,48,3,9.0,True
+Azure/azure-functions-host,11210,2299129956,src/WebJobs.Script/Http/RetryProxyHandler.cs,Human,HRH,Knowledge Transfer,cs,C#,cs,True,0.6,0.5341,832bb61,63-63,63,1,9.0,True
+Azure/azure-functions-host,11210,2301543729,src/WebJobs.Script/Http/RetryProxyHandler.cs,Human,HRH,Understanding,cs,C#,cs,True,0.8611,0.8695,832bb61,77-77,77,1,8.0,True
+Azure/azure-functions-host,11229,2273700047,src/WebJobs.Script/Workers/Rpc/IWorkerConfigurationResolver.cs,Human,HRH,Code Improvement,cs,C#,cs,True,0.9859,1.0,bd3a331,11-11,11,1,8.0,True
+Azure/azure-functions-host,11322,2349405528,test/WebJobs.Script.Tests/UtilityTests.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9718,0.8403,2a6a0df,1118-1118,1118,1,8.0,True
+Azure/azure-functions-host,11333,2356986724,test/WebJobs.Script.Tests.Integration/Diagnostics/MetricsEventManagerTests.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9688,0.904,d8c5cf8,591-591,591,1,9.0,True
+Azure/azure-functions-host,11349,2371148469,src/WebJobs.Script.WebHost/Middleware/SpecializationSimulatorMiddleware.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.964,0.9875,f009469,41-41,41,1,9.0,True
+Azure/azure-powershell,27706,2083748839,src/Accounts/Accounts/Token/GetAzureRmAccessToken.cs,Human,HRH,Code Improvement,cs,C#,cs,True,0.9797,0.5412,dca2e6b,74-74,74,1,9.0,True
+Azure/azure-powershell,27706,2083829050,src/Accounts/Accounts/Token/GetAzureRmAccessToken.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9235,0.6251,dca2e6b,153-155,153,3,9.0,True
+Azure/azure-powershell,27837,2160800141,src/HDInsight/HDInsight/ClusterConfigurationUtils.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9305,1.0,0472956,178-178,178,1,9.0,True
+Automattic/wp-calypso,103494,2098223958,client/components/navigation-header/navigation-header.tsx,Agent,ARH,Code Improvement,tsx,TypeScript,tsx,True,0.9881,1.0,93c08bf,49-50,49,2,9.0,True
+Automattic/wp-calypso,103541,2098602221,client/my-sites/stats/stats-email-detail/index.jsx,Human,HRH,Code Improvement,jsx,JavaScript,jsx,True,0.9902,0.7278,301b69a,162-162,162,1,8.0,True
+Automattic/wp-calypso,103541,2098619804,client/my-sites/stats/pages/subscribers/index.tsx,Human,HRH,Code Improvement,tsx,TypeScript,tsx,True,0.95,0.5915,06f9e36,111-111,111,1,9.0,True
+Automattic/wp-calypso,103728,2108437796,client/my-sites/stats/stats-period-navigation/index.jsx,Agent,ARH,Code Improvement,jsx,JavaScript,jsx,True,0.9941,1.0,05a944f,250-252,249,3,9.0,True
+Automattic/wp-calypso,103743,2109484330,client/lib/post-normalizer/rule-content-remove-styles.js,Agent,ARH,Code Improvement,js,JavaScript,js,True,0.703,0.6831,eddfed5,25-25,25,1,8.0,True
+Automattic/wp-calypso,103743,2109484348,client/lib/post-normalizer/rule-content-remove-styles.js,Agent,ARH,Code Improvement,js,JavaScript,js,True,0.9895,0.6352,eddfed5,26-26,26,1,9.0,True
+Automattic/wp-calypso,103822,2115081241,client/my-sites/stats/geochart/index.jsx,Agent,ARH,Code Improvement,jsx,JavaScript,jsx,True,0.5777,0.9957,42a1908,504-504,503,1,9.0,True
+Automattic/wp-calypso,104795,2224966031,client/dashboard/app/queries/site-staging-sites.ts,Human,HRH,Defects,ts,TypeScript,ts,True,0.9141,1.0,6913cc1,9-9,18,1,9.0,True
+Automattic/wp-calypso,104795,2228596158,client/dashboard/app/queries/site-staging-sites.ts,Human,HRH,Defects,ts,TypeScript,ts,True,0.995,0.7903,6913cc1,10-10,11,1,9.0,True
+Automattic/wp-calypso,104843,2219828276,client/login/magic-login/request-login-email-form.jsx,Agent,ARH,Code Improvement,jsx,JavaScript,jsx,True,0.9812,0.851,5f58942,240-240,240,1,9.0,True
+Automattic/wp-calypso,106394,2476487649,packages/wpcom-proxy-request/src/index.js,Agent,ARH,Code Improvement,js,JavaScript,js,True,0.7455,1.0,6ba4ac9,80-80,80,1,9.0,True
+Automattic/wp-calypso,106394,2476487659,packages/wpcom-proxy-request/src/index.js,Agent,ARH,Code Improvement,js,JavaScript,js,True,0.9854,1.0,6ba4ac9,572-572,572,1,9.0,True
+Automattic/wp-calypso,106400,2425227584,client/dashboard/sites/performance/core-metrics-chart.tsx,Agent,ARH,Code Improvement,tsx,TypeScript,tsx,True,0.9898,0.6667,f3e7c1f,86-86,86,1,9.0,True
+Automattic/wp-calypso,106639,2452825353,client/dashboard/sites/ssh-migration-failed/index.tsx,Agent,ARH,Code Improvement,tsx,TypeScript,tsx,True,0.8082,0.6386,5d935ff,51-53,50,1,9.0,True
+Azure/azure-cli,31465,2264874453,src/azure-cli/azure/cli/command_modules/dms/custom.py,Agent,ARH,Code Improvement,py,Python,py,True,0.9692,1.0,d322380,489-489,489,1,9.0,True
+Azure/azure-cli,31465,2264874465,src/azure-cli/azure/cli/command_modules/dms/custom.py,Agent,ARH,Code Improvement,py,Python,py,True,0.96,0.6208,d322380,498-498,498,1,9.0,True
+Azure/azure-cli,31495,2096650458,src/azure-cli/azure/cli/command_modules/acs/_params.py,Human,HRH,Code Improvement,py,Python,py,True,0.9619,0.825,c2f088b,836-836,836,1,8.0,True
+Azure/azure-cli,31544,2162827204,src/azure-cli/azure/cli/command_modules/acs/_help.py,Human,HRH,Code Improvement,py,Python,py,True,0.9973,1.0,983bcc5,672-672,672,1,9.0,True
+Azure/azure-cli,31544,2162827419,src/azure-cli/azure/cli/command_modules/acs/_help.py,Human,HRH,Social Communication,py,Python,py,True,0.9958,1.0,983bcc5,1747-1747,1747,1,8.0,True
+Azure/azure-cli,31544,2162908043,src/azure-cli/azure/cli/command_modules/acs/tests/latest/test_aks_commands.py,Human,HRH,Testing,py,Python,py,True,0.68,1.0,bbdda3c,12778-12779,12869,2,9.0,True
+Azure/azure-cli,31586,2116299537,src/azure-cli/azure/cli/command_modules/rdbms/flexible_server_custom_postgres.py,Agent,ARH,Code Improvement,py,Python,py,True,0.7587,0.6597,f51e48c,1062-1062,1062,1,9.0,True
+Azure/azure-cli,31635,2138909748,src/azure-cli/azure/cli/command_modules/appservice/custom.py,Agent,ARH,Code Improvement,py,Python,py,True,0.8423,1.0,b1bb754,4655-4655,4653,1,9.0,True
+Azure/azure-cli,31659,2151443539,src/azure-cli/azure/cli/command_modules/keyvault/_params.py,Human,HRH,Code Improvement,py,Python,py,True,0.9798,0.827,deb13a1,561-561,561,1,9.0,True
+Azure/azure-cli,31660,2149384627,scripts/ci/codegen_report.py,Agent,ARH,Code Improvement,py,Python,py,True,0.7411,0.8238,96be1da,50-50,50,1,9.0,True
+Azure/azure-cli,31668,2155243075,src/azure-cli/azure/cli/command_modules/acs/_help.py,Agent,ARH,Defects,py,Python,py,True,0.9143,0.55,eab4ff6,2586-2586,2586,1,9.0,True
+Azure/azure-cli,31668,2155243087,src/azure-cli/azure/cli/command_modules/acs/_help.py,Agent,ARH,Defects,py,Python,py,True,0.9143,0.55,eab4ff6,2586-2586,2603,1,9.0,True
+Azure/azure-cli,31693,2162041226,src/azure-cli/azure/cli/command_modules/rdbms/validators.py,Agent,ARH,Code Improvement,py,Python,py,True,0.9226,0.5333,a046f08,517-517,517,1,9.0,True
+Azure/azure-cli,31711,2224574353,src/azure-cli/azure/cli/command_modules/appconfig/_help.py,Human,HRH,Code Improvement,py,Python,py,True,0.8281,1.0,849c20e,440-440,440,1,8.0,True
+Azure/azure-cli,31711,2224576011,src/azure-cli/azure/cli/command_modules/appconfig/_help.py,Human,HRH,Code Improvement,py,Python,py,True,0.814,1.0,849c20e,461-461,461,1,8.0,True
+Azure/azure-cli,31824,2209671358,src/azure-cli/azure/cli/command_modules/container/custom.py,Agent,ARH,Code Improvement,py,Python,py,True,0.9707,0.8092,e95931d,146-146,146,1,9.0,True
+Azure/azure-cli,31824,2209671396,src/azure-cli/azure/cli/command_modules/container/custom.py,Agent,ARH,Code Improvement,py,Python,py,True,0.9676,0.8092,e95931d,153-153,153,1,9.0,True
+Azure/azure-cli,31828,2211844348,src/azure-cli/azure/cli/command_modules/acs/azuremonitormetrics/amg/link.py,Agent,ARH,Defects,py,Python,py,True,0.9891,1.0,5644995,38-41,37,4,9.0,True
+Azure/azure-cli,31844,2217123654,src/azure-cli/azure/cli/command_modules/servicefabric/tests/latest/test_sf_managed_cluster.py,Agent,ARH,Code Improvement,py,Python,py,True,0.8352,0.6949,80ec1d9,164-164,164,1,9.0,True
+Azure/azure-cli,31854,2220654088,src/azure-cli/azure/cli/command_modules/acs/tests/latest/test_managed_cluster_decorator.py,Agent,ARH,Code Improvement,py,Python,py,True,0.97,1.0,78d52a2,4703-4703,4703,1,9.0,True
+Azure/azure-cli,31855,2220817033,src/azure-cli/azure/cli/command_modules/vm/custom.py,Agent,ARH,Defects,py,Python,py,True,0.952,0.7354,225605d,4239-4239,4239,1,9.0,True
+Azure/azure-cli,31912,2252372675,src/azure-cli/azure/cli/command_modules/_breaking_change.py,Agent,ARH,Defects,py,Python,py,True,0.96,0.4571,1cc8081,42-42,42,1,9.0,True
+Azure/azure-cli,31912,2299752669,src/azure-cli/azure/cli/command_modules/_breaking_change.py,Human,HRH,Code Improvement,py,Python,py,True,0.9294,0.5684,1cc8081,66-66,66,1,8.0,True
+Azure/azure-cli,32020,2492697937,src/azure-cli/azure/cli/command_modules/acs/tests/latest/test_aks_commands.py,Agent,ARH,Defects,py,Python,py,True,0.9143,0.804,ca53352,2814-2814,2814,1,9.0,True
+Azure/azure-cli,32110,2345572961,src/azure-cli/azure/cli/command_modules/appservice/custom.py,Agent,ARH,Code Improvement,py,Python,py,True,0.9721,0.75,3cafdae,6188-6188,6188,1,9.0,True
+Azure/azure-cli,32118,2361916574,src/azure-cli/azure/cli/command_modules/vm/custom.py,Human,HRH,Code Improvement,py,Python,py,True,0.9862,0.7176,5d03b78,3134-3134,3134,1,8.0,True
+Azure/azure-cli,32118,2361936441,src/azure-cli/azure/cli/command_modules/vm/custom.py,Human,HRH,Code Improvement,py,Python,py,True,0.9862,0.7176,5d03b78,3134-3134,3186,1,8.0,True
+Azure/azure-cli,32122,2349573916,src/azure-cli/azure/cli/command_modules/appservice/_params.py,Agent,ARH,Defects,py,Python,py,True,0.8454,0.8205,cf5ad8e,495-495,495,1,9.0,True
+Azure/azure-cli,32142,2361536705,src/azure-cli/azure/cli/command_modules/keyvault/_help.py,Agent,ARH,Code Improvement,py,Python,py,True,1.0,0.9335,fa7b5b9,586-586,586,1,9.0,True
+Azure/azure-cli,32185,2383642730,src/azure-cli/azure/cli/command_modules/rdbms/_breaking_change.py,Agent,ARH,Defects,py,Python,py,True,0.9758,1.0,83ae520,65-65,65,1,9.0,True
+Azure/azure-powershell,28026,2166879390,tools/Mcp/src/services/utils.ts,Agent,ARH,Defects,ts,TypeScript,ts,True,0.8979,0.7946,7e30f9a,127-127,127,1,9.0,True
+Azure/azure-powershell,28123,2181847997,src/Synapse/Synapse/Common/Utils.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9662,0.9248,47c30a3,243-243,243,1,8.0,True
+Azure/azure-powershell,28168,2198252599,src/Compute/Compute.Management.Sdk/Customizations/VirtualMachineScaleSetVMExtension.cs,Agent,ARH,Defects,cs,C#,cs,True,0.8615,0.7812,47a5bec,35-35,35,1,9.0,True
+Azure/azure-powershell,28288,2237146620,src/Accounts/Authentication/Authentication/TokenCache/SharedTokenCacheProvider.cs,Agent,ARH,Code Improvement,cs,C#,cs,True,0.9877,1.0,a4e3d3a,123-125,123,3,9.0,True
+Azure/azure-powershell,28349,2261685711,src/ServiceFabric/ServiceFabric/Models/ManagedClusters/PSManagedCluster.cs,Agent,ARH,Defects,cs,C#,cs,True,0.9576,0.7021,690d8ed,50-50,50,1,9.0,True
+Altinn/altinn-studio,15545,2115778926,frontend/packages/shared/src/utils/textResourceUtils.ts,Human,HRH,Code Improvement,ts,TypeScript,ts,True,0.9657,1.0,1089b3b,37-37,35,1,8.0,True
+Altinn/altinn-studio,15562,2125762291,frontend/packages/shared/src/api/mutations.ts,Human,HRH,Code Improvement,ts,TypeScript,ts,True,1.0,0.9278,34ffc45,200-200,200,1,9.0,True
+Altinn/altinn-studio,15579,2126325760,frontend/packages/ux-editor/src/components/WithHoverAddButton/WithHoverAddButton.test.tsx,Human,HRH,Code Improvement,tsx,TypeScript,tsx,True,1.0,0.792,b2d5d91,6-6,6,1,9.0,True

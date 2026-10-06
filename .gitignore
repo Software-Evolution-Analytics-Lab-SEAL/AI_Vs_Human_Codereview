@@ -1,0 +1,31 @@
+# Virtual environment (do NOT push to cloud - recreate with: python3 -m venv .venv)
+.venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Generated results (reproducible from scripts)
+# Note: figures and tables are committed as reference outputs for reviewers
+results/RQ1/
+results/RQ2/
+results/RQ3/
+results/tables/*.tex
+
+# Full dataset (on HuggingFace, not GitHub)
+data/full/
+
+# R workspace
+.Rhistory
+.RData
+*.Rproj.user
